@@ -9,4 +9,5 @@ public interface SongDAO {
     void deleteSong(long songId);
     Song getSongById(long songId);
     List<Song> getAllSongs();
+
 }

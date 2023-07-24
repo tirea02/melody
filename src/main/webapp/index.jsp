@@ -18,5 +18,10 @@
 <a href="hello-servlet">Hello Servlet</a>
 <br>
 
+
+<a href="download?id=1">play music</a>
+
+<br>
+
 </body>
 </html>
