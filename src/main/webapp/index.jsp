@@ -7,8 +7,16 @@
 <body>
 <h1><%= "Hello World!" %></h1>
 <br/>
+
+<h1>Welcome to Melody App</h1>
+
+
+<p>
+  <a href="songs">View Song List</a>
+</p>
+
 <a href="hello-servlet">Hello Servlet</a>
 <br>
-<a href="songs">to songs</a>
+
 </body>
 </html>

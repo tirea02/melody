@@ -2,26 +2,22 @@ package com.melody.model;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
-import javax.persistence.*;
-
-@Entity
 @Getter
 @Setter
-@Table(name = "song")
+@ToString
 public class Song {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @Column(nullable = false)
     private String title;
-
-    @Column(nullable = false)
     private String artist;
-
-
     private String album;
 
-    // Getters and setters (omitted for brevity)
+    public Song(Long id, String title, String artist, String album) {
+        this.id = id;
+        this.title = title;
+        this.artist = artist;
+        this.album = album;
+    }
+
 }
