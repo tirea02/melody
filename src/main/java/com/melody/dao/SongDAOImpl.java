@@ -12,12 +12,14 @@ public class SongDAOImpl implements SongDAO {
     @Override
     public void saveSong(Song song) {
         try (Connection connection = DatabaseConfig.getConnection()) {
-            String insertQuery = "INSERT INTO Song (id, title, artist, album) VALUES (?,?,?,?)";
+            String insertQuery = "INSERT INTO Song (id, title, artist, album, url) VALUES (?,?,?,?, ?)";
             PreparedStatement preparedStatement = connection.prepareStatement(insertQuery);
             preparedStatement.setLong(1, song.getId());
             preparedStatement.setString(2, song.getTitle());
             preparedStatement.setString(3, song.getArtist());
             preparedStatement.setString(4, song.getAlbum());
+            preparedStatement.setString(5, song.getUrl());
+
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -27,12 +29,15 @@ public class SongDAOImpl implements SongDAO {
     @Override
     public void updateSong(Song song) {
         try (Connection connection = DatabaseConfig.getConnection()) {
-            String updateQuery = "UPDATE Song SET title=?, artist=?, album=? WHERE id=?";
+            String updateQuery = "UPDATE Song SET title=?, artist=?, album=?, url=? WHERE id=?";
             PreparedStatement preparedStatement = connection.prepareStatement(updateQuery);
             preparedStatement.setString(1, song.getTitle());
             preparedStatement.setString(2, song.getArtist());
             preparedStatement.setString(3, song.getAlbum());
-            preparedStatement.setLong(4, song.getId());
+            preparedStatement.setString(4, song.getUrl());
+            preparedStatement.setLong(5, song.getId());
+
+
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -62,7 +67,8 @@ public class SongDAOImpl implements SongDAO {
                 String title = resultSet.getString("title");
                 String artist = resultSet.getString("artist");
                 String album = resultSet.getString("album");
-                return new Song(songId, title, artist, album);
+                String url = resultSet.getString("url");
+                return new Song(songId, title, artist, album, url);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -82,7 +88,8 @@ public class SongDAOImpl implements SongDAO {
                 String title = resultSet.getString("title");
                 String artist = resultSet.getString("artist");
                 String album = resultSet.getString("album");
-                songs.add(new Song(id, title, artist, album));
+                String url = resultSet.getString("url");
+                songs.add(new Song(id, title, artist, album, url));
             }
         } catch (SQLException e) {
             e.printStackTrace();

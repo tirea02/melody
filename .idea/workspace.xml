@@ -9,23 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="init before change to hibernate -&gt; dao">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/dao/SongDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/dao/SongDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/util/DatabaseConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/songList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="버전 최종 세팅 &#10;JAVA EE 8 (javax 써야함) &#10;Tomcat 9">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/controller/SongServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/SongServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/dao/SongDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/dao/SongDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/model/Song.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/util/HibernateUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/songList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/songList.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -85,7 +83,7 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "advanced.settings",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -204,7 +202,7 @@
       <workItem from="1690165122622" duration="2841000" />
       <workItem from="1690167979908" duration="1514000" />
       <workItem from="1690175994046" duration="246000" />
-      <workItem from="1690176248565" duration="680000" />
+      <workItem from="1690176248565" duration="2575000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -222,7 +220,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690169557289</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="버전 최종 세팅 &#10;JAVA EE 8 (javax 써야함) &#10;Tomcat 9">
+      <option name="closed" value="true" />
+      <created>1690176954261</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690176954261</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +260,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
     <MESSAGE value="init before change to hibernate -&gt; dao" />
-    <option name="LAST_COMMIT_MESSAGE" value="init before change to hibernate -&gt; dao" />
+    <MESSAGE value="버전 최종 세팅 &#10;JAVA EE 8 (javax 써야함) &#10;Tomcat 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="버전 최종 세팅 &#10;JAVA EE 8 (javax 써야함) &#10;Tomcat 9" />
   </component>
 </project>

@@ -27,7 +27,7 @@ public class SongServlet extends HttpServlet {
             SongDAO songDAO = new SongDAOImpl();
             List<Song> songs = songDAO.getAllSongs();
 
-            // Forward the request to the songList.jsp page
+            // Forward the request to the songList.jsp page with pagination information
             request.setAttribute("songs", songs);
             request.getRequestDispatcher("/pages/songList.jsp").forward(request, response);
         } catch (Exception ex) {

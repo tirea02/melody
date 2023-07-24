@@ -12,12 +12,14 @@ public class Song {
     private String title;
     private String artist;
     private String album;
+    private String url;
 
-    public Song(Long id, String title, String artist, String album) {
+    public Song(Long id, String title, String artist, String album, String url) {
         this.id = id;
         this.title = title;
         this.artist = artist;
         this.album = album;
+        this.url = url;
     }
 
 }
