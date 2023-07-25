@@ -25,7 +25,7 @@ public class YoutubeDownloader {
             }
 
             // Define the output filename format
-            String outputFilenameFormat = outputDirectory + "/" + title + "_" + songId + ".mp3";
+            String outputFilenameFormat = outputDirectory + "/" + title + "_" + songId;
             String ytDlpExecutablePath = "C:/yt-dlp/yt-dlp";
             ProcessBuilder processBuilder = new ProcessBuilder(
                     ytDlpExecutablePath,

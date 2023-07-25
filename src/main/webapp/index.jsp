@@ -19,7 +19,9 @@
 <br>
 
 
-<a href="download?id=1">play music</a>
+<a href="download?id=31">play music</a>
+<br>
+<a href="pages/music-player.html">play music</a>
 
 <br>
 
