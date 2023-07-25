@@ -12,13 +12,11 @@ import org.slf4j.LoggerFactory;
 public class YoutubeDownloader {
     private static final Logger logger = LoggerFactory.getLogger(YoutubeDownloader.class);
 
-    public static String downloadAudio(String link, ServletContext servletContext) {
+    public static String downloadAudio(String link, String title, int songId) {
         String downloadedFilePath = null;
         try {
-            String contextPath = servletContext.getRealPath("/");
-
             // Define the output directory for downloaded MP3 files
-            String outputDirectory = contextPath + "resources/mp3";
+            String outputDirectory = "C:/melody/mp3";
 
             // Create the output directory if it does not exist
             Path outputPath = Paths.get(outputDirectory);
@@ -27,16 +25,12 @@ public class YoutubeDownloader {
             }
 
             // Define the output filename format
-
-            String outputFilenameFormat = outputDirectory + "/%(title)s_%(id)s.mp3";
-
-            logger.debug("Output Filename Format: {}", outputFilenameFormat);
-
+            String outputFilenameFormat = outputDirectory + "/" + title + "_" + songId + ".mp3";
+            String ytDlpExecutablePath = "C:/yt-dlp/yt-dlp";
             ProcessBuilder processBuilder = new ProcessBuilder(
-                    "yt-dlp",
-                    "--extract-audio",
+                    ytDlpExecutablePath,
+                    "-x",
                     "--audio-format", "mp3",
-                    "--audio-quality", "0",
                     "--output", outputFilenameFormat,
                     link
             );
@@ -46,7 +40,11 @@ public class YoutubeDownloader {
             System.out.println("Successfully Downloaded - see local folder");
 
             // Set the downloaded file path to return
-            downloadedFilePath = String.format(outputFilenameFormat, "TITLE", "ID");
+            downloadedFilePath = outputFilenameFormat;
+
+            // Log the absolute path of the downloaded file
+
+            logger.debug("Downloaded File Path: {}", downloadedFilePath);
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }

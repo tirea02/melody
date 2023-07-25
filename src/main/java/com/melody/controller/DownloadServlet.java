@@ -3,6 +3,7 @@ package com.melody.controller;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import com.melody.model.Song;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,6 +29,8 @@ public class DownloadServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
 
+
+
         try {
             // Retrieve the id parameter from the request
             String idParam = request.getParameter("id");
@@ -40,9 +43,13 @@ public class DownloadServlet extends HttpServlet {
             // Convert the id parameter to an integer
             int id = Integer.parseInt(idParam);
 
-            // Retrieve the URL from the database based on the id
+            // Retrieve the URL from the database based on the
+
             SongDAO songDAO = new SongDAOImpl();
-            String url = songDAO.getSongById(id).getUrl();
+            Song song = songDAO.getSongById(id);
+            String url = song.getUrl();
+            String title = song.getTitle();
+            int songId = Math.toIntExact(song.getId());
 
             if (url == null) {
                 out.println("No URL found for the given ID.");
@@ -54,14 +61,12 @@ public class DownloadServlet extends HttpServlet {
 
             // Download the video using YoutubeDownloader
             YoutubeDownloader youtubeDownloader = new YoutubeDownloader();
-            String downloadedFilePath = youtubeDownloader.downloadAudio(url, servletContext);
-
-            // Store the downloaded file path in the session
+            String downloadedFilePath = youtubeDownloader.downloadAudio(url, title, songId);
             HttpSession session = request.getSession();
             session.setAttribute("downloadedFilePath", downloadedFilePath);
 
             // Redirect to the PlayMusicServlet to play the downloaded audio
-            response.sendRedirect(request.getContextPath() + "/play");
+            response.sendRedirect(request.getContextPath() + "/play?filePath=" + downloadedFilePath);
 
         } catch (Exception ex) {
             // Handle any exceptions that occur during the download process
