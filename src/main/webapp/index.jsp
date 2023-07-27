@@ -38,5 +38,23 @@
   <div id="answer">${answer}</div>
 </div>
 
+<h1>YouTube Link Extractor</h1>
+<form action="youtube-crawler" method="get">
+  <label for="query">Enter Search Query:</label>
+  <input type="text" id="query" name="query" required>
+  <button type="submit">Search</button>
+</form>
+
+<h2>First Video Link:</h2>
+<p>${videoLink}</p>
+
+<%--<h1>YouTube Crawler</h1>--%>
+<%--<p>--%>
+<%--  <a href="${pageContext.request.contextPath}/youtube-crawler">Get First YouTube Video Link</a>--%>
+<%--</p>--%>
+<%--<p>--%>
+<%--  First video link: ${videoLink}--%>
+<%--</p>--%>
+
 </body>
 </html>

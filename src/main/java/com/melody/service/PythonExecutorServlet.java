@@ -53,7 +53,7 @@ public class PythonExecutorServlet extends HttpServlet {
     private String executePythonScript(String question, String token) throws IOException {
         logger.debug(question);
         logger.debug(token);
-        String pythonExecutable = "C:/Program Files/Python311/python";
+        String pythonExecutable = "C:/Users/신정민/AppData/Local/Programs/Python/Python39/python";
         ProcessBuilder processBuilder = new ProcessBuilder(pythonExecutable, "C:/melody/bard/bard_script.py", question, token);
         Process process = processBuilder.start();
 

@@ -3,9 +3,7 @@ package com.melody.controller;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import com.melody.model.Song;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.melody.model.SongSimple;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -46,10 +44,10 @@ public class DownloadServlet extends HttpServlet {
             // Retrieve the URL from the database based on the
 
             SongDAO songDAO = new SongDAOImpl();
-            Song song = songDAO.getSongById(id);
-            String url = song.getUrl();
-            String title = song.getTitle();
-            int songId = Math.toIntExact(song.getId());
+            SongSimple songSimple = songDAO.getSongById(id);
+            String url = songSimple.getUrl();
+            String title = songSimple.getTitle();
+            int songId = Math.toIntExact(songSimple.getId());
 
             if (url == null) {
                 out.println("No URL found for the given ID.");

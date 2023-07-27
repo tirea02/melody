@@ -1,13 +1,13 @@
 package com.melody.dao;
 
 import java.util.List;
-import com.melody.model.Song;
+import com.melody.model.SongSimple;
 
 public interface SongDAO {
-    void saveSong(Song song);
-    void updateSong(Song song);
+    void saveSong(SongSimple songSimple);
+    void updateSong(SongSimple songSimple);
     void deleteSong(long songId);
-    Song getSongById(long songId);
-    List<Song> getAllSongs();
+    SongSimple getSongById(long songId);
+    List<SongSimple> getAllSongs();
 
 }

@@ -7,14 +7,14 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class Song {
+public class SongSimple {
     private Long id;
     private String title;
     private String artist;
     private String album;
     private String url;
 
-    public Song(Long id, String title, String artist, String album, String url) {
+    public SongSimple(Long id, String title, String artist, String album, String url) {
         this.id = id;
         this.title = title;
         this.artist = artist;

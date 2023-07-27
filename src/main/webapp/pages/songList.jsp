@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.util.List" %>
-<%@ page import="com.melody.model.Song" %>
+<%@ page import="com.melody.model.SongSimple" %>
 
 <%
   int currentPage = 1;
@@ -9,13 +9,13 @@
     currentPage = Integer.parseInt(request.getParameter("page"));
   }
 
-  List<Song> songs = (List<Song>) request.getAttribute("songs");
-  int totalSongs = songs.size();
+  List<SongSimple> songSimples = (List<SongSimple>) request.getAttribute("songSimples");
+  int totalSongs = songSimples.size();
   int totalPages = (int) Math.ceil((double) totalSongs / songsPerPage);
 
   int startIdx = (currentPage - 1) * songsPerPage;
   int endIdx = Math.min(startIdx + songsPerPage, totalSongs);
-  List<Song> songsToDisplay = songs.subList(startIdx, endIdx);
+  List<SongSimple> songsToDisplay = songSimples.subList(startIdx, endIdx);
 %>
 
 <!DOCTYPE html>
@@ -34,13 +34,13 @@
     <th>Url</th>
 
   </tr>
-  <% for (Song song : songsToDisplay) { %>
+  <% for (SongSimple songSimple : songsToDisplay) { %>
   <tr>
-    <td><%= song.getId() %></td>
-    <td><%= song.getTitle() %></td>
-    <td><%= song.getArtist() %></td>
-    <td><%= song.getAlbum() %></td>
-    <td><%= song.getUrl() %></td>
+    <td><%= songSimple.getId() %></td>
+    <td><%= songSimple.getTitle() %></td>
+    <td><%= songSimple.getArtist() %></td>
+    <td><%= songSimple.getAlbum() %></td>
+    <td><%= songSimple.getUrl() %></td>
   </tr>
   <% } %>
 </table>

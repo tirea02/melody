@@ -1,6 +1,6 @@
 package com.melody.dao;
 
-import com.melody.model.Song;
+import com.melody.model.SongSimple;
 import com.melody.util.DatabaseConfig;
 
 import java.sql.*;
@@ -10,15 +10,15 @@ import java.util.List;
 public class SongDAOImpl implements SongDAO {
 
     @Override
-    public void saveSong(Song song) {
+    public void saveSong(SongSimple songSimple) {
         try (Connection connection = DatabaseConfig.getConnection()) {
-            String insertQuery = "INSERT INTO Song (id, title, artist, album, url) VALUES (?,?,?,?, ?)";
+            String insertQuery = "INSERT INTO SONGSIMPLE (id, title, artist, album, url) VALUES (?,?,?,?, ?)";
             PreparedStatement preparedStatement = connection.prepareStatement(insertQuery);
-            preparedStatement.setLong(1, song.getId());
-            preparedStatement.setString(2, song.getTitle());
-            preparedStatement.setString(3, song.getArtist());
-            preparedStatement.setString(4, song.getAlbum());
-            preparedStatement.setString(5, song.getUrl());
+            preparedStatement.setLong(1, songSimple.getId());
+            preparedStatement.setString(2, songSimple.getTitle());
+            preparedStatement.setString(3, songSimple.getArtist());
+            preparedStatement.setString(4, songSimple.getAlbum());
+            preparedStatement.setString(5, songSimple.getUrl());
 
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
@@ -27,15 +27,15 @@ public class SongDAOImpl implements SongDAO {
     }
 
     @Override
-    public void updateSong(Song song) {
+    public void updateSong(SongSimple songSimple) {
         try (Connection connection = DatabaseConfig.getConnection()) {
-            String updateQuery = "UPDATE Song SET title=?, artist=?, album=?, url=? WHERE id=?";
+            String updateQuery = "UPDATE SONGSIMPLE SET title=?, artist=?, album=?, url=? WHERE id=?";
             PreparedStatement preparedStatement = connection.prepareStatement(updateQuery);
-            preparedStatement.setString(1, song.getTitle());
-            preparedStatement.setString(2, song.getArtist());
-            preparedStatement.setString(3, song.getAlbum());
-            preparedStatement.setString(4, song.getUrl());
-            preparedStatement.setLong(5, song.getId());
+            preparedStatement.setString(1, songSimple.getTitle());
+            preparedStatement.setString(2, songSimple.getArtist());
+            preparedStatement.setString(3, songSimple.getAlbum());
+            preparedStatement.setString(4, songSimple.getUrl());
+            preparedStatement.setLong(5, songSimple.getId());
 
 
             preparedStatement.executeUpdate();
@@ -47,7 +47,7 @@ public class SongDAOImpl implements SongDAO {
     @Override
     public void deleteSong(long songId) {
         try (Connection connection = DatabaseConfig.getConnection()) {
-            String deleteQuery = "DELETE FROM Song WHERE id=?";
+            String deleteQuery = "DELETE FROM SONGSIMPLE WHERE id=?";
             PreparedStatement preparedStatement = connection.prepareStatement(deleteQuery);
             preparedStatement.setLong(1, songId);
             preparedStatement.executeUpdate();
@@ -57,9 +57,9 @@ public class SongDAOImpl implements SongDAO {
     }
 
     @Override
-    public Song getSongById(long songId) {
+    public SongSimple getSongById(long songId) {
         try (Connection connection = DatabaseConfig.getConnection()) {
-            String selectQuery = "SELECT * FROM Song WHERE id=?";
+            String selectQuery = "SELECT * FROM SONGSIMPLE WHERE id=?";
             PreparedStatement preparedStatement = connection.prepareStatement(selectQuery);
             preparedStatement.setLong(1, songId);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -68,7 +68,7 @@ public class SongDAOImpl implements SongDAO {
                 String artist = resultSet.getString("artist");
                 String album = resultSet.getString("album");
                 String url = resultSet.getString("url");
-                return new Song(songId, title, artist, album, url);
+                return new SongSimple(songId, title, artist, album, url);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -77,10 +77,10 @@ public class SongDAOImpl implements SongDAO {
     }
 
     @Override
-    public List<Song> getAllSongs() {
-        List<Song> songs = new ArrayList<>();
+    public List<SongSimple> getAllSongs() {
+        List<SongSimple> songSimples = new ArrayList<>();
         try (Connection connection = DatabaseConfig.getConnection()) {
-            String selectAllQuery = "SELECT * FROM Song";
+            String selectAllQuery = "SELECT * FROM SONGSIMPLE";
             PreparedStatement preparedStatement = connection.prepareStatement(selectAllQuery);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
@@ -89,11 +89,11 @@ public class SongDAOImpl implements SongDAO {
                 String artist = resultSet.getString("artist");
                 String album = resultSet.getString("album");
                 String url = resultSet.getString("url");
-                songs.add(new Song(id, title, artist, album, url));
+                songSimples.add(new SongSimple(id, title, artist, album, url));
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return songs;
+        return songSimples;
     }
 }

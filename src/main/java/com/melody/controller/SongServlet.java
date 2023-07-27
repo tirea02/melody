@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.melody.model.Song;
+import com.melody.model.SongSimple;
 import com.melody.dao.SongDAO;
 import com.melody.dao.SongDAOImpl;
 
@@ -25,10 +25,10 @@ public class SongServlet extends HttpServlet {
         try {
             // Retrieve all songs from the database using the DAO
             SongDAO songDAO = new SongDAOImpl();
-            List<Song> songs = songDAO.getAllSongs();
+            List<SongSimple> songSimples = songDAO.getAllSongs();
 
             // Forward the request to the songList.jsp page with pagination information
-            request.setAttribute("songs", songs);
+            request.setAttribute("songSimples", songSimples);
             request.getRequestDispatcher("/pages/songList.jsp").forward(request, response);
         } catch (Exception ex) {
             // Handle any exceptions that occur during database operations
