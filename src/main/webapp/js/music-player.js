@@ -102,57 +102,55 @@ new Vue({
         }
     },
     methods: {
-        pause: function() {
-            if (!this.player.playing) {
-                return;
-            }
-            this.$set('player.playing', false);
-            clearInterval(this.timer);
-            this.$set('timer', false);
-        },
         play: function() {
-            if (this.player.playing) {
-                return;
+            var audio = this.$refs.audio;
+            if (!this.player.playing) {
+                this.$set('player.playing', true);
+                audio.play();
             }
-            var _this = this,
-                timer = setInterval(function() {
-                    if (_this.player.elapsed >= _this.currentTrack.duration) {
-                        _this.$set('player.elapsed', 0);
-                        _this.skipForward();
-                    }
-                    _this.player.elapsed += .1;
-                }, 100);
-
-            this.$set('player.playing', true);
-            this.$set('timer', timer);
         },
-        selectTrack: function(id) {
-            this.$set('player.currentTrack', id);
+
+        // New pause method using audio element to pause the current track
+        pause: function() {
+            var audio = this.$refs.audio;
+            if (this.player.playing) {
+                this.$set('player.playing', false);
+                audio.pause();
+            }
+        },
+
+        // New selectTrack method to play the selected track
+        selectTrack: function(index) {
+            this.$set('player.currentTrack', index);
             this.$set('player.elapsed', 0);
             this.play();
         },
+
+        // New skipForward method to skip to the next track
         skipForward: function() {
             var track = this.player.currentTrack + 1;
-
             track = track % this.playlist.tracks.length;
             this.selectTrack(track);
         },
+
+        // New skipBack method to skip to the previous track
         skipBack: function() {
             var track = this.player.currentTrack;
-
             if (this.player.elapsed < 2) {
                 track = track - 1;
             }
-
             if (track < 0) {
                 track = 0;
             }
-
             this.selectTrack(track);
         },
+
+        // New toggleRepeat method to toggle repeat mode
         toggleRepeat: function() {
             this.player.repeat = !this.player.repeat;
         },
+
+        // New toggleShuffle method to toggle shuffle mode
         toggleShuffle: function() {
             this.player.shuffle = !this.player.shuffle;
         }
