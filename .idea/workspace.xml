@@ -10,19 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="changed to eclipse project and add resource melody zip">
-      <change afterPath="$PROJECT_DIR$/bin/META-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/TableScraperServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/target.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/melody_war2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/RegisterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/dao/UserAccountDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/model/UserAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/util/UserAccountUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/registerValidation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/controller/DownloadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/DownloadServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/controller/PlayMusicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/PlayMusicServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/controller/SongServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/SongServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/dao/SongDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/dao/SongSimpleDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/dao/SongDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/dao/SongSimpleDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/service/PythonExecutorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/service/PythonExecutorServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/service/YoutubeDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/service/YoutubeDownloader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,18 +35,18 @@
       <list>
         <option value="Interface" />
         <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Jsp File" />
         <option value="JavaScript File" />
         <option value="SCSS File" />
-        <option value="HTML File" />
         <option value="Class" />
-        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -131,7 +128,10 @@
       <recent name="com.melody.controller" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.76">
+    <configuration name="register.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8089/melody/pages/register.jsp">
+      <method v="2" />
+    </configuration>
     <configuration name="Tomcat 9.0.76" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.76" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="17">
       <option name="COMMON_VM_ARGUMENTS" value="-Duser.language=en -Duser.region=us" />
       <deployment>
@@ -220,6 +220,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.register.jsp" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -244,7 +249,7 @@
       <workItem from="1690510291385" duration="527000" />
       <workItem from="1690510832698" duration="1570000" />
       <workItem from="1690512413359" duration="902000" />
-      <workItem from="1690516077265" duration="2889000" />
+      <workItem from="1690516077265" duration="8519000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -294,7 +299,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690512920169</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="changed to eclipse project and add resource melody zip">
+      <option name="closed" value="true" />
+      <created>1690520788495</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1690520788495</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
