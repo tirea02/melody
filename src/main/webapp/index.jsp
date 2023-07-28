@@ -21,6 +21,9 @@
 
 <a href="TableScraperServlet">test table</a>
 <br>
+<br>
+<br>
+<a href="${pageContext.request.contextPath}/pages/register.jsp">Register Now</a>
 
 
 <a href="download?id=31">play music</a>
