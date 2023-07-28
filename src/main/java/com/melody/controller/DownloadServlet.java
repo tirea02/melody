@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.melody.dao.SongDAO;
-import com.melody.dao.SongDAOImpl;
+import com.melody.dao.SongSimpleDAO;
+import com.melody.dao.SongSimpleDAOImpl;
 import com.melody.service.YoutubeDownloader;
 
 import javax.servlet.annotation.WebServlet;
@@ -43,8 +43,8 @@ public class DownloadServlet extends HttpServlet {
 
             // Retrieve the URL from the database based on the
 
-            SongDAO songDAO = new SongDAOImpl();
-            SongSimple songSimple = songDAO.getSongById(id);
+            SongSimpleDAO songSimpleDAO = new SongSimpleDAOImpl();
+            SongSimple songSimple = songSimpleDAO.getSongById(id);
             String url = songSimple.getUrl();
             String title = songSimple.getTitle();
             int songId = Math.toIntExact(songSimple.getId());
