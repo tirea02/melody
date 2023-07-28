@@ -7,7 +7,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SongDAOImpl implements SongDAO {
+public class SongSimpleDAOImpl implements SongSimpleDAO {
 
     @Override
     public void saveSong(SongSimple songSimple) {

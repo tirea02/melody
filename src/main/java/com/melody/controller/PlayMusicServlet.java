@@ -34,6 +34,7 @@ public class PlayMusicServlet extends HttpServlet {
         // Get the downloaded file path from the request parameter
         HttpSession session = request.getSession();
         String filePath = (String) session.getAttribute("downloadedFilePath");
+        filePath += ".mp3";
         out.println(filePath);
         logger.debug("passed  File Path: {}", filePath);
 

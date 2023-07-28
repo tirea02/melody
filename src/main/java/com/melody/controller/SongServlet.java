@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.melody.model.SongSimple;
-import com.melody.dao.SongDAO;
-import com.melody.dao.SongDAOImpl;
+import com.melody.dao.SongSimpleDAO;
+import com.melody.dao.SongSimpleDAOImpl;
 
 import javax.servlet.annotation.WebServlet;
 
@@ -24,8 +24,8 @@ public class SongServlet extends HttpServlet {
 
         try {
             // Retrieve all songs from the database using the DAO
-            SongDAO songDAO = new SongDAOImpl();
-            List<SongSimple> songSimples = songDAO.getAllSongs();
+            SongSimpleDAO songSimpleDAO = new SongSimpleDAOImpl();
+            List<SongSimple> songSimples = songSimpleDAO.getAllSongs();
 
             // Forward the request to the songList.jsp page with pagination information
             request.setAttribute("songSimples", songSimples);
