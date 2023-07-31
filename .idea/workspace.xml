@@ -10,24 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/dao/AlbumDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/dao/HashtagDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/dao/PlaylistDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/dao/SingerDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/dao/SongDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/model/Album.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/model/Genre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/model/Hashtag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/model/Playlist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/model/Singer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/model/Song.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/model/SongPlaylist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/dao/UserAccountDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/dao/UserAccountDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/model/UserAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/model/UserAccount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +37,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="master-intelij-version" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -231,6 +215,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.register.jsp" />
+        <item itemvalue="JavaScript Debug.register.jsp" />
+        <item itemvalue="JavaScript Debug.register.jsp" />
       </list>
     </recent_temporary>
   </component>
@@ -364,7 +350,8 @@
     <MESSAGE value="clone" />
     <MESSAGE value="changed to eclipse project and add resource melody zip" />
     <MESSAGE value="commit 가입 로직 완성" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 가입 로직 완성" />
+    <MESSAGE value="database model, dao added" />
+    <option name="LAST_COMMIT_MESSAGE" value="database model, dao added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
