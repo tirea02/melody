@@ -1,12 +1,14 @@
 package com.melody.model;
 
+import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.Date;
 
-@Getter
-@Setter
+@Data
+@NoArgsConstructor
 public class UserAccount {
     private int userAccountId;
     private String name;

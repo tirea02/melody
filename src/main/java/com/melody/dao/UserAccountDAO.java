@@ -37,7 +37,7 @@ public class UserAccountDAO {
 
     // Retrieve a UserAccount by its userAccountId
     public UserAccount getUserAccount(int userAccountId) {
-        String sql = "SELECT * FROM USERACCOUNT WHERE user_account_id = ?";
+        String sql = "SELECT * FROM USERACCOUNT WHERE useraccount_id = ?";
 
         try (Connection conn = DatabaseConfig.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
@@ -46,19 +46,7 @@ public class UserAccountDAO {
             ResultSet rs = pstmt.executeQuery();
 
             if (rs.next()) {
-                UserAccount userAccount = new UserAccount();
-                userAccount.setUserAccountId(rs.getInt("user_account_id"));
-                userAccount.setName(rs.getString("name"));
-                userAccount.setBirthDate(rs.getDate("birth_date"));
-                userAccount.setAgeGroup(rs.getString("age_group"));
-                userAccount.setAccountId(rs.getString("account_id"));
-                userAccount.setPassword(rs.getString("password"));
-                userAccount.setEmail(rs.getString("email"));
-                userAccount.setGender(rs.getString("gender"));
-                userAccount.setProfileImage(rs.getString("profile_image"));
-                userAccount.setUserHashtags(rs.getString("user_hashtags"));
-
-                return userAccount;
+                return createUserAccountFromResultSet(rs);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -70,7 +58,7 @@ public class UserAccountDAO {
     // Update an existing UserAccount
     public void updateUserAccount(UserAccount userAccount) {
         String sql = "UPDATE USERACCOUNT SET name = ?, birth_date = ?, age_group = ?, account_id = ?, password = ?, " +
-                "email = ?, gender = ?, profile_image = ?, user_hashtags = ? WHERE user_account_id = ?";
+                "email = ?, gender = ?, profile_image = ?, user_hashtags = ? WHERE useraccount_id = ?";
 
         try (Connection conn = DatabaseConfig.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
@@ -94,7 +82,7 @@ public class UserAccountDAO {
 
     // Delete a UserAccount by its userAccountId
     public void deleteUserAccount(int userAccountId) {
-        String sql = "DELETE FROM USERACCOUNT WHERE user_account_id = ?";
+        String sql = "DELETE FROM USERACCOUNT WHERE useraccount_id = ?";
 
         try (Connection conn = DatabaseConfig.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
@@ -116,25 +104,53 @@ public class UserAccountDAO {
              ResultSet rs = stmt.executeQuery(sql)) {
 
             while (rs.next()) {
-                UserAccount userAccount = new UserAccount();
-                userAccount.setUserAccountId(rs.getInt("user_account_id"));
-                userAccount.setName(rs.getString("name"));
-                userAccount.setBirthDate(rs.getDate("birth_date"));
-                userAccount.setAgeGroup(rs.getString("age_group"));
-                userAccount.setAccountId(rs.getString("account_id"));
-                userAccount.setPassword(rs.getString("password"));
-                userAccount.setEmail(rs.getString("email"));
-                userAccount.setGender(rs.getString("gender"));
-                userAccount.setProfileImage(rs.getString("profile_image"));
-                userAccount.setUserHashtags(rs.getString("user_hashtags"));
-
-                userAccounts.add(userAccount);
+                userAccounts.add(createUserAccountFromResultSet(rs));
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
         return userAccounts;
+    }
+
+    // Method to search for UserAccounts based on the provided criteria
+    public List<UserAccount> searchUserAccounts(String searchCriteria) {
+        List<UserAccount> userAccounts = new ArrayList<>();
+        String searchQuery = "SELECT * FROM USERACCOUNT WHERE name LIKE ? OR account_id LIKE ? OR email LIKE ? OR user_hashtags LIKE ?";
+        try (Connection conn = DatabaseConfig.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(searchQuery)) {
+            String searchParam = "%" + searchCriteria + "%";
+            pstmt.setString(1, searchParam);
+            pstmt.setString(2, searchParam);
+            pstmt.setString(3, searchParam);
+            pstmt.setString(4, searchParam);
+
+            try (ResultSet resultSet = pstmt.executeQuery()) {
+                while (resultSet.next()) {
+                    UserAccount userAccount = createUserAccountFromResultSet(resultSet);
+                    userAccounts.add(userAccount);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return userAccounts;
+    }
+
+    // Helper method to create a UserAccount object from a ResultSet row
+    private UserAccount createUserAccountFromResultSet(ResultSet resultSet) throws SQLException {
+        UserAccount userAccount = new UserAccount();
+        userAccount.setUserAccountId(resultSet.getInt("user_account_id"));
+        userAccount.setName(resultSet.getString("name"));
+        userAccount.setBirthDate(resultSet.getDate("birth_date"));
+        userAccount.setAgeGroup(resultSet.getString("age_group"));
+        userAccount.setAccountId(resultSet.getString("account_id"));
+        userAccount.setPassword(resultSet.getString("password"));
+        userAccount.setEmail(resultSet.getString("email"));
+        userAccount.setGender(resultSet.getString("gender"));
+        userAccount.setProfileImage(resultSet.getString("profile_image"));
+        userAccount.setUserHashtags(resultSet.getString("user_hashtags"));
+        return userAccount;
     }
 
     private int getNextUserIdFromSequence() {
