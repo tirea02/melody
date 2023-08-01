@@ -1,4 +1,4 @@
-package com.melody.controller;
+package com.melody.controller.playlist;
 
 import java.io.IOException;
 import java.util.List;
@@ -9,20 +9,21 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.melody.dao.PlayListDAOImpl;
-import com.melody.model.PlayList;
+import com.melody.dao.PlaylistDAO;
+
+
 
 /**
- * Servlet implementation class PlayListDisplay
+ * Servlet implementation class PlaylistDisplay
  */
 @WebServlet("/PlayListDisplay")
-public class PlayListDisplay extends HttpServlet {
+public class PlaylistDisplayServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public PlayListDisplay() {
+    public PlaylistDisplayServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -34,9 +35,8 @@ public class PlayListDisplay extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		
-		PlayListDAOImpl PlayListDAO = new PlayListDAOImpl();
-		List<PlayList> playlists = new PlayListDAOImpl().showPlayList();
-		request.setAttribute("playlists", playlists);
+		PlaylistDAO PlaylistDAO = new PlaylistDAO();
+		
 		
 		
 	}

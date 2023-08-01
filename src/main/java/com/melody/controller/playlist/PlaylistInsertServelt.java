@@ -1,4 +1,4 @@
-package com.melody.controller;
+package com.melody.controller.playlist;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -14,20 +14,20 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.melody.dao.PlayListDAOImpl;
+import com.melody.dao.PlaylistDAO;
 import com.melody.util.DatabaseConfig;
 
 /**
  * Servlet implementation class PlayListServlet
  */
 @WebServlet("/createPlayList")
-public class PlayListServlet extends HttpServlet {
+public class PlaylistInsertServelt extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public PlayListServlet() {
+    public PlaylistInsertServelt() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -47,8 +47,7 @@ public class PlayListServlet extends HttpServlet {
 		response.setContentType("text/html; charset=UTF-8");
 	    
 	    try (Connection connection = DatabaseConfig.getConnection()){
-	    	PlayListDAOImpl PlayListDAO = new PlayListDAOImpl();
-	    	PlayListDAO.createPlayList();
+	    	PlaylistDAO PlaylistDAO = new PlaylistDAO();
 	    } catch(SQLException e) {
 
 	    }

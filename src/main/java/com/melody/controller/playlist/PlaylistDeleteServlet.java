@@ -12,20 +12,20 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.melody.dao.PlayListDAOImpl;
+import com.melody.dao.PlaylistDAO;
 import com.melody.util.DatabaseConfig;
 
 /**
- * Servlet implementation class PlayListdeletePlayList
+ * Servlet implementation class PlaylistDeleteServelt
  */
 @WebServlet("/deletePlayList")
-public class PlayListdeletePlayList extends HttpServlet {
+public class PlaylistDeleteServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public PlayListdeletePlayList() {
+    public PlaylistDeleteServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -50,8 +50,7 @@ public class PlayListdeletePlayList extends HttpServlet {
 		
 	    
 	    try(Connection connection = DatabaseConfig.getConnection()){
-	    	PlayListDAOImpl PlayListDAO = new PlayListDAOImpl();
-	    	PlayListDAO.deletePlayList();
+	    	PlaylistDAO PlaylistDAO = new PlaylistDAO();
 	    	
 	    } catch(Exception e) {
 	    	
