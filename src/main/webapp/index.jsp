@@ -60,6 +60,8 @@
 <br>
 <a href="${pageContext.request.contextPath}/pages/login.jsp">login test</a>
 
+<br>
+<a href="${pageContext.request.contextPath}/pages/main.jsp">main</a>
 
 <%--<h1>YouTube Crawler</h1>--%>
 <%--<p>--%>
