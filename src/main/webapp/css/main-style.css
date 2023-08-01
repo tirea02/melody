@@ -21,6 +21,9 @@ html {
 body {
   margin: 0;
 }
+body.dark {
+	background-color: #222;
+}
 .container {
   max-width: none !important;
   padding: 0;
@@ -38,6 +41,9 @@ section:nth-child(odd) {
   background-color: #f8f8f8;
   transition: 0.35s;
 }
+section:nth-child(odd).dark {
+  background-color: rgb(72, 70, 70);
+}
 .section-header {
   display: flex;
   justify-content: left;
@@ -46,6 +52,11 @@ section:nth-child(odd) {
 .section-header h2 {
   font-size: 30px;
   font-weight: 500;
+}
+.section-header.dark h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
 }
 
 /* Slick */
@@ -85,6 +96,9 @@ section:nth-child(odd) {
 .slick-dots li button:before {
   font-size: 50px;
 }
+.slick-dots.dark li button:before {
+	color: #fff;
+}
 .artist .slick-prev:before,
 .musicvideo .slick-prev:before {
   display: none;
@@ -111,16 +125,25 @@ header.dark {
 .header-inner {
   width: 1300px;
   padding: 20px 0;
+} 
+.lnb.dark a {
+	color: #fff;
+}
+.logo {
 }
 .logo a {
-  display: block;
-  width: 200px;
-  height: 40px;
-  border: 1px solid #000;
-  background-image: url(/images/Logo.png) no-repeat cover;
+  display: inline-block;
+  background: url('../resources/images/Logo.png') no-repeat center center;
+  background-size: 300px;
+  width: 250px;
+  height: 40px
 }
-.logo img {
-  width: 300px;
+.logo.dark a {
+  display: inline-block;
+  background: url('../resources/images/Logo-dark.png') no-repeat center center;
+  background-size: 300px;
+  width: 250px;
+  height: 40px
 }
 .banner {
   display: flex;
@@ -133,7 +156,6 @@ header.dark {
   display: flex;
   justify-content: center;
   gap: 20px;
-  border: 1px solid #000;
 }
 .lnb a {
   transition: 0.1s;
@@ -144,7 +166,6 @@ header.dark {
   color: inherit;
 }
 .darkmode {
-  border: 1px solid #000;
   width: 30px;
   cursor: pointer;
   line-height: 35px;
@@ -175,11 +196,24 @@ nav {
   background-color: transparent;
   border-bottom: 1px solid #bbb;
   padding: 0px 7px;
-  background: url('/images/search.svg') no-repeat center right 10px;
+  background: url('../resources/images/search.svg') no-repeat center right 10px;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-100%, -10%);
+}
+.sub-lnb input[type=search].dark {
+  border: none;
+  width: 300px;
+  background-color: transparent;
+  border-bottom: 1px solid #bbb;
+  padding: 0px 7px;
+  background: url('../resources/images/search-dark.svg') no-repeat center right 10px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-100%, -10%);
+  color: #fff;
 }
 .sub-lnb input[type=search]:focus {
   border-bottom: 1.5px solid #9d9b9b;
@@ -187,6 +221,9 @@ nav {
 .gnb {
   display: flex;
   gap: 30px;
+}
+.gnb.dark a {
+	color: #fff;
 }
 .gnb a {
   transition: 0.3s;
@@ -207,6 +244,10 @@ nav {
 .gnb a:hover {
   font-weight: 500;
   color: #000;
+}
+.gnb.dark a:hover {
+	font-weight: 500;
+	color: #fff;
 }
 .gnb a:hover::before {
   display: block;
@@ -522,6 +563,11 @@ nav {
 .new-text {
   font-size: 13px;
 }
+.new-text.dark > p, 
+.new-text.dark > span  {
+  color: #fff;
+  text-decoration: none;
+}
 
 /* ############## Genre ############## */
 .genre-tab-inner {
@@ -713,6 +759,9 @@ nav {
   text-align: center;
   font-size: 15px;
 }
+.artist-text.dark > span {
+	color: #fff;
+}
 /* ############## Music Video ############## */
 .musicvideo .slick-initialized .slick-slide {
   display: flex;
@@ -741,6 +790,9 @@ nav {
   transition: 0.3s;
   font-size: 13px;
 }
+.musicvideo-text.dark > span {
+	color: #fff;
+}
 
 
 /* ############## Footer ############## */
@@ -750,6 +802,13 @@ footer {
   background-color: #555;
   color: #fff;
   font-size: 13px;
+}
+footer.dark {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 13px;
+  background-color: rgb(23, 20, 20);
 }
 .footer-inner {
   width: 1300px;
@@ -794,6 +853,9 @@ footer {
 }
 .sns a {
   margin-left: 20px;
+}
+.sns.dark a i {
+	color: #fff;
 }
 .sns a i {
   transition: 0.3s;
