@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="../css/play-song.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="javascript.js"></script>
+    <script src="../js/playSong.js"></script>
     
 </head>
 <body>
@@ -27,7 +27,7 @@
 
         <div class="info">
           <audio class="audio" preload="metadata">
-            <source src="C:/melody/mp3/ditto_31.mp3" type="audio/mp3">
+              <source src="/mp3/ditto_31.mp3" type="audio/mp3">
           </audio>
 
           <div class="progressBar">
@@ -37,7 +37,7 @@
           </div>
 
           <div class="currentlyPlaying">
-            <h1 class="songName">Super Shy</h1>
+            <h1 class="songName">Ditto</h1>
             <h3 class="artistName">NewJeans</h3>
           </div>
           
