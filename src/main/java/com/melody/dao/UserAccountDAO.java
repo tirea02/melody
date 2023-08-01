@@ -10,13 +10,14 @@ import java.util.List;
 public class UserAccountDAO {
 
     // Create a new UserAccount
-    public void addUserAccount(UserAccount userAccount) {
+    public long addUserAccount(UserAccount userAccount) {
         String sql = "INSERT INTO USERACCOUNT (useraccount_id, name, birth_date, age_group, account_id, password, email, gender, profile_image, user_hashtags) " +
                 "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        int uniqueId = getNextUserIdFromSequence();
 
         try (Connection conn = DatabaseConfig.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
-            int uniqueId = getNextUserIdFromSequence();
+
 
             pstmt.setInt(1, uniqueId); // Set the unique ID obtained from the sequence
             pstmt.setString(2, userAccount.getName());
@@ -33,16 +34,37 @@ public class UserAccountDAO {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+        return uniqueId;
     }
 
     // Retrieve a UserAccount by its userAccountId
     public UserAccount getUserAccount(int userAccountId) {
-        String sql = "SELECT * FROM USERACCOUNT WHERE useraccount_id = ?";
+        String sql = "SELECT * FROM USERACCOUNT WHERE USERACCOUNT_ID = ?";
 
         try (Connection conn = DatabaseConfig.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
 
             pstmt.setInt(1, userAccountId);
+            ResultSet rs = pstmt.executeQuery();
+
+            if (rs.next()) {
+                return createUserAccountFromResultSet(rs);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    public UserAccount getUserAccountByAccountId(String accountId) {
+        String sql = "SELECT * FROM USERACCOUNT WHERE ACCOUNT_ID = ?";
+
+        try (Connection conn = DatabaseConfig.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+
+            pstmt.setString(1, accountId);
             ResultSet rs = pstmt.executeQuery();
 
             if (rs.next()) {
@@ -140,7 +162,7 @@ public class UserAccountDAO {
     // Helper method to create a UserAccount object from a ResultSet row
     private UserAccount createUserAccountFromResultSet(ResultSet resultSet) throws SQLException {
         UserAccount userAccount = new UserAccount();
-        userAccount.setUserAccountId(resultSet.getInt("user_account_id"));
+        userAccount.setUserAccountId(resultSet.getInt("useraccount_id"));
         userAccount.setName(resultSet.getString("name"));
         userAccount.setBirthDate(resultSet.getDate("birth_date"));
         userAccount.setAgeGroup(resultSet.getString("age_group"));
