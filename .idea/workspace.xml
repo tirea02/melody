@@ -9,7 +9,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="init" />
+    <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/user/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/user/UserDetailServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/userDetail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/304a904a-0fe1-4271-bbdb-609c0a993ae6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/304a904a-0fe1-4271-bbdb-609c0a993ae6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/304a904a-0fe1-4271-bbdb-609c0a993ae6/storage_v2/_src_/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/304a904a-0fe1-4271-bbdb-609c0a993ae6/storage_v2/_src_/schema/PUBLIC.aaZQjQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/controller/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/user/RegisterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/dao/UserAccountDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/dao/UserAccountDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/service/PythonExecutorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/service/PythonExecutorServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/registerValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/registerValidation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/register.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -210,10 +226,6 @@
         </option>
       </method>
     </configuration>
-    <list>
-      <item itemvalue="JavaScript Debug.register.jsp" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.76" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.register.jsp" />
