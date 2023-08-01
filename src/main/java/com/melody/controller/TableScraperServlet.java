@@ -1,5 +1,6 @@
 package com.melody.controller;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -30,8 +31,10 @@ public class TableScraperServlet extends HttpServlet {
 
         // Create a new ChromeDriver instance
         WebDriver driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
+
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        int rowCount = 0;
         try {
             // Fetch the webpage using Selenium
             driver.get("https://www.melon.com/chart/index.htm"); // Replace with the actual URL
@@ -59,14 +62,29 @@ public class TableScraperServlet extends HttpServlet {
 
                 // Process each cell and extract data
                 for (WebElement cell : cells) {
+
                     String cellText = cell.getText();
 
                     // Generate a cell in the table
                     out.println("<td>" + cellText + "</td>");
+
+
+                    //working on it
+//                    WebElement anchorElement = cell.findElement(By.cssSelector("a.image_typeAll"));
+//                    WebElement imageElement = anchorElement.findElement(By.cssSelector("img"));
+//
+//                    String imageUrl = imageElement.getAttribute("src");
+//                    String imageTitle = imageElement.getAttribute("alt");
+//
+//                    // Generate an image tag with the extracted image source and title
+//                    out.println("<td><img src='" + imageUrl + "' alt='" + imageTitle + "'></td>");
                 }
 
                 // End the current row
                 out.println("</tr>");
+
+                // Increment the row count
+
             }
 
             // End the table
