@@ -32,6 +32,11 @@
 
 <br>
 
+<a href="pages/playSong.jsp">세담 play song</a>
+
+<br>
+
+
 <h1>Ask Google BARD</h1>
 <form action="pythonExecutor" method="get">
   <label for="question">Enter your question:</label><br>
