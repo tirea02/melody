@@ -16,7 +16,7 @@ import com.melody.dao.PlaylistDAO;
 /**
  * Servlet implementation class PlaylistDisplay
  */
-@WebServlet("/PlayListDisplay")
+@WebServlet("/PlaylistDisplay")
 public class PlaylistDisplayServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

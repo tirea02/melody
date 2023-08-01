@@ -18,7 +18,7 @@ import com.melody.util.DatabaseConfig;
 /**
  * Servlet implementation class PlaylistDeleteServelt
  */
-@WebServlet("/deletePlayList")
+@WebServlet("/deletePlaylist")
 public class PlaylistDeleteServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

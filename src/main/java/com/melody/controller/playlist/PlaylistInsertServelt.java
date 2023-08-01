@@ -20,7 +20,7 @@ import com.melody.util.DatabaseConfig;
 /**
  * Servlet implementation class PlayListServlet
  */
-@WebServlet("/createPlayList")
+@WebServlet("/createPlaylist")
 public class PlaylistInsertServelt extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
