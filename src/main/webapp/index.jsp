@@ -54,6 +54,7 @@
 <h2>First Video Link:</h2>
 <p>${videoLink}</p>
 
+<<<<<<< HEAD
 <br>
 <a href="${pageContext.request.contextPath}/userDetail">user detail</a>
 
@@ -63,6 +64,8 @@
 <br>
 <a href="${pageContext.request.contextPath}/pages/main.jsp">main</a>
 
+=======
+>>>>>>> parent of 076d541 (회원 가입, 로그인, 유저 상세 보기 로직 및 기본 front 구현)
 <%--<h1>YouTube Crawler</h1>--%>
 <%--<p>--%>
 <%--  <a href="${pageContext.request.contextPath}/youtube-crawler">Get First YouTube Video Link</a>--%>

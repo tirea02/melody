@@ -31,7 +31,7 @@ public class PythonExecutorServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String question = request.getParameter("question");
-        String token = "ZQh13qusT4H_k4B40YJmBCcfWDKHvzNwaQjT-IlvEJXjlBPzS6NYIvaDNSnA0ZHyBUbN8Q."; // Your BARD API token
+        String token = "ZQh13gmp0Yt8QmA5CWf1bg8lhkIUCISVPiYG6p7N_9nX5c6gnMhYBa5QpDsb3H670X3v8w."; // Your BARD API token
 
         String answer = executePythonScript(question, token);
         logger.debug("Answer : {}", answer);

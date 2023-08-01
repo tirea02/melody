@@ -81,13 +81,6 @@
       <artifactId>selenium-java</artifactId>
       <version>4.10.0</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/jstl/jstl -->
-    <dependency>
-      <groupId>jstl</groupId>
-      <artifactId>jstl</artifactId>
-      <version>1.2</version>
-    </dependency>
-
 
   </dependencies>
 

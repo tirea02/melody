@@ -1,4 +1,4 @@
-package com.melody.controller.user;
+package com.melody.controller;
 
 import com.melody.dao.UserAccountDAO;
 import com.melody.model.UserAccount;
@@ -6,7 +6,6 @@ import com.melody.util.UserAccountUtils;
 
 import java.io.IOException;
 import java.util.Date;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -21,7 +20,6 @@ public class RegisterServlet extends HttpServlet {
             throws ServletException, IOException {
         // Get form data from the request
         String name = request.getParameter("name");
-        String accountId = request.getParameter("accountId");
         String birthDateString = request.getParameter("birthDate");
         String email = request.getParameter("email");
         String gender = request.getParameter("gender");
@@ -34,7 +32,7 @@ public class RegisterServlet extends HttpServlet {
         // Perform any additional validations if needed
         // ...
 
-        // Convert the birthdate string to a Date object
+        // Convert the birth date string to a Date object
         Date birthDate = null;
         try {
             birthDate = new Date(java.sql.Date.valueOf(birthDateString).getTime());
@@ -48,7 +46,6 @@ public class RegisterServlet extends HttpServlet {
         // Create a new UserAccount object
         UserAccount userAccount = new UserAccount();
         userAccount.setName(name);
-        userAccount.setAccountId(accountId);
         userAccount.setBirthDate(birthDate);
         userAccount.setEmail(email);
         userAccount.setGender(gender);
@@ -59,13 +56,11 @@ public class RegisterServlet extends HttpServlet {
 
         // Call the UserAccountDAO to add the new user to the database
         UserAccountDAO userAccountDAO = new UserAccountDAO();
-        long newUserId = userAccountDAO.addUserAccount(userAccount);
+        userAccountDAO.addUserAccount(userAccount);
 
         // Optionally, you can redirect the user to a success page
         // or show a success message on the same page
-        response.setContentType("text/html");
-        response.setCharacterEncoding("UTF-8");
-        response.getWriter().println("<div style='background-color: #d4edda; color: #155724; padding: 10px;'>Registration Successful!</div>");
-        response.sendRedirect(request.getContextPath() + "/userDetail?userAccountId=" + newUserId);
+
+        response.getWriter().println("Registration Successful!");
     }
 }

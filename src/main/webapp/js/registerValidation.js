@@ -3,7 +3,6 @@ document.getElementById("registrationForm").onsubmit = function() {
     var name = document.getElementsByName("name")[0].value;
     var birthDate = document.getElementsByName("birthDate")[0].value;
     var email = document.getElementsByName("email")[0].value;
-    var accountId = document.getElementsByName("accountId")[0].value;
     var password = document.getElementsByName("password")[0].value;
     var passwordConfirm = document.getElementsByName("passwordConfirm")[0].value;
     var hashtag = document.getElementsByName("hashtag")[0].value;
@@ -12,18 +11,12 @@ document.getElementById("registrationForm").onsubmit = function() {
     document.getElementById("nameError").innerHTML = "";
     document.getElementById("birthDateError").innerHTML = "";
     document.getElementById("emailError").innerHTML = "";
-    document.getElementById("accountIdError").innerHTML = "";
     document.getElementById("passwordError").innerHTML = "";
     document.getElementById("passwordConfirmError").innerHTML = "";
 
     // Perform name validation
     if (name.trim() === "") {
         document.getElementById("nameError").innerHTML = "Please enter your name.";
-        return false;
-    }
-
-    if (accountId.trim() === "") {
-        document.getElementById("accountId").innerHTML = "Please enter your name.";
         return false;
     }
 
