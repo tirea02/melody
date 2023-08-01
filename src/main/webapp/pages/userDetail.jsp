@@ -56,7 +56,7 @@
 </div>
 
 <br>
-<a href="${pageContext.request.contextPath}/index.jsp">bach to index</a>
+<a href="${pageContext.request.contextPath}/index.jsp">back to index</a>
 </body>
 
 </html>
