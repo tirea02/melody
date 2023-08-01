@@ -16,6 +16,11 @@
   <input type="text" name="name" required>
   <div id="nameError"></div>
 
+  <label>accountId:</label>
+  <input type="text" name="accountId" required>
+  <div id="accountIdError"></div>
+
+
   <label>Birth Date:</label>
   <input type="date" name="birthDate" required>
   <div id="birthDateError"></div>
@@ -28,6 +33,7 @@
   <input type="radio" name="gender" value="Male"> Male
   <input type="radio" name="gender" value="Female"> Female
   <br>
+
   <label>Password:</label>
   <input type="password" name="password" required>
   <div id="passwordError"></div>
