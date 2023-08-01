@@ -54,6 +54,13 @@
 <h2>First Video Link:</h2>
 <p>${videoLink}</p>
 
+<br>
+<a href="${pageContext.request.contextPath}/userDetail">user detail</a>
+
+<br>
+<a href="${pageContext.request.contextPath}/pages/login.jsp">login test</a>
+
+
 <%--<h1>YouTube Crawler</h1>--%>
 <%--<p>--%>
 <%--  <a href="${pageContext.request.contextPath}/youtube-crawler">Get First YouTube Video Link</a>--%>
