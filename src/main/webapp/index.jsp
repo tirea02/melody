@@ -61,8 +61,6 @@
 <br>
 <a href="${pageContext.request.contextPath}/pages/login.jsp">login test</a>
 
-<br>
-<a href="${pageContext.request.contextPath}/pages/main.jsp">main</a>
 
 =======
 >>>>>>> parent of 076d541 (회원 가입, 로그인, 유저 상세 보기 로직 및 기본 front 구현)
