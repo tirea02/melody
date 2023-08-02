@@ -66,6 +66,18 @@
 <p>${videoLink}</p>
 
 <br>
+
+<h1>Song data Extractor</h1>
+<form action="playSongSimple" method="get">
+  <label for="query">Enter Search Query:</label>
+  <input type="text" id="melonQuery" name="melonQuery" required>
+  <button type="submit">Search</button>
+</form>
+
+<h2>result of songSimple</h2>
+<p>${songSimple}</p>
+
+<br>
 <a href="${pageContext.request.contextPath}/userDetail">user detail</a>
 
 <br>
