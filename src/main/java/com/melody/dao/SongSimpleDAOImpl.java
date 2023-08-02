@@ -12,13 +12,12 @@ public class SongSimpleDAOImpl implements SongSimpleDAO {
     @Override
     public void saveSong(SongSimple songSimple) {
         try (Connection connection = DatabaseConfig.getConnection()) {
-            String insertQuery = "INSERT INTO SONGSIMPLE (id, title, artist, album, url) VALUES (?,?,?,?, ?)";
+            String insertQuery = "INSERT INTO SONGSIMPLE (id, title, artist, album, url) VALUES (SONGSIMPLE_ID_SEQ.NEXTVAL,?,?,?, ?)";
             PreparedStatement preparedStatement = connection.prepareStatement(insertQuery);
-            preparedStatement.setLong(1, songSimple.getId());
-            preparedStatement.setString(2, songSimple.getTitle());
-            preparedStatement.setString(3, songSimple.getArtist());
-            preparedStatement.setString(4, songSimple.getAlbum());
-            preparedStatement.setString(5, songSimple.getUrl());
+            preparedStatement.setString(1, songSimple.getTitle());
+            preparedStatement.setString(2, songSimple.getArtist());
+            preparedStatement.setString(3, songSimple.getAlbum());
+            preparedStatement.setString(4, songSimple.getUrl());
 
             preparedStatement.executeUpdate();
         } catch (SQLException e) {

@@ -1,12 +1,9 @@
 package com.melody.model;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
-@Getter
-@Setter
-@ToString
+@Data
+@NoArgsConstructor
 public class SongSimple {
     private Long id;
     private String title;
