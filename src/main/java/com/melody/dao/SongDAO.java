@@ -146,7 +146,7 @@ public class SongDAO {
         List<Hashtag> hashtags = new ArrayList<>();
         String sql = "SELECT h.Hashtag_ID, h.Hashtag_Value " +
                 "FROM Hashtag h " +
-                "JOIN Song s ON s.Song_Hashtags LIKE CONCAT('%', h.Hashtag_Value, '%') " +
+                "JOIN Song s ON REGEXP_LIKE(s.Song_Hashtags, '(^|[,\\s])' || h.Hashtag_Value || '($|[,\\s])') " +
                 "WHERE s.Song_ID = ?";
 
         try (Connection conn = DatabaseConfig.getConnection();
@@ -164,6 +164,7 @@ public class SongDAO {
         }
         return hashtags;
     }
+
 
     // Helper method to convert hashtags to a comma-separated string
     public String getSongHashtagsAsString(Song song) {

@@ -1,7 +1,6 @@
 package com.melody.dao;
 
-import com.melody.model.Hashtag;
-import com.melody.model.Playlist;
+import com.melody.model.*;
 import com.melody.util.DatabaseConfig;
 
 import java.sql.*;
@@ -124,11 +123,12 @@ public class PlaylistDAO {
     }
 
     // Method to retrieve all hashtags associated with a specific Playlist
+    // Method to retrieve all hashtags associated with a specific Playlist
     public List<Hashtag> getHashtagsForPlaylist(long playlistId) throws SQLException {
         List<Hashtag> hashtags = new ArrayList<>();
         String sql = "SELECT h.Hashtag_ID, h.Hashtag_Value " +
                 "FROM Hashtag h " +
-                "JOIN Playlist p ON p.Playlist_Hashtags LIKE CONCAT('%', h.Hashtag_Value, '%') " +
+                "JOIN Playlist p ON REGEXP_LIKE(p.Playlist_Hashtags, '(^|[,\\s])' || h.Hashtag_Value || '($|[,\\s])') " +
                 "WHERE p.Playlist_ID = ?";
 
         try (Connection conn = DatabaseConfig.getConnection();
@@ -147,6 +147,8 @@ public class PlaylistDAO {
         return hashtags;
     }
 
+
+
     // Helper method to convert hashtags to a comma-separated string
     public String getPlaylistHashtagsAsString(Playlist playlist) {
         StringBuilder sb = new StringBuilder();
@@ -161,6 +163,41 @@ public class PlaylistDAO {
         }
         return sb.toString();
     }
+
+    public CustomPlaylist getCustomPlaylistWithSongs(long playlistId) {
+        CustomPlaylist customPlaylist = null;
+
+        try {
+            PlaylistDAO playlistDAO = new PlaylistDAO();
+            Playlist playlist = playlistDAO.getPlaylistById(playlistId);
+
+            if (playlist != null) {
+                String playlistName = playlist.getPlaylistName();
+                customPlaylist = new CustomPlaylist(playlistId, playlistName);
+
+                SongPlaylistDAO songPlaylistDAO = new SongPlaylistDAO();
+                List<SongPlaylist> songPlaylists = songPlaylistDAO.getSongsByPlaylistId(playlistId);
+
+                if (songPlaylists != null) {
+                    SongDAO songDAO = new SongDAO();
+
+                    for (SongPlaylist songPlaylist : songPlaylists) {
+                        long songId = songPlaylist.getSongId();
+                        Song song = songDAO.getSongById(songId);
+                        if (song != null) {
+                            customPlaylist.getSongs().add(song);
+                        }
+                    }
+                }
+            }
+
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+
+        return customPlaylist;
+    }
+
 
 
 }
