@@ -1,12 +1,13 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Title -->
-  <title>Main Page</title>
+  <title>Melody</title>
   <!-- jQuery CDN -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- slick slider -->
@@ -19,6 +20,8 @@
   <!-- Custom Css & Js -->
   <link rel="stylesheet" href="../css/main-style.css">
   <script src="../js/main-custom.js"></script>
+  <!-- Favicon -->
+  <link rel="icon" href="../resources/images/Favicon.png">
 </head>
 <body>
     
@@ -2412,6 +2415,22 @@
         </div>
       </div>
     </section>
+
+    <div class="chat-helper-icon">
+      <button class="chat-helper-start">
+        <img class="chat-helper-img" src="../resources/images/chat-helper.png">
+      </button>
+    </div>
+    <div class="chat-helper-main">
+      <form class="chat-helper-inner">
+        <div class="helper-text">
+        </div>
+        <div class="user-text">
+          <textarea cols="100%" rows="4" class="user-chat"></textarea>
+          <button type="submit" class="helper-send">Send</button>
+        </div>
+      </from>
+    </div>
 
     <!-- Footer -->
     <footer>
