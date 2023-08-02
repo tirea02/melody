@@ -2417,7 +2417,7 @@
     <footer>
       <div class="footer-inner">
         <div class="footer-logo">
-          <img src="../resources/images/Footer-logo.png" alt="#none">
+          <img src="../resources/images/Footerlogo.png" alt="#none">
         </div>
         <div class="copyright">
           <div class="service">
