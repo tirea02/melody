@@ -3,8 +3,8 @@ $(document).ready(function() {
   const coloredHeart = $(".coloredHeart");
 
   const audioElement = document.querySelector("audio");
-  const mp3FilePath = "C:/melody/mp3/ditto_31.mp3";
-  audioElement.src = mp3FilePath;
+ // const mp3FilePath = "C:/melody/mp3/ditto_31.mp3";
+ // audioElement.src = mp3FilePath;
 
   const progressBar = $("#progress");
   const currentTime = $(".current");
