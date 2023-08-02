@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="com.melody.dao.SingerDAO" %>
+<%@ page import="java.sql.SQLException" %>
+<%@ page import="com.melody.model.Song" %>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link href="../css/play-song.css" rel="stylesheet" type="text/css">
+    <link href="${pageContext.request.contextPath}/css/play-song.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="../js/playSong.js"></script>
+    <script src="${pageContext.request.contextPath}/js/playSong.js"></script>
     
 </head>
 <body>
@@ -27,7 +32,7 @@
 
         <div class="info">
           <audio class="audio" preload="metadata">
-              <source src="/mp3/ditto_31.mp3" type="audio/mp3">
+              <source src="${song.url}" type="audio/mp3">
           </audio>
 
           <div class="progressBar">
@@ -37,8 +42,22 @@
           </div>
 
           <div class="currentlyPlaying">
-            <h1 class="songName">Ditto</h1>
-            <h3 class="artistName">NewJeans</h3>
+              <h1 class="songName"><%= ((Song) request.getAttribute("song")).getTitle() %></h1>
+              <%
+                  try {
+                      SingerDAO singerDAO = new SingerDAO();
+                      long singerId = ((Song) request.getAttribute("song")).getSingerId();
+                      String singerName = singerDAO.getSingerById(singerId).getSingerName();
+              %>
+              <h1 class="artistName">Artist Name: <%= singerName %></h1>
+              <%
+              } catch (SQLException e) {
+                  e.printStackTrace();
+              %>
+              <p>Artist Name: Unknown Artist</p>
+              <%
+                  }
+              %>
           </div>
           
           <div class="controls">
@@ -62,30 +81,5 @@
       </div>
 
 
-
-      <!-- Playlist section
-      <div id="playlist">
-        <h3>Playlist</h3>
-        <ul id="songList"></ul>
-    </div>
-
-    <script>
-        // JavaScript code to populate the playlist
-        document.addEventListener('DOMContentLoaded', function() {
-            const songs = [
-                { name: 'Super Shy', artist: 'NewJeans' },
-                { name: '셀러브리티', artist: 'IU' },
-                // Add more songs to the array as needed
-            ];
-          
-            const songList = document.getElementById('songList');
-          
-            songs.forEach(song => {
-                const listItem = document.createElement('li');
-                listItem.innerText = `${song.name} - ${song.artist}`;
-                songList.appendChild(listItem);
-            });
-        });
-    </script> -->
 </body>
 </html>

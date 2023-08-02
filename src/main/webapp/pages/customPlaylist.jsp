@@ -8,12 +8,19 @@
     <title>Custom Playlist</title>
 </head>
 <body>
-<h1>Custom Playlist</h1>
+<h1>Custom Playlist Details</h1>
 <c:if test="${customPlaylist != null}">
-    <h2>${customPlaylist.playlistName}</h2>
+    <h2>Playlist ID: ${customPlaylist.playlistId}</h2>
+    <h2>Playlist Name: ${customPlaylist.playlistName}</h2>
+    <h3>Songs:</h3>
     <c:forEach items="${customPlaylist.songs}" var="song">
-        <p>${song.title} - ${song.singerId}</p>
-        <!-- Add other details you want to display for each song -->
+        <p>Song ID: ${song.songId}</p>
+        <p>Title: ${song.title}</p>
+        <p>Singer ID: ${song.singerId}</p>
+        <p>URL: ${song.url}</p>
+        <a href="<%= request.getContextPath() %>/playSong?songId=${song.songId}">Play Song</a>
+        <!-- Add more details as needed -->
+        <hr>
     </c:forEach>
 </c:if>
 </body>
