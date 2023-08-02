@@ -36,6 +36,12 @@
 
 <br>
 
+<br>
+
+<a href="customPlaylist?playlistId=1">playlist 생성 test</a>
+
+<br>
+
 
 <h1>Ask Google BARD</h1>
 <form action="pythonExecutor" method="get">
