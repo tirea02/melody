@@ -9,7 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="init" />
+    <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="custom playlist 기능 추가 hashtag 파싱 부분 변경">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/PlaySongServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/util/SongUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/customPlaylist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/customPlaylist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/playSong.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/playSong.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,15 +36,15 @@
         <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="SCSS File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master-intelij-version" />
+        <entry key="$PROJECT_DIR$" value="dev-dam" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,7 +68,7 @@
     <option name="FILTER_WARNINGS" value="false" />
     <option name="FILTER_INFO" value="false" />
     <option name="FILTER_DEBUG" value="false" />
-    <option name="CUSTOM_FILTER" />
+    <option name="CUSTOM_FILTER" value="" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -133,6 +143,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="f869ca08-f3d6-4078-a4ba-1b2a493b9fb8" />
+        <option name="DEPLOY_TOMCAT_APPS" value="true" />
         <option name="HTTP_PORT" value="8089" />
       </server-settings>
       <log_file checked="false" alias="Tomcat Host Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/host-manager.*" />
@@ -219,6 +230,7 @@
         <item itemvalue="JavaScript Debug.register.jsp" />
         <item itemvalue="JavaScript Debug.register.jsp" />
         <item itemvalue="JavaScript Debug.register.jsp" />
+        <item itemvalue="JavaScript Debug.register.jsp" />
       </list>
     </recent_temporary>
   </component>
@@ -248,6 +260,8 @@
       <workItem from="1690516077265" duration="9872000" />
       <workItem from="1690762701808" duration="3019000" />
       <workItem from="1690765738933" duration="3880000" />
+      <workItem from="1690874522225" duration="8828000" />
+      <workItem from="1690961026529" duration="2686000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -321,13 +335,52 @@
       <option name="project" value="LOCAL" />
       <updated>1690849238338</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="init">
+      <option name="closed" value="true" />
+      <created>1690863121971</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1690863121971</updated>
+    </task>
+    <task id="LOCAL-00011" summary="commit before home&#10;플레이 기능 추가 (세담 ) 로컬 파일 기능 추가">
+      <option name="closed" value="true" />
+      <created>1690880125343</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1690880125343</updated>
+    </task>
+    <task id="LOCAL-00012" summary="custom playlist 기능 추가 hashtag 파싱 부분 변경">
+      <option name="closed" value="true" />
+      <created>1690960899170</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1690960899170</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="newMaster" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -338,7 +391,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="newMaster" />
                       </list>
                     </value>
                   </entry>
@@ -362,7 +415,10 @@
     <MESSAGE value="commit 가입 로직 완성" />
     <MESSAGE value="database model, dao added" />
     <MESSAGE value="changed some temp tokens" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed some temp tokens" />
+    <MESSAGE value="init" />
+    <MESSAGE value="commit before home&#10;플레이 기능 추가 (세담 ) 로컬 파일 기능 추가" />
+    <MESSAGE value="custom playlist 기능 추가 hashtag 파싱 부분 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="custom playlist 기능 추가 hashtag 파싱 부분 변경" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

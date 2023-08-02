@@ -1,5 +1,10 @@
 package com.melody.util;
 
+
+import com.melody.model.UserAccount;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 import java.util.Date;
 import java.util.Calendar;
 
@@ -28,4 +33,11 @@ public class UserAccountUtils {
         }
         return age;
     }
+
+    // Static method to get the UserAccount object from the session
+    public static UserAccount getUserAccount(HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        return (UserAccount) session.getAttribute("userAccount");
+    }
+
 }
