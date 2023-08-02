@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -17,8 +18,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <!-- Custom Css & Js -->
-  <link rel="stylesheet" href="../css/main-style.css">
-  <script src="../js/main-custom.js"></script>
+  <link rel="stylesheet" href="../css/main-login-style.css">
+  <script src="../js/main-login-custom.js"></script>
   <!-- Favicon -->
   <link rel="icon" href="../resources/images/Favicon.png">
 </head>
@@ -55,6 +56,105 @@
           </nav>
       </div>
     </header>
+
+    <!-- Section : Artist -->
+    <section class="artist" id="artist">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2 class="content-heading">
+            <b>Artist</b>
+          </h2>
+        </div>
+        <div class="artist-inner">
+          <div class="artist-slider">
+            <div class="artist-items">
+              <div class="artist-item">
+                <a href="#">
+                  <div class="artist-img-inner">
+                    <img src="../resources/images/MockupsUpImg.png">
+                  </div>
+                  <div class="artist-text">
+                    <span>TWICE (트와이스)</span>
+                  </div>
+                </a>
+              </div>
+              <div class="artist-item">
+                <a href="#">
+                  <div class="artist-img-inner">
+                    <img src="../resources/images/MockupsUpImg.png">
+                  </div>
+                  <div class="artist-text">
+                    <span>TWICE (트와이스)</span>
+                  </div>
+                </a>
+              </div>
+              <div class="artist-item">
+                <a href="#">
+                  <div class="artist-img-inner">
+                    <img src="../resources/images/MockupsUpImg.png">
+                  </div>
+                  <div class="artist-text">
+                    <span>TWICE (트와이스)</span>
+                  </div>
+                </a>
+              </div>
+              <div class="artist-item">
+                <a href="#">
+                  <div class="artist-img-inner">
+                    <img src="../resources/images/MockupsUpImg.png">
+                  </div>
+                  <div class="artist-text">
+                    <span>TWICE (트와이스)</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="artist-items">
+              <div class="artist-item">
+                <a href="#">
+                  <div class="artist-img-inner">
+                    <img src="../resources/images/MockupsUpImg.png">
+                  </div>
+                  <div class="artist-text">
+                    <span>TWICE (트와이스)</span>
+                  </div>
+                </a>
+              </div>
+              <div class="artist-item">
+                <a href="#">
+                  <div class="artist-img-inner">
+                    <img src="../resources/images/MockupsUpImg.png">
+                  </div>
+                  <div class="artist-text">
+                    <span>TWICE (트와이스)</span>
+                  </div>
+                </a>
+              </div>
+              <div class="artist-item">
+                <a href="#">
+                  <div class="artist-img-inner">
+                    <img src="../resources/images/MockupsUpImg.png">
+                  </div>
+                  <div class="artist-text">
+                    <span>TWICE (트와이스)</span>
+                  </div>
+                </a>
+              </div>
+              <div class="artist-item">
+                <a href="#">
+                  <div class="artist-img-inner">
+                    <img src="../resources/images/MockupsUpImg.png">
+                  </div>
+                  <div class="artist-text">
+                    <span>TWICE (트와이스)</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Section : Season -->
     <section class="season" id="season">
@@ -489,9 +589,6 @@
             <b>Best</b>
             Music
           </h2>
-          <div class="more-btn">
-            <a href="#">More</a>
-          </div>
         </div>
         <div class="best-tab-inner">
           <div class="best-btn-tab">
@@ -1510,9 +1607,6 @@
             <b>Genre</b>
             Music
           </h2>
-          <div class="more-btn">
-            <a href="#">More</a>
-          </div>
         </div>
         <div class="genre-tab-inner">
           <div class="genre-btn-tab">
@@ -2421,6 +2515,7 @@
       </div>
     </section>
 
+    <!-- Chat Helper -->
     <div class="chat-helper-icon">
       <button class="chat-helper-start">
         <img class="chat-helper-img" src="../resources/images/chat-helper.png">
