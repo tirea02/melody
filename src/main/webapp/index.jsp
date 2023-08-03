@@ -10,7 +10,8 @@
 <br/>
 
 <h1>Welcome to Melody App</h1>
-
+<a href="${pageContext.request.contextPath}/pages/main.jsp">main</a>
+<br>
 
 <p>
   <a href="songs">View Song List</a>
@@ -31,9 +32,11 @@
 <a href="pages/music-player.html">play music</a>
 
 <br>
-
 <a href="pages/playSong.jsp">세담 play song</a>
+<br>
 
+<br>
+<a href="pages/miniPlaySong.jsp">세담 mini play song</a>
 <br>
 
 <br>
@@ -94,7 +97,7 @@
 <a href="${pageContext.request.contextPath}/pages/login.jsp">login test</a>
 
 <br>
-<a href="${pageContext.request.contextPath}/pages/main.jsp">main</a>
+
 
 <%--<h1>YouTube Crawler</h1>--%>
 <%--<p>--%>

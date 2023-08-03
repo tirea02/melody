@@ -75,9 +75,9 @@
     <schema id="24" parent="1" name="MELODYTEST">
       <CreatedTimestamp>2023-07-28.21:24:24</CreatedTimestamp>
       <Current>1</Current>
-      <IntrospectionL1Timestamp>2023-08-03.18:39:08</IntrospectionL1Timestamp>
-      <IntrospectionL2Timestamp>2023-08-03.18:39:08</IntrospectionL2Timestamp>
-      <IntrospectionL3Timestamp>2023-08-03.18:39:08</IntrospectionL3Timestamp>
+      <IntrospectionL1Timestamp>2023-08-03.21:45:08</IntrospectionL1Timestamp>
+      <IntrospectionL2Timestamp>2023-08-03.21:45:08</IntrospectionL2Timestamp>
+      <IntrospectionL3Timestamp>2023-08-03.21:45:08</IntrospectionL3Timestamp>
       <IntrospectionVersion>200820</IntrospectionVersion>
       <ModifiedTimestamp>2023-08-03.04:11:52</ModifiedTimestamp>
       <ObjectId>117</ObjectId>

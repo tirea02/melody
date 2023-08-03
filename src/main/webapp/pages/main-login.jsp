@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html>
 <html lang="ko">
@@ -35,8 +36,11 @@
               </a>
             </div>
             <div class="lnb">
+              <c:if test="${not empty userAccount}">
+               <p>${userAccount.name}님 환영합니다. </p>
+              </c:if>
               <a href="#none">LOGOUT</a>
-              <a href="#none">MY PAGE</a>
+              <a href="${pageContext.request.contextPath}/pages/userDetail.jsp">MY PAGE</a>
               <div class="darkmode"></div>
             </div>
           </div>
@@ -53,106 +57,44 @@
       </div>
     </header>
 
-    <!-- Section : Artist -->
+    <!-- Section : my playlist -->
     <section class="myplaylist" id="myplaylist">
       <div class="section-inner">
         <div class="section-header">
           <h2 class="content-heading">
-            <b>My PlayList</b>
+            <b>My Playlist</b>
           </h2>
         </div>
         <div class="myplaylist-inner">
           <div class="myplaylist-slider">
+            <c:forEach items="${sessionScope.customPlaylists}" var="playlist">
             <div class="myplaylist-items">
-              <div class="myplaylist-item">
-                <a href="#">
-                  <div class="myplaylist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
+              <c:forEach items="${playlist.songs}" var="song">
+
+                <div class="myplaylist-item">
+                  <a href="<c:url value='/customPlaylist'>
+                            <c:param name='playlistId' value='${playlist.playlistId}' />
+                        </c:url>">
+                    <div class="myplaylist-img-inner">
+                      <p></p>
+                    </div>
+                  </a>
                   <div class="myplaylist-text">
-                    <span>TWICE (트와이스)</span>
+                    <span>${playlist.playlistName}</span>
                   </div>
-                </a>
-              </div>
-              <div class="myplaylist-item">
-                <a href="#">
-                  <div class="myplaylist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="myplaylist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-              <div class="myplaylist-item">
-                <a href="#">
-                  <div class="myplaylist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="myplaylist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-              <div class="myplaylist-item">
-                <a href="#">
-                  <div class="myplaylist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="myplaylist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="myplaylist-items">
-              <div class="myplaylist-item">
-                <a href="#">
-                  <div class="myplaylist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="myplaylist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-              <div class="myplaylist-item">
-                <a href="#">
-                  <div class="myplaylist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="myplaylist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-              <div class="myplaylist-item">
-                <a href="#">
-                  <div class="myplaylist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="myplaylist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-              <div class="myplaylist-item">
-                <a href="#">
-                  <div class="myplaylist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="myplaylist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-            </div>
+                </div>
+
+            </c:forEach>
           </div>
+          </c:forEach>
         </div>
       </div>
-    </section>
+    </div>
+
+  </section>
 
     <!-- Section : #Tag song -->
+  <
     <section class="tag-song" id="tag-song">
       <div class="section-inner">
         <div class="section-header">
@@ -329,6 +271,7 @@
           </div>
         </div>
       </div>
+
     </section>
 
     <!-- Section : MusicVideo -->
@@ -444,7 +387,7 @@
           <textarea cols="100%" rows="4" class="user-chat"></textarea>
           <button type="submit" class="helper-send">Send</button>
         </div>
-      </from>
+      </form>
     </div>
 
     <!-- Footer -->
