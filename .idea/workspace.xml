@@ -10,13 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="customplaylist 페이지에서 바로 play 할수 있는 기능 구현">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/PlaySongSimpleServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/service/MelonSongInfoExtractor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/playSongSimple.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/SearchServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/searchResult.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/304a904a-0fe1-4271-bbdb-609c0a993ae6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/304a904a-0fe1-4271-bbdb-609c0a993ae6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/dao/SongSimpleDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/dao/SongSimpleDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/model/SongSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/model/SongSimple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/controller/PlaySongSimpleServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/PlaySongSimpleServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/dao/AlbumDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/dao/AlbumDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/dao/SongDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/dao/SongDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -263,7 +263,7 @@
       <workItem from="1690762701808" duration="3019000" />
       <workItem from="1690765738933" duration="3880000" />
       <workItem from="1690874522225" duration="8828000" />
-      <workItem from="1690961026529" duration="9254000" />
+      <workItem from="1690961026529" duration="15197000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
