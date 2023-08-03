@@ -3,7 +3,8 @@ $(document).ready(function() {
   const coloredHeart = $(".coloredHeart");
 
   const audioElement = document.querySelector("audio");
-
+  // const mp3FilePath = "./music/NewJeans-SuperShy.mp3";
+  // audioElement.src = mp3FilePath;
 
   const progressBar = $("#progress");
   const currentTime = $(".current");
@@ -23,7 +24,7 @@ $(document).ready(function() {
   let isPlaying = false;
   let isMuted = false;
   let previousVolume = 1.0;
-
+  
 
   //좋아요 하트
   coloredHeart.hide(); //hide coloredHeart button until clicked
@@ -73,7 +74,7 @@ $(document).ready(function() {
 
   //이전 곡 버튼
   previousButton.click(function () {
-	audioElement.currentTime = 0; //Reset audio to 0 sec
+    audioElement.currentTime = 0; //Reset audio to 0 sec
     // Implement the logic to play the previous song
     // For example: audioElement.src = "path_to_previous_song.mp3";
     // You may need to manage the playlist and track the current song index
