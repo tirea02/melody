@@ -2420,7 +2420,7 @@
         </div>
       </div>
     </section>
-
+    <!-- Chat-Helper -->
     <div class="chat-helper-icon">
       <button class="chat-helper-start">
         <img class="chat-helper-img" src="../resources/images/chat-helper.png">
