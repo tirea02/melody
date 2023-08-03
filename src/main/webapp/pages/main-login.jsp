@@ -1,6 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -36,8 +35,8 @@
               </a>
             </div>
             <div class="lnb">
-              <a href="#none">LOGIN</a>
-              <a href="#none">SIGN UP</a>
+              <a href="#none">LOGOUT</a>
+              <a href="#none">MY PAGE</a>
               <div class="darkmode"></div>
             </div>
           </div>
@@ -46,11 +45,8 @@
               <input type="search">
             </div>
             <div class="gnb">
-              <a href="#season">Season</a>
-              <a href="#best">Best</a>
-              <a href="#new">New</a>
-              <a href="#genre">Genre</a>
-              <a href="#artist">Artist</a>
+              <a href="#myplaylist">MyPlayList</a>
+              <a href="#tag-song">Tag Song</a>
               <a href="#musicvideo">Music Video</a>
             </div>
           </nav>
@@ -58,94 +54,94 @@
     </header>
 
     <!-- Section : Artist -->
-    <section class="artist" id="artist">
+    <section class="myplaylist" id="myplaylist">
       <div class="section-inner">
         <div class="section-header">
           <h2 class="content-heading">
-            <b>Artist</b>
+            <b>My PlayList</b>
           </h2>
         </div>
-        <div class="artist-inner">
-          <div class="artist-slider">
-            <div class="artist-items">
-              <div class="artist-item">
+        <div class="myplaylist-inner">
+          <div class="myplaylist-slider">
+            <div class="myplaylist-items">
+              <div class="myplaylist-item">
                 <a href="#">
-                  <div class="artist-img-inner">
+                  <div class="myplaylist-img-inner">
                     <img src="../resources/images/MockupsUpImg.png">
                   </div>
-                  <div class="artist-text">
+                  <div class="myplaylist-text">
                     <span>TWICE (트와이스)</span>
                   </div>
                 </a>
               </div>
-              <div class="artist-item">
+              <div class="myplaylist-item">
                 <a href="#">
-                  <div class="artist-img-inner">
+                  <div class="myplaylist-img-inner">
                     <img src="../resources/images/MockupsUpImg.png">
                   </div>
-                  <div class="artist-text">
+                  <div class="myplaylist-text">
                     <span>TWICE (트와이스)</span>
                   </div>
                 </a>
               </div>
-              <div class="artist-item">
+              <div class="myplaylist-item">
                 <a href="#">
-                  <div class="artist-img-inner">
+                  <div class="myplaylist-img-inner">
                     <img src="../resources/images/MockupsUpImg.png">
                   </div>
-                  <div class="artist-text">
+                  <div class="myplaylist-text">
                     <span>TWICE (트와이스)</span>
                   </div>
                 </a>
               </div>
-              <div class="artist-item">
+              <div class="myplaylist-item">
                 <a href="#">
-                  <div class="artist-img-inner">
+                  <div class="myplaylist-img-inner">
                     <img src="../resources/images/MockupsUpImg.png">
                   </div>
-                  <div class="artist-text">
+                  <div class="myplaylist-text">
                     <span>TWICE (트와이스)</span>
                   </div>
                 </a>
               </div>
             </div>
-            <div class="artist-items">
-              <div class="artist-item">
+            <div class="myplaylist-items">
+              <div class="myplaylist-item">
                 <a href="#">
-                  <div class="artist-img-inner">
+                  <div class="myplaylist-img-inner">
                     <img src="../resources/images/MockupsUpImg.png">
                   </div>
-                  <div class="artist-text">
+                  <div class="myplaylist-text">
                     <span>TWICE (트와이스)</span>
                   </div>
                 </a>
               </div>
-              <div class="artist-item">
+              <div class="myplaylist-item">
                 <a href="#">
-                  <div class="artist-img-inner">
+                  <div class="myplaylist-img-inner">
                     <img src="../resources/images/MockupsUpImg.png">
                   </div>
-                  <div class="artist-text">
+                  <div class="myplaylist-text">
                     <span>TWICE (트와이스)</span>
                   </div>
                 </a>
               </div>
-              <div class="artist-item">
+              <div class="myplaylist-item">
                 <a href="#">
-                  <div class="artist-img-inner">
+                  <div class="myplaylist-img-inner">
                     <img src="../resources/images/MockupsUpImg.png">
                   </div>
-                  <div class="artist-text">
+                  <div class="myplaylist-text">
                     <span>TWICE (트와이스)</span>
                   </div>
                 </a>
               </div>
-              <div class="artist-item">
+              <div class="myplaylist-item">
                 <a href="#">
-                  <div class="artist-img-inner">
+                  <div class="myplaylist-img-inner">
                     <img src="../resources/images/MockupsUpImg.png">
                   </div>
-                  <div class="artist-text">
+                  <div class="myplaylist-text">
                     <span>TWICE (트와이스)</span>
                   </div>
                 </a>
@@ -156,453 +152,24 @@
       </div>
     </section>
 
-    <!-- Section : Season -->
-    <section class="season" id="season">
-      <div class="section-inner">
-        <div class="season-inner">
-          <div class="season-slider">
-            <div class="season-item">
-              <a href="#" class="season-slide">
-                <div class="season-text">
-                  <span>여름노래 기강잡는 <br>추억의 썸머송</span>
-                  <p>총 10곡 <b> | </b> #summer</p>
-                  <i class="bi bi-play-fill"></i>
-                </div>
-                <div class="season-list">
-                  <div class="season-songs">
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="season-songs">
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="season-songs">
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="season-item season-item2">
-              <a href="#" class="season-slide">
-                <div class="season-text">
-                  <span>나른한 오후에 즐기는 <br>피크닉 타임</span>
-                  <p>총 10곡 <b> | </b> #healing</p>
-                  <i class="bi bi-play-fill"></i>
-                </div>
-                <div class="season-list">
-                  <div class="season-songs">
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="season-songs">
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="season-songs">
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="season-item season-item3">
-              <a href="#" class="season-slide">
-                <div class="season-text">
-                  <span>비 오는 날<br>여유를 즐기고 싶다면</span>
-                  <p>총 10곡 <b> | </b> #summer</p>
-                  <i class="bi bi-play-fill"></i>
-                </div>
-                <div class="season-list">
-                  <div class="season-songs">
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="season-songs">
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="season-songs">
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="season-item season-item4">
-              <a href="#" class="season-slide">
-                <div class="season-text">
-                  <span>여행 떠나기 전 <br>챙겨야 할 노래집</span>
-                  <p>총 10곡 <b> | </b> #summer</p>
-                  <i class="bi bi-play-fill"></i>
-                </div>
-                <div class="season-list">
-                  <div class="season-songs">
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="season-songs">
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="season-songs">
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="season-item season-item5">
-              <a href="#" class="season-slide">
-                <div class="season-text">
-                  <span>운동할 때 내적댄스 <br>유발하는곡</span>
-                  <p>총 10곡 <b> | </b> #summer</p>
-                  <i class="bi bi-play-fill"></i>
-                </div>
-                <div class="season-list">
-                  <div class="season-songs">
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="season-songs">
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="season-songs">
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                    <div class="season-song">
-                      <div class="season-song-img">
-                        <img src="../resources/images/MockupsUpImg.png">
-                      </div>
-                      <div class="season-song-text">
-                        <p>
-                          <span>Dance The Night Away</span>
-                          TWICE (트와이스)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section : Best -->
-    <section class="best" id="best">
+    <!-- Section : #Tag song -->
+    <section class="tag-song" id="tag-song">
       <div class="section-inner">
         <div class="section-header">
           <h2 class="content-heading">
-            <b>Best</b>
-            Music
+            <b>#OO</b>
+             곡과 비슷한 곡
           </h2>
-        </div>
-        <div class="best-tab-inner">
-          <div class="best-btn-tab">
-            <a href="#none" class="active">Top 100</a>
-            <a href="#none">Hot 100</a>
-            <a href="#none">Daily</a>
-            <a href="#none">Monthly</a>
+          <div class="more-btn">
+            <a href="#">More</a>
           </div>
-          <div class="best-tabs">
-            <div class="best-tab1">
-              <div class="best-item">
-                <table class="best-table">
+        </div>
+        <div class="tag-song-tab-inner">
+          <div class="tag-song-items">
+            <div class="tag-song-item">
+              <div class="tag-song-content">
+                <table class="tag-song-table">
                   <tr>
-                    <th>순위</th>
                     <th>곡</th>
                     <th>아티스트</th>
                     <th>재생</th>
@@ -610,15 +177,12 @@
                   </tr>
                   <tr>
                     <td>
-                      <p>1</p>
-                    </td>
-                    <td>
-                      <div class="best-song-info">
+                      <div class="tag-song-info">
                         <a href="#">
-                          <div class="best-img-inner">
+                          <div class="tag-song-img-inner">
                             <img src="../resources/images/MockupsUpImg.png">
                           </div>
-                          <div class="best-song-name">
+                          <div class="tag-song-name">
                             <span>
                               Dance The Night Away
                             </span>
@@ -632,23 +196,20 @@
                       </p>
                     </td>
                     <td>
-                      <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                      <a href="#" class="tag-song-play"><i class="bi bi-play-fill"></i></a>
                     </td>
                     <td>
-                      <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
+                      <a href="#" class="tag-song-plus"><i class="bi bi-plus"></i></a>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p>2</p>
-                    </td>
-                    <td>
-                      <div class="best-song-info">
+                      <div class="tag-song-info">
                         <a href="#">
-                          <div class="best-img-inner">
+                          <div class="tag-song-img-inner">
                             <img src="../resources/images/MockupsUpImg.png">
                           </div>
-                          <div class="best-song-name">
+                          <div class="tag-song-name">
                             <span>
                               Dance The Night Away
                             </span>
@@ -662,23 +223,20 @@
                       </p>
                     </td>
                     <td>
-                      <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                      <a href="#" class="tag-song-play"><i class="bi bi-play-fill"></i></a>
                     </td>
                     <td>
-                      <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
+                      <a href="#" class="tag-song-plus"><i class="bi bi-plus"></i></a>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p>3</p>
-                    </td>
-                    <td>
-                      <div class="best-song-info">
+                      <div class="tag-song-info">
                         <a href="#">
-                          <div class="best-img-inner">
+                          <div class="tag-song-img-inner">
                             <img src="../resources/images/MockupsUpImg.png">
                           </div>
-                          <div class="best-song-name">
+                          <div class="tag-song-name">
                             <span>
                               Dance The Night Away
                             </span>
@@ -692,23 +250,20 @@
                       </p>
                     </td>
                     <td>
-                      <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                      <a href="#" class="tag-song-play"><i class="bi bi-play-fill"></i></a>
                     </td>
                     <td>
-                      <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
+                      <a href="#" class="tag-song-plus"><i class="bi bi-plus"></i></a>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p>4</p>
-                    </td>
-                    <td>
-                      <div class="best-song-info">
+                      <div class="tag-song-info">
                         <a href="#">
-                          <div class="best-img-inner">
+                          <div class="tag-song-img-inner">
                             <img src="../resources/images/MockupsUpImg.png">
                           </div>
-                          <div class="best-song-name">
+                          <div class="tag-song-name">
                             <span>
                               Dance The Night Away
                             </span>
@@ -722,23 +277,20 @@
                       </p>
                     </td>
                     <td>
-                      <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                      <a href="#" class="tag-song-play"><i class="bi bi-play-fill"></i></a>
                     </td>
                     <td>
-                      <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
+                      <a href="#" class="tag-song-plus"><i class="bi bi-plus"></i></a>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <p>5</p>
-                    </td>
-                    <td>
-                      <div class="best-song-info">
+                      <div class="tag-song-info">
                         <a href="#">
-                          <div class="best-img-inner">
+                          <div class="tag-song-img-inner">
                             <img src="../resources/images/MockupsUpImg.png">
                           </div>
-                          <div class="best-song-name">
+                          <div class="tag-song-name">
                             <span>
                               Dance The Night Away
                             </span>
@@ -752,10 +304,10 @@
                       </p>
                     </td>
                     <td>
-                      <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                      <a href="#" class="tag-song-play"><i class="bi bi-play-fill"></i></a>
                     </td>
                     <td>
-                      <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
+                      <a href="#" class="tag-song-plus"><i class="bi bi-plus"></i></a>
                     </td>
                   </tr>
                 </table>
@@ -774,1643 +326,6 @@
                 </div>
               </div>
             </div>
-            <div class="best-tab2">
-              <table class="best-table">
-                <tr>
-                  <th>순위</th>
-                  <th>곡</th>
-                  <th>아티스트</th>
-                  <th>재생</th>
-                  <th>추가</th>
-                </tr>
-                <tr>
-                  <td>
-                    <p>1</p>
-                  </td>
-                  <td>
-                    <div class="best-song-info">
-                      <a href="#">
-                        <div class="best-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="best-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>2</p>
-                  </td>
-                  <td>
-                    <div class="best-song-info">
-                      <a href="#">
-                        <div class="best-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="best-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>3</p>
-                  </td>
-                  <td>
-                    <div class="best-song-info">
-                      <a href="#">
-                        <div class="best-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="best-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>4</p>
-                  </td>
-                  <td>
-                    <div class="best-song-info">
-                      <a href="#">
-                        <div class="best-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="best-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>5</p>
-                  </td>
-                  <td>
-                    <div class="best-song-info">
-                      <a href="#">
-                        <div class="best-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="best-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-              </table>
-              <div class="table-btn">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">7</a>
-                <a href="#">8</a>
-                <a href="#">9</a>
-                <a href="#">10</a>
-                <a href="#">></a>
-              </div>
-            </div>
-            <div class="best-tab3">
-              <table class="best-table">
-                <tr>
-                  <th>순위</th>
-                  <th>곡</th>
-                  <th>아티스트</th>
-                  <th>재생</th>
-                  <th>추가</th>
-                </tr>
-                <tr>
-                  <td>
-                    <p>1</p>
-                  </td>
-                  <td>
-                    <div class="best-song-info">
-                      <a href="#">
-                        <div class="best-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="best-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>2</p>
-                  </td>
-                  <td>
-                    <div class="best-song-info">
-                      <a href="#">
-                        <div class="best-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="best-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>3</p>
-                  </td>
-                  <td>
-                    <div class="best-song-info">
-                      <a href="#">
-                        <div class="best-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="best-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>4</p>
-                  </td>
-                  <td>
-                    <div class="best-song-info">
-                      <a href="#">
-                        <div class="best-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="best-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>5</p>
-                  </td>
-                  <td>
-                    <div class="best-song-info">
-                      <a href="#">
-                        <div class="best-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="best-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-              </table>
-              <div class="table-btn">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">7</a>
-                <a href="#">8</a>
-                <a href="#">9</a>
-                <a href="#">10</a>
-                <a href="#">></a>
-              </div>
-            </div>
-            <div class="best-tab4">
-              <table class="best-table">
-                <tr>
-                  <th>순위</th>
-                  <th>곡</th>
-                  <th>아티스트</th>
-                  <th>재생</th>
-                  <th>추가</th>
-                </tr>
-                <tr>
-                  <td>
-                    <p>1</p>
-                  </td>
-                  <td>
-                    <div class="best-song-info">
-                      <a href="#">
-                        <div class="best-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="best-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>2</p>
-                  </td>
-                  <td>
-                    <div class="best-song-info">
-                      <a href="#">
-                        <div class="best-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="best-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>3</p>
-                  </td>
-                  <td>
-                    <div class="best-song-info">
-                      <a href="#">
-                        <div class="best-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="best-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>4</p>
-                  </td>
-                  <td>
-                    <div class="best-song-info">
-                      <a href="#">
-                        <div class="best-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="best-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>5</p>
-                  </td>
-                  <td>
-                    <div class="best-song-info">
-                      <a href="#">
-                        <div class="best-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="best-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-              </table>
-              <div class="table-btn">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">7</a>
-                <a href="#">8</a>
-                <a href="#">9</a>
-                <a href="#">10</a>
-                <a href="#">></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section :  New -->
-    <section class="new" id="new">
-      <div class="section-inner">
-        <div class="section-header">
-          <h2 class="content-heading">
-            <b>New</b>
-            Music
-          </h2>
-        </div>
-        <div class="new-inner">
-          <div class="new-slider">
-            <div class="new-items">
-              <div class="new-item">
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="new-item">
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="new-items">
-              <div class="new-item">
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="new-item">
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="new-items">
-              <div class="new-item">
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="new-item">
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="new-content">
-                  <a href="#">
-                    <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
-                    </div>
-                    <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section : Genre -->
-    <section class="genre" id="genre">
-      <div class="section-inner">
-        <div class="section-header">
-          <h2 class="content-heading">
-            <b>Genre</b>
-            Music
-          </h2>
-        </div>
-        <div class="genre-tab-inner">
-          <div class="genre-btn-tab">
-            <a href="#none" class="active">Ballad</a>
-            <a href="#none">Rap</a>
-            <a href="#none">Ost</a>
-            <a href="#none">Pop</a>
-          </div>
-          <div class="genre-tabs">
-            <div class="genre-tab1">
-              <table class="genre-table">
-                <tr>
-                  <th>순위</th>
-                  <th>곡</th>
-                  <th>아티스트</th>
-                  <th>재생</th>
-                  <th>추가</th>
-                </tr>
-                <tr>
-                  <td>
-                    <p>1</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>2</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>3</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>4</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>5</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-              </table>
-              <div class="table-btn">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">7</a>
-                <a href="#">8</a>
-                <a href="#">9</a>
-                <a href="#">10</a>
-                <a href="#">></a>
-              </div>
-            </div>
-            <div class="genre-tab2">
-              <table class="genre-table">
-                <tr>
-                  <th>순위</th>
-                  <th>곡</th>
-                  <th>아티스트</th>
-                  <th>재생</th>
-                  <th>추가</th>
-                </tr>
-                <tr>
-                  <td>
-                    <p>1</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>2</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>3</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>4</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>5</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-              </table>
-              <div class="table-btn">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">7</a>
-                <a href="#">8</a>
-                <a href="#">9</a>
-                <a href="#">10</a>
-                <a href="#">></a>
-              </div>
-            </div>
-            <div class="genre-tab3">
-              <table class="genre-table">
-                <tr>
-                  <th>순위</th>
-                  <th>곡</th>
-                  <th>아티스트</th>
-                  <th>재생</th>
-                  <th>추가</th>
-                </tr>
-                <tr>
-                  <td>
-                    <p>1</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>2</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>3</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>4</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>5</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-              </table>
-              <div class="table-btn">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">7</a>
-                <a href="#">8</a>
-                <a href="#">9</a>
-                <a href="#">10</a>
-                <a href="#">></a>
-              </div>
-            </div>
-            <div class="genre-tab4">
-              <table class="genre-table">
-                <tr>
-                  <th>순위</th>
-                  <th>곡</th>
-                  <th>아티스트</th>
-                  <th>재생</th>
-                  <th>추가</th>
-                </tr>
-                <tr>
-                  <td>
-                    <p>1</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>2</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>3</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>4</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>5</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-              </table>
-              <div class="table-btn">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">7</a>
-                <a href="#">8</a>
-                <a href="#">9</a>
-                <a href="#">10</a>
-                <a href="#">></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section : Artist -->
-    <section class="artist" id="artist">
-      <div class="section-inner">
-        <div class="section-header">
-          <h2 class="content-heading">
-            <b>Artist</b>
-          </h2>
-        </div>
-        <div class="artist-inner">
-          <div class="artist-slider">
-            <div class="artist-items">
-              <div class="artist-item">
-                <a href="#">
-                  <div class="artist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="artist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-              <div class="artist-item">
-                <a href="#">
-                  <div class="artist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="artist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-              <div class="artist-item">
-                <a href="#">
-                  <div class="artist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="artist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-              <div class="artist-item">
-                <a href="#">
-                  <div class="artist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="artist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="artist-items">
-              <div class="artist-item">
-                <a href="#">
-                  <div class="artist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="artist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-              <div class="artist-item">
-                <a href="#">
-                  <div class="artist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="artist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-              <div class="artist-item">
-                <a href="#">
-                  <div class="artist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="artist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-              <div class="artist-item">
-                <a href="#">
-                  <div class="artist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="artist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -2421,7 +336,8 @@
       <div class="section-inner">
         <div class="section-header">
           <h2 class="content-heading">
-            <b>Music Video</b>
+            <b>My List</b>
+            Music Video
           </h2>
         </div>
         <div class="musicvideo-inner">
@@ -2515,7 +431,6 @@
       </div>
     </section>
 
-    <!-- Chat Helper -->
     <div class="chat-helper-icon">
       <button class="chat-helper-start">
         <img class="chat-helper-img" src="../resources/images/chat-helper.png">
