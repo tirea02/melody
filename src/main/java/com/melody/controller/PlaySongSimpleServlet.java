@@ -42,8 +42,6 @@ public class PlaySongSimpleServlet extends HttpServlet {
 
                 request.setAttribute("songSimple", songSimple);
                 request.getRequestDispatcher("pages/playSongSimple.jsp").forward(request, response);
-//                request.getRequestDispatcher("index.jsp").forward(request, response);
-
 
             } else {
                 response.getWriter().println("Please provide a search query.");
