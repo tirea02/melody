@@ -57,6 +57,7 @@
 
 <br>
 <a href="${pageContext.request.contextPath}/index.jsp">back to index</a>
+<a href="${pageContext.request.contextPath}/pages/main-login.jsp">to main</a>
 </body>
 
 </html>

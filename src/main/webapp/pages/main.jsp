@@ -35,8 +35,8 @@
               </a>
             </div>
             <div class="lnb">
-              <a href="#none">LOGIN</a>
-              <a href="#none">SIGN UP</a>
+              <a href="${pageContext.request.contextPath}/pages/login.jsp">LOGIN</a>
+              <a href="${pageContext.request.contextPath}/pages/register.jsp">SIGN UP</a>
               <div class="darkmode"></div>
             </div>
           </div>

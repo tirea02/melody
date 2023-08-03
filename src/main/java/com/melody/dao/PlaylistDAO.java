@@ -44,6 +44,32 @@ public class PlaylistDAO {
         return null;
     }
 
+    public List<CustomPlaylist> getAllPlaylistsForUser(long accountId) {
+        List<CustomPlaylist> customPlaylists = new ArrayList<>();
+        String sql = "SELECT * FROM Playlist WHERE UserAccount_ID = ?";
+
+        try (Connection conn = DatabaseConfig.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+
+            pstmt.setLong(1, accountId);
+
+            try (ResultSet rs = pstmt.executeQuery()) {
+                while (rs.next()) {
+                    long playlistId = rs.getLong("Playlist_ID");
+
+                    // Create a CustomPlaylist object
+                    CustomPlaylist customPlaylist = getCustomPlaylistWithSongs(playlistId);
+
+                    // Add the playlist to the list
+                    customPlaylists.add(customPlaylist);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return customPlaylists;
+    }
+
     // Method to update an existing Playlist in the database
     public void updatePlaylist(Playlist playlist) throws SQLException {
         String sql = "UPDATE Playlist SET UserAccount_ID = ?, Playlist_Name = ?, Description = ?, " +
