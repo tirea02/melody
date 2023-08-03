@@ -9,16 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/304a904a-0fe1-4271-bbdb-609c0a993ae6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/304a904a-0fe1-4271-bbdb-609c0a993ae6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="form tag 오타 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/controller/user/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/user/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/dao/PlaylistDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/dao/PlaylistDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/main-login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/main-login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/userDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/userDetail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/controller/PlaySongSimpleServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/PlaySongSimpleServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -371,7 +364,23 @@
       <option name="project" value="LOCAL" />
       <updated>1690963989480</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="login기능, log in 시 myplaylist 보여주기 위해서 &#10;login servlet 에서 customplaylist 받아오는 기능들 추가">
+      <option name="closed" value="true" />
+      <created>1691042928996</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1691042928996</updated>
+    </task>
+    <task id="LOCAL-00015" summary="form tag 오타 수정">
+      <option name="closed" value="true" />
+      <created>1691043008400</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1691043008400</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,7 +440,9 @@
     <MESSAGE value="commit before home&#10;플레이 기능 추가 (세담 ) 로컬 파일 기능 추가" />
     <MESSAGE value="custom playlist 기능 추가 hashtag 파싱 부분 변경" />
     <MESSAGE value="customplaylist 페이지에서 바로 play 할수 있는 기능 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="customplaylist 페이지에서 바로 play 할수 있는 기능 구현" />
+    <MESSAGE value="login기능, log in 시 myplaylist 보여주기 위해서 &#10;login servlet 에서 customplaylist 받아오는 기능들 추가" />
+    <MESSAGE value="form tag 오타 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="form tag 오타 수정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
