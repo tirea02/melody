@@ -1,14 +1,18 @@
 package com.melody.dao;
 
+import com.melody.controller.SearchServlet;
 import com.melody.model.Hashtag;
 import com.melody.model.Song;
 import com.melody.util.DatabaseConfig;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class SongDAO {
+    private static final Logger logger = LoggerFactory.getLogger(SongDAO.class);
 
     // Method to add a new Song to the database
     public void addSong(Song song) throws SQLException {
@@ -98,23 +102,24 @@ public class SongDAO {
     }
 
     // Method to search for Songs based on the provided criteria
-    public List<Song> searchSongs(String searchCriteria) throws SQLException {
+    public List<Song> searchSongs(String query) {
         List<Song> songs = new ArrayList<>();
-        String searchQuery = "SELECT * FROM Song WHERE Title LIKE ? OR Song_Info LIKE ? OR Lyrics LIKE ? OR Song_Hashtags LIKE ?";
-        try (Connection conn = DatabaseConfig.getConnection();
-             PreparedStatement pstmt = conn.prepareStatement(searchQuery)) {
+        String searchQuery = "SELECT s.*, si.Singer_Name FROM Song s INNER JOIN Singer si ON s.Singer_ID = si.Singer_ID WHERE s.Title LIKE ? OR s.Song_Hashtags LIKE ? or si.SINGER_NAME like ?";
+        try (Connection connection = DatabaseConfig.getConnection();
+             PreparedStatement statement = connection.prepareStatement(searchQuery)) {
+            String searchParam = "%" + query + "%";
+            statement.setString(1, searchParam);
+            statement.setString(2, searchParam);
+            statement.setString(3, searchParam);
 
-            String searchParam = "%" + searchCriteria + "%";
-            pstmt.setString(1, searchParam);
-            pstmt.setString(2, searchParam);
-            pstmt.setString(3, searchParam);
-            pstmt.setString(4, searchParam);
-
-            try (ResultSet resultSet = pstmt.executeQuery()) {
+            try (ResultSet resultSet = statement.executeQuery()) {
                 while (resultSet.next()) {
-                    songs.add(createSongFromResultSet(resultSet));
+                    Song song = createSongFromResultSet(resultSet);
+                    songs.add(song);
                 }
             }
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
         return songs;
     }
@@ -135,13 +140,15 @@ public class SongDAO {
         song.setGenreId(resultSet.getLong("Genre_ID")); // Set the Genre_ID
         // Fetch the list of hashtags for the song using SongDAO.getHashtagsForSong()
 
-        List<Hashtag> hashtags = getHashtagsForSong(songId);
+        List<Hashtag> hashtags = getHashtagsForSongNoMatch(songId);
+        logger.debug(hashtags.toString());
         song.setSongHashtags(hashtags);
         song.setUrl(resultSet.getString("URL"));
         return song;
     }
 
     // Method to retrieve all hashtags associated with a specific Song
+    // should have match hashtag table(미리 hashtable에 존재 해야하는데 실질적으로 힘들다)
     public List<Hashtag> getHashtagsForSong(long songId) throws SQLException {
         List<Hashtag> hashtags = new ArrayList<>();
         String sql = "SELECT h.Hashtag_ID, h.Hashtag_Value " +
@@ -158,10 +165,40 @@ public class SongDAO {
                     Hashtag hashtag = new Hashtag();
                     hashtag.setHashtagId(rs.getLong("Hashtag_ID"));
                     hashtag.setHashtagValue(rs.getString("Hashtag_Value"));
+                    logger.debug(hashtag.toString());
                     hashtags.add(hashtag);
                 }
             }
         }
+        return hashtags;
+    }
+
+    public List<Hashtag> getHashtagsForSongNoMatch(long songId) throws SQLException {
+        List<Hashtag> hashtags = new ArrayList<>();
+        String sql = "SELECT Song_Hashtags " +
+                "FROM Song " +
+                "WHERE Song_ID = ?";
+
+        try (Connection conn = DatabaseConfig.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+
+            pstmt.setLong(1, songId);
+            try (ResultSet rs = pstmt.executeQuery()) {
+                if (rs.next()) {
+                    String songHashtags = rs.getString("Song_Hashtags");
+                    if (songHashtags != null && !songHashtags.isEmpty()) {
+                        String[] hashtagValues = songHashtags.split("[,\\s]+");
+                        for (String hashtagValue : hashtagValues) {
+                            Hashtag hashtag = new Hashtag();
+                            hashtag.setHashtagId(0); // this won't saved to hashtag so ill just give 0 as id
+                            hashtag.setHashtagValue(hashtagValue);
+                            hashtags.add(hashtag);
+                        }
+                    }
+                }
+            }
+        }
+
         return hashtags;
     }
 

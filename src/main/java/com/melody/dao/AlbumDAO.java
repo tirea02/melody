@@ -97,7 +97,10 @@ public class AlbumDAO {
     // Method to search for albums based on the provided criteria
     public List<Album> searchAlbums(String searchCriteria) throws SQLException {
         List<Album> albums = new ArrayList<>();
-        String searchQuery = "SELECT * FROM Album WHERE Album_Title LIKE ? OR Album_Info LIKE ? OR Album_Hashtags LIKE ?";
+        String searchQuery = "SELECT a.* FROM ALBUM a " +
+                "INNER JOIN Song s ON a.ALBUM_ID = s.ALBUM_ID " +
+                "INNER JOIN Singer si ON s.Singer_ID = si.Singer_ID " +
+                "WHERE a.ALBUM_TITLE LIKE ? OR a.ALBUM_INFO LIKE ? OR si.SINGER_NAME LIKE ?";
         try (Connection connection = DatabaseConfig.getConnection();
              PreparedStatement statement = connection.prepareStatement(searchQuery)) {
             String searchParam = "%" + searchCriteria + "%";

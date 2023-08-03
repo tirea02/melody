@@ -27,6 +27,8 @@ public class PlaySongSimpleServlet extends HttpServlet {
                 YouTubeScraper scraper = new YouTubeScraper();
                 MelonSongInfoExtractor melonSongInfoExtractor = new MelonSongInfoExtractor();
                 SongSimple songSimple = melonSongInfoExtractor.extractSongInfo(query);
+
+                query += " lyrics";
                 String videoLink = scraper.getFirstVideoLink(query);
 
                 scraper.close();

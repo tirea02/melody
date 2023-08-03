@@ -42,6 +42,16 @@
 
 <br>
 
+<br>
+
+<form action="search" method="get">
+  <label for="query">Enter Search Query:</label>
+  <input type="text" id="mainSearchQuery" name="mainSearchQuery" required>
+  <button type="submit">Search</button>
+</form>
+
+<br>
+
 
 <h1>Ask Google BARD</h1>
 <form action="pythonExecutor" method="get">
