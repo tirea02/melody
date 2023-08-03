@@ -86,6 +86,14 @@
 
             </c:forEach>
           </div>
+          	<div class="myplatlist=delete">
+            	<a href="<c:url value='/CustomPlaylistDeleteServelt'>
+                	<c:param name='playlistId' value='${playlist.playlistId}' />
+                	</c:url>">
+               	<div calss="myplaylist-delete-text">
+               		<span>Delete MyPlaylist</span>
+               	</div>
+            </div>
           </c:forEach>
         </div>
       </div>
