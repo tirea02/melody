@@ -35,6 +35,7 @@
 <a href="pages/playSong.jsp">세담 play song</a>
 
 <br>
+<a href="pages/miniPlaySong.jsp">세담 mini play song</a>
 
 <br>
 

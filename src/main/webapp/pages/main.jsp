@@ -535,7 +535,7 @@
                       </p>
                     </td>
                     <td>
-                      <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                      <a href="miniPlaySong.jsp" class="best-play"><i class="bi bi-play-fill"></i></a>
                     </td>
                     <td>
                       <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
@@ -565,7 +565,7 @@
                       </p>
                     </td>
                     <td>
-                      <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                      <a href="miniPlaySong.jsp" class="best-play"><i class="bi bi-play-fill"></i></a>
                     </td>
                     <td>
                       <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
@@ -595,7 +595,7 @@
                       </p>
                     </td>
                     <td>
-                      <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                      <a href="miniPlaySong.jsp" class="best-play"><i class="bi bi-play-fill"></i></a>
                     </td>
                     <td>
                       <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
@@ -625,7 +625,7 @@
                       </p>
                     </td>
                     <td>
-                      <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                      <a href="miniPlaySong.jsp" class="best-play"><i class="bi bi-play-fill"></i></a>
                     </td>
                     <td>
                       <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
@@ -655,7 +655,7 @@
                       </p>
                     </td>
                     <td>
-                      <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                      <a href="miniPlaySong.jsp" class="best-play"><i class="bi bi-play-fill"></i></a>
                     </td>
                     <td>
                       <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
@@ -710,7 +710,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="best-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
@@ -740,7 +740,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="best-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
@@ -770,7 +770,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="best-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
@@ -800,7 +800,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="best-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
@@ -830,7 +830,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="best-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
@@ -884,7 +884,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="best-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
@@ -914,7 +914,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="best-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
@@ -944,7 +944,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="best-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
@@ -974,7 +974,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="best-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
@@ -1004,7 +1004,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="best-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
@@ -1058,7 +1058,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="best-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
@@ -1088,7 +1088,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="best-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
@@ -1118,7 +1118,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="best-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
@@ -1148,7 +1148,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="best-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
@@ -1178,7 +1178,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="best-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="best-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="best-plus"><i class="bi bi-plus"></i></a>
@@ -1555,7 +1555,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="genre-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
@@ -1585,7 +1585,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="genre-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
@@ -1615,7 +1615,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="genre-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
@@ -1645,7 +1645,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="genre-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
@@ -1675,7 +1675,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="genre-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
@@ -1729,7 +1729,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="genre-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
@@ -1759,7 +1759,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="genre-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
@@ -1789,7 +1789,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="genre-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
@@ -1819,7 +1819,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="genre-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
@@ -1849,7 +1849,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="genre-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
@@ -1903,7 +1903,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="genre-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
@@ -1933,7 +1933,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="genre-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
@@ -1963,7 +1963,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="genre-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
@@ -1993,7 +1993,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="genre-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
@@ -2023,7 +2023,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="genre-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
@@ -2077,7 +2077,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="genre-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
@@ -2107,7 +2107,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="genre-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
@@ -2137,7 +2137,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="genre-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
@@ -2167,7 +2167,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="genre-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
@@ -2197,7 +2197,7 @@
                     </p>
                   </td>
                   <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
+                    <a href="miniPlaySong.jsp" class="genre-play"><i class="bi bi-play-fill"></i></a>
                   </td>
                   <td>
                     <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>

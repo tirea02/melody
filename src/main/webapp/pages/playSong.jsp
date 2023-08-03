@@ -56,7 +56,7 @@
               %>
               <p>Artist Name: Unknown Artist</p>
               <%
-                  }
+                }
               %>
           </div>
           
