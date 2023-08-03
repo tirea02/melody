@@ -389,7 +389,7 @@ nav {
 	border-radius: 5px;
 }
 .tag-song .section-header .more-btn a:hover {
-	background-color: #aaa;
+	background-color: #000;
 	color: #fff;
 }
 .tag-song-content {

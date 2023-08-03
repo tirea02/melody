@@ -464,7 +464,7 @@ nav {
 	border-radius: 5px;
 }
 .best .section-header .more-btn a:hover {
-	background-color: #aaa;
+	background-color: #000;
 	color: #fff;
 }
 .best-btn-tab {
@@ -714,7 +714,7 @@ nav {
 	border-radius: 5px;
 }
 .genre .section-header .more-btn a:hover {
-	background-color: #aaa;
+	background-color: #000;
 	color: #fff;
 }
 .genre-btn-tab {

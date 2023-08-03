@@ -1,3 +1,13 @@
+$(function(){
+    //Dark mode
+    $('.darkmode').click(function(){
+      $(this).toggleClass('on')
+    })
+    $('.darkmode').click(function(){
+        $('body, header, .lnb, .logo, .registrationForm, footer, .sns').toggleClass('dark')
+    })
+  })
+
 document.getElementById("registrationForm").onsubmit = function() {
     // Get form inputs
     var name = document.getElementsByName("name")[0].value;

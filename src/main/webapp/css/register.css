@@ -1,57 +1,346 @@
-/* styles.css */
+@charset 'utf-8';
+
+/* Google Web Font CDN */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap');
+
+/* XEIcon CDN */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Default CSS */
+
+/* Common CSS */
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	/* font-family: 'Montserrat', sans-serif; */
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+	outline: none;
+}
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
+	margin: 0;
+	/* position: relative; */
 }
 
-h2 {
-  color: #007bff;
+body.dark {
+	background-color: rgb(72, 70, 70);
 }
 
-form {
-  width: 400px;
-  margin: 0 auto;
-  border: 1px solid #ccc;
-  padding: 20px;
+.container {
+	max-width: none !important;
+	padding: 0;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	color: #000;
+}
+
+.section-inner {
+	width: 1200px;
+	margin: auto;
+	padding: 50px;
+}
+
+.section-header {
+	display: flex;
+	justify-content: left;
+	padding-bottom: 20px;
+}
+
+/* Music Streaming Website */
+/* ############## Header ############## */
+header {
+	position: fixed;
+	width: 100%;
+	background-color: #eeeded;
+	display: flex;
+	justify-content: center;
+	z-index: 1000;
+	transition: 0.35s;
+}
+
+header.dark {
+	background-color: rgb(23, 20, 20);
+}
+
+.header-inner {
+	width: 1300px;
+	padding: 20px 0;
+}
+
+.lnb.dark a {
+	color: #fff;
+}
+
+.lnb {
+}
+
+.logo {
+	height: 50px;
+	width: 200px;
+}
+
+.logo a {
+	display: inline-block;
+	background: url('../resources/images/Logo.png') no-repeat center center;
+	background-size: cover;
+	width: 200px;
+	height: 50px;
+	transition: 0.2s;
+}
+
+.logo.dark a {
+	display: inline-block;
+	background: url('../resources/images/Logodark.png') no-repeat center center;
+	background-size: cover;
+	width: 200px;
+	height: 50px;
+	transition: 0.2s;
+}
+
+.banner {
+	display: flex;
+	justify-content: space-between;
+	height: 50px;
+	line-height: 60px;
+}
+
+.lnb {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	line-height: 50px;
+}
+
+.lnb a {
+	transition: 0.1s;
+	letter-spacing: 0.2dvh;
+}
+
+.lnb a:hover {
+	font-weight: 500;
+}
+
+.darkmode {
+	width: 30px;
+	cursor: pointer;
+	line-height: 50px;
+}
+
+.darkmode:before {
+	content: '\F497';
+	font-family: bootstrap-icons;
+}
+
+.darkmode.on:before {
+	content: '\F1D2';
+	font-family: bootstrap-icons;
+	color: #fff;
+}
+
+
+/* ############## Sign Up ############## */
+.signup {
+  padding-top: 50px;
+}
+.registration-form-inner {
+  padding: 100px;
+}
+.registrationForm {
+  border: 1px solid #bbb;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 100px 50px;
+  justify-content: center;
 }
-
-label {
-  display: block;
-  margin-bottom: 5px;
+.registrationForm h1 {
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  /* transition: 0.3s; */
 }
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="date"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 15px;
-}
-
-input[type="radio"] {
-  margin-right: 5px;
-}
-
-#errorMessages {
-  color: red;
-  margin-bottom: 15px;
-}
-
-#submitButton {
-  background-color: #007bff;
+.registrationForm.dark h1 {
   color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+}
+.registration-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+.registrationForm.dark .registration-text label,
+.registrationForm.dark .registration-text input[type=date] {
+  color: #eee;
+}
+.registration-text > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+  gap: 10px;
+}
+.registration-text label {
+  text-align: left;
+}
+.registration-text input[type=text],
+.registration-text input[type=date],
+.registration-text input[type=email],
+.registration-text input[type=password],
+.registration-text input[type=text] {
+  padding: 20px 10px;
+  width: 100%;
+  border: 1px solid #bbb;
+  background-color: transparent;
+}
+.registration-text input[type=date] {
+  cursor: pointer;
+  position: relative;
+}
+.registration-text input[type=date]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  right: -10px;
+  top: 0;
+  transform: translateX(10px);
+  padding-left: 3000px;
+  height: 100%;
   cursor: pointer;
 }
+.gender-check {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px solid #bbb;
+  padding: 20px 10px;
+}
+.gender-check label {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}
+.submitButton {
+  color: #fff;
+  background-color: #000;
+  padding: 15px 0;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  transition: 0.2s;
+}
+.submitButton:hover {
+  background-color: #bbb;
+  color: #000;
+}
+/* ############## Footer ############## */
+footer {
+	display: flex;
+	justify-content: center;
+	background-color: #555;
+	color: #fff;
+	font-size: 13px;
+}
 
-#submitButton:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
+footer.dark {
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	font-size: 13px;
+	background-color: rgb(23, 20, 20);
+}
+
+.footer-inner {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 1300px;
+	padding: 20px 0;
+}
+
+.footer-logo {
+}
+
+.footer-logo img {
+	width: 200px;
+	height: 50px;
+}
+
+.copyright {
+	display: flex;
+	justify-content: space-between;
+}
+
+.service span {
+	display: block;
+}
+
+.service-text {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.service-text span {
+	margin: 0 10px;
+}
+
+.service-text span:nth-child(3) {
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.service-text span:after {
+	content: '|';
+	margin-left: 20px;
+}
+
+.service-text span:last-child:after {
+	display: none;
+}
+
+.sns {
+	font-size: 30px;
+	text-align: right;
+}
+
+.sns a {
+	margin-left: 20px;
+	color: #fff;
+}
+
+.sns.dark a i {
+	color: #fff;
+}
+
+.sns a i {
+	transition: 0.3s;
+}
+
+.sns a:nth-child(1):hover i {
+	color: #1977f3;
+}
+
+.sns a:nth-child(2):hover i {
+	color: #b73498;
+}
+
+.sns a:nth-child(3):hover i {
+	color: #1da1f3
+}
+
+.sns a:nth-child(4):hover i {
+	color: #ff0000;
+}
+
+.sub-text {
+	border-top: 1px solid #fff;
 }
