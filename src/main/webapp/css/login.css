@@ -1,0 +1,352 @@
+@charset 'utf-8';
+
+/* Google Web Font CDN */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap');
+
+/* XEIcon CDN */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Default CSS */
+
+/* Common CSS */
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	/* font-family: 'Montserrat', sans-serif; */
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+	outline: none;
+}
+body {
+	margin: 0;
+	/* position: relative; */
+}
+
+body.dark {
+	background-color: rgb(72, 70, 70);
+}
+
+.container {
+	max-width: none !important;
+	padding: 0;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	color: #000;
+}
+
+.section-inner {
+	width: 1200px;
+	margin: auto;
+	padding: 50px;
+}
+
+.section-header {
+	display: flex;
+	justify-content: left;
+	padding-bottom: 20px;
+}
+
+/* Music Streaming Website */
+/* ############## Header ############## */
+header {
+	position: fixed;
+	width: 100%;
+	background-color: #eeeded;
+	display: flex;
+	justify-content: center;
+	z-index: 1000;
+	transition: 0.35s;
+}
+
+header.dark {
+	background-color: rgb(23, 20, 20);
+}
+
+.header-inner {
+	width: 1300px;
+	padding: 20px 0;
+}
+
+.lnb.dark a {
+	color: #fff;
+}
+
+.lnb {
+}
+
+.logo {
+	height: 50px;
+	width: 200px;
+}
+
+.logo a {
+	display: inline-block;
+	background: url('../resources/images/Logo.png') no-repeat center center;
+	background-size: cover;
+	width: 200px;
+	height: 50px;
+	transition: 0.2s;
+}
+
+.logo.dark a {
+	display: inline-block;
+	background: url('../resources/images/Logodark.png') no-repeat center center;
+	background-size: cover;
+	width: 200px;
+	height: 50px;
+	transition: 0.2s;
+}
+
+.banner {
+	display: flex;
+	justify-content: space-between;
+	height: 50px;
+	line-height: 60px;
+}
+
+.lnb {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	line-height: 50px;
+}
+
+.lnb a {
+	transition: 0.1s;
+	letter-spacing: 0.2dvh;
+}
+
+.lnb a:hover {
+	font-weight: 500;
+}
+
+.darkmode {
+	width: 30px;
+	cursor: pointer;
+	line-height: 50px;
+}
+
+.darkmode:before {
+	content: '\F497';
+	font-family: bootstrap-icons;
+}
+
+.darkmode.on:before {
+	content: '\F1D2';
+	font-family: bootstrap-icons;
+	color: #fff;
+}
+
+
+/* ############## Login ############## */
+.login {
+	padding-top: 50px;
+  height: 100vh;
+}
+.login-form-inner {
+  padding: 100px;
+
+}
+.login-form {
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 100px 50px;
+  justify-content: center;
+}
+.login-form h1 {
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  /* transition: 0.3s; */
+}
+.login-form.dark h1 {
+  color: #fff;
+}
+.login-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.accountId, .password {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.accountId-text, 
+.password-text {
+  padding: 20px 10px;
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid #bbb;
+  background-color: transparent;
+}
+.login-form.dark .accountId-text, 
+.login-form.dark .password-text {
+  color: #fff;
+}
+.accountId-text:focus, 
+.password-text:focus {
+  border-bottom: 3px solid #bbb;
+}
+.login-checks {
+  display: flex;
+  justify-content: center;
+  gap: 30%;
+  font-size: 13px;
+  transition: 0.2s;
+}
+.login-form.dark .login-check-inner,
+.login-form.dark .login-checks a {
+  color: #fff;
+}
+.login-check:hover {
+  font-weight: 500;
+}
+.login-check-inner {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+.login-btn-inner {
+  display: flex;
+  justify-content: center;
+}
+.login-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: 2px;
+  gap: 20px;
+  width: 50%;
+}
+.login-btn {
+  color: #fff;
+  background-color: #000;
+  padding: 15px 0;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  transition: 0.2s;
+}
+.login-btn:hover {
+  background-color: #bbb;
+  color: #000;
+}
+
+/* ############## Footer ############## */
+footer {
+	display: flex;
+	justify-content: center;
+	background-color: #555;
+	color: #fff;
+	font-size: 13px;
+}
+
+footer.dark {
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	font-size: 13px;
+	background-color: rgb(23, 20, 20);
+}
+
+.footer-inner {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 1300px;
+	padding: 20px 0;
+}
+
+.footer-logo {
+}
+
+.footer-logo img {
+	width: 200px;
+	height: 50px;
+}
+
+.copyright {
+	display: flex;
+	justify-content: space-between;
+}
+
+.service span {
+	display: block;
+}
+
+.service-text {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.service-text span {
+	margin: 0 10px;
+}
+
+.service-text span:nth-child(3) {
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.service-text span:after {
+	content: '|';
+	margin-left: 20px;
+}
+
+.service-text span:last-child:after {
+	display: none;
+}
+
+.sns {
+	font-size: 30px;
+	text-align: right;
+}
+
+.sns a {
+	margin-left: 20px;
+	color: #fff;
+}
+
+.sns.dark a i {
+	color: #fff;
+}
+
+.sns a i {
+	transition: 0.3s;
+}
+
+.sns a:nth-child(1):hover i {
+	color: #1977f3;
+}
+
+.sns a:nth-child(2):hover i {
+	color: #b73498;
+}
+
+.sns a:nth-child(3):hover i {
+	color: #1da1f3
+}
+
+.sns a:nth-child(4):hover i {
+	color: #ff0000;
+}
+
+.sub-text {
+	border-top: 1px solid #fff;
+}

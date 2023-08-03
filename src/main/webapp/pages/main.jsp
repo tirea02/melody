@@ -2420,7 +2420,7 @@
         </div>
       </div>
     </section>
-
+    <!-- Chat-Helper -->
     <div class="chat-helper-icon">
       <button class="chat-helper-start">
         <img class="chat-helper-img" src="../resources/images/chat-helper.png">
@@ -2434,7 +2434,7 @@
           <textarea cols="100%" rows="4" class="user-chat"></textarea>
           <button type="submit" class="helper-send">Send</button>
         </div>
-      </from>
+      </form>
     </div>
 
     <!-- Footer -->
