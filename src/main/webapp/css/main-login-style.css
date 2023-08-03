@@ -201,7 +201,6 @@ header.dark {
 
 .lnb a:hover {
 	font-weight: 500;
-	color: inherit;
 }
 
 .darkmode {
@@ -247,6 +246,7 @@ nav {
 		10px;
 	position: absolute;
 	top: 0;
+	left: 50%;
 	transform: translate(-100%, -10%);
 }
 
@@ -570,7 +570,6 @@ nav {
 	color: #fff;
 }
 
-/* ############## Chat Helper ############## */
 .chat-helper-icon {
 	position: fixed;
 	width: 60px;
@@ -603,7 +602,7 @@ nav {
 .chat-helper-main {
 	border: 1px solid #ccc;
 	border-radius: 10px;
-	background-color: #d5c0dc;
+	background-color: #d9d9ff;
 	height: 450px;
 	width: 300px;
 	position: fixed;
@@ -627,7 +626,7 @@ nav {
 	content: '';
 	border-bottom: 1px solid #ccc;
 	border-right: 1px solid #ccc;
-	background-color: #d5c0dc;
+	background-color: #d9d9ff;
 	display: block;
 	width: 30px;
 	height: 30px;
@@ -653,7 +652,7 @@ nav {
 	flex-direction: column;
 }
 .helper-text {
-	/* border: 3px solid blue; */
+	border: 1px solid #ccc;
 	background-color: #eee;
 	border-radius: 5px;
 	flex: 3;
@@ -680,10 +679,11 @@ nav {
 	flex: 0.5;
 	font-size: 13px;
 	border: 1px solid #ccc;
-	transition: 0.2s;
+	transition: 0.1s;
 }
 .helper-send:hover {
-	border: 1px solid #5c5c5c;
+	/* border: 1px solid #5c5c5c; */
+  font-weight: 500;
 }
 
 /* ############## Footer ############## */
