@@ -101,6 +101,26 @@ public class SongDAO {
         return songs;
     }
 
+
+    public List<Song> getSongsByGenre(int genreId) {
+        List<Song> songs = new ArrayList<>();
+        String searchQuery = "SELECT s.* FROM Song s WHERE s.Genre_ID = ? order by likes desc";
+        try (Connection connection = DatabaseConfig.getConnection();
+             PreparedStatement statement = connection.prepareStatement(searchQuery)) {
+            statement.setInt(1, genreId);
+
+            try (ResultSet resultSet = statement.executeQuery()) {
+                while (resultSet.next()) {
+                    Song song = createSongFromResultSet(resultSet);
+                    songs.add(song);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return songs;
+    }
+
     // Method to search for Songs based on the provided criteria
     public List<Song> searchSongs(String query) {
         List<Song> songs = new ArrayList<>();
@@ -141,7 +161,7 @@ public class SongDAO {
         // Fetch the list of hashtags for the song using SongDAO.getHashtagsForSong()
 
         List<Hashtag> hashtags = getHashtagsForSongNoMatch(songId);
-        logger.debug(hashtags.toString());
+//        logger.debug(hashtags.toString());
         song.setSongHashtags(hashtags);
         song.setUrl(resultSet.getString("URL"));
         return song;

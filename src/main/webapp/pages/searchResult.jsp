@@ -13,8 +13,9 @@
 <h2>Artists:</h2>
 <c:if test="${not empty singers}">
   <c:forEach items="${singers}" var="singers">
-    <p>${singers.singerName}</p>
-    <p>${singers.singerHashtags}</p>
+    <p>아티스트 : ${singers.singerName}</p>
+    <p>아티시트 해쉬태그 : ${singers.singerHashtags}</p>
+    <P><img src="${singers.singerPhoto}"/></P>
     <!-- Display more artist information as needed -->
   </c:forEach>
 </c:if>
@@ -25,14 +26,15 @@
 <h2>Songs:</h2>
 <c:if test="${not empty songs}">
   <c:forEach items="${songs}" var="song">
-    <p>${song.title}</p>
-    <p>${song.songInfo}</p>
+    <p>곡 제목 : ${song.title}</p>
+    <p>곡 정보 : ${song.songInfo}</p>
 
     <c:forEach items="${song.songHashtags}" var="hashtags">
-      <p>${hashtags.hashtagValue}</p>
+      <p>#${hashtags.hashtagValue}</p>
     </c:forEach>
 
     <!-- Display more song information as needed -->
+    <br>
   </c:forEach>
 </c:if>
 <c:if test="${empty songs}">
@@ -42,9 +44,10 @@
 <h2>Albums:</h2>
 <c:if test="${not empty albums}">
   <c:forEach items="${albums}" var="album">
-    <p>${album.albumTitle}</p>
-    <p>${album.albumInfo}</p>
-    <p>${album.musicVideoLink}</p>
+    <P><img src="${album.coverPhoto}"/></P>
+    <p>엘범 타이틀 : ${album.albumTitle}</p>
+    <p>엘범 정보 : ${album.albumInfo}</p>
+    <p>뮤직 비디오 링크 : ${album.musicVideoLink}</p>
     <!-- Display more album information as needed -->
   </c:forEach>
 </c:if>
