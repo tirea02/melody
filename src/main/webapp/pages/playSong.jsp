@@ -26,7 +26,6 @@ Song.
           </div>
         </div>
         
-
         <div class="info">
           <audio class="audio" preload="metadata">
             <source src="/mp3/ditto_31.mp3" type="audio/mp3">
@@ -62,32 +61,5 @@ Song.
           </div>
         </div>
       </div>
-
-
-
-      <!-- Playlist section
-      <div id="playlist">
-        <h3>Playlist</h3>
-        <ul id="songList"></ul>
-    </div>
-
-    <script>
-        // JavaScript code to populate the playlist
-        document.addEventListener('DOMContentLoaded', function() {
-            const songs = [
-                { name: 'Super Shy', artist: 'NewJeans' },
-                { name: '셀러브리티', artist: 'IU' },
-                // Add more songs to the array as needed
-            ];
-          
-            const songList = document.getElementById('songList');
-          
-            songs.forEach(song => {
-                const listItem = document.createElement('li');
-                listItem.innerText = `${song.name} - ${song.artist}`;
-                songList.appendChild(listItem);
-            });
-        });
-    </script> -->
 </body>
 </html>
