@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Dongle:wght@300;400;700&family=Poppins:wght@300&display=swap');
+body {
+  background: whitesmoke;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+#player {
+  background: white;
+  margin: auto;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px gray;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  padding: 10px 0;
+}
+
+.clicked {
+  color: #49654D;
+  transform: scale(1.2);
+  transition: all 0.2s ease;
+}
+
+.info {
+  display: flex;
+}
+.info-sub {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 2;
+}
+
+.progressBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.progressBar-main {
+  flex: 1;
+  text-align: center;
+}
+
+#progress {
+  background: #c2d2d9;
+  -webkit-appearance: none;
+  width: 90%;
+  height: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 5px solid #89a3a9;
+}
+
+.album-cover {
+}
+.album-img-inner {
+  background: url("https://search.pstatic.net/sunny/?src=https%3A%2F%2Fimage.bugsm.co.kr%2Falbum%2Fimages%2F500%2F40885%2F4088574.jpg&type=sc960_832") center center;
+  background-repeat: no-repeat;
+  background-size: 70px;
+  border-radius: 20px;
+  width: 80px;
+  height: 80px;
+  margin-left: 20px;
+  margin-top: 6px;
+}
+
+.current, .duration {
+  color: #364F3C;
+  font-size: 12px;
+  flex: 1;
+  text-align: center;
+}
+
+.currentlyPlaying {
+  margin-bottom: 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+}
+
+.heart {
+  flex: 0.2;
+  padding: 0 10px;
+  position: relative;
+}
+.blankedHeart, .coloredHeart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.blankedHeart {
+  transition: all 1s ease;
+  cursor: pointer;
+}
+.coloredHeart {
+  transition: all 1s ease;
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.currentlyPlaying-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-left: 1px solid #bbb;
+  padding-left: 15px;
+}
+
+.songName, .artistName {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+.songName {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #364F3C;
+}
+.artistName {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #557c5f;
+}
+
+.controls {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-size: 0.8em;
+  justify-content: center;
+  color: #89a9a9;
+  text-align: center;
+  flex: 2;
+  padding: 0 10px;
+}
+.controls > div {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.controls div i {
+  cursor: pointer;
+}
+
+.controls .play, .controls .pause {
+  color: #6e946c;
+}
+.music-timer {
+  display: flex;
+  gap: 5px;
+  justify-content:space-between;
+}
+
+.volume-btn {
+  position: relative;
+  font-size: 0.8em;
+}
+
+.controls .volumeCtrl {
+  width: 90px;
+  height: 15px;
+  background: hsl(117, 16%, 80%);
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  align-items: center;
+}
+.controls .volumeCtrl.hidden {
+  display: none;
+}
+.volume-bar {
+  position: relative;
+  height: 100%;
+}
+.controls .volumeBg {
+  width: 85%;
+  height: 50%;
+  border-radius: 3px;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  overflow: hidden;
+}
+
+.volumeRange {
+  margin: 0;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  overflow: hidden;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.controls .volumeRange:focus {
+  outline: none;
+}
+.controls .volumeRange::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+.controls .volumeRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: -100vw 0 0 100vw gray;
+}
+
+.controls .repeat {
+  font-size: 0.8em;
+}
+
+.controls .shuffle {
+  font-size: 0.8em;
+}
+
+.controls .option {
+  font-size: 0.8em;
+}
+
+.play, .pause, .next, .previous, .option, .add, .volume, .shuffle {
+  transition: all 0.5s ease;
+}
+.play:hover, .pause:hover, .next:hover, .previous:hover, .option:hover, .add:hover, .volume:hover, .shuffle:hover {
+  color: #557c5f;
+}
