@@ -2434,7 +2434,7 @@
           <textarea cols="100%" rows="4" class="user-chat"></textarea>
           <button type="submit" class="helper-send">Send</button>
         </div>
-      </from>
+      </form>
     </div>
 
     <!-- Footer -->
