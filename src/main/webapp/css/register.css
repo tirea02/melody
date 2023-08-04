@@ -201,6 +201,13 @@ header.dark {
   border: 1px solid #bbb;
   background-color: transparent;
 }
+.registrationForm.dark .registration-text input[type=text],
+.registrationForm.dark .registration-text input[type=date],
+.registrationForm.dark .registration-text input[type=email],
+.registrationForm.dark .registration-text input[type=password],
+.registrationForm.dark .registration-text input[type=text] {
+	color: #fff;
+}
 .registration-text input[type=date] {
   cursor: pointer;
   position: relative;
