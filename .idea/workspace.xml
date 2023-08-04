@@ -9,18 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="add image url field to Song object and set to default&#10;adding when need song image">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/controller/ArtistServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/ArtistServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/controller/user/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/user/RegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/util/DatabaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/util/DatabaseConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/main-custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/main-custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/searchResult-login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/searchResult-login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/searchResult.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/searchResult.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="주환님 코드에서 c prefix 빠진 부분 수정&#10;&#10;main.jsp 에서 artist data fetch 및 렌더링 구현&#10;css 수정해야함" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="newMaster-temp" />
+        <entry key="$PROJECT_DIR$" value="newMaster" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -417,7 +406,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691112085889</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="주환님 코드에서 c prefix 빠진 부분 수정&#10;&#10;main.jsp 에서 artist data fetch 및 렌더링 구현&#10;css 수정해야함">
+      <option name="closed" value="true" />
+      <created>1691133921000</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1691133921000</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +479,8 @@
     <MESSAGE value="의미없는 주석 삭제" />
     <MESSAGE value=".idea" />
     <MESSAGE value="add image url field to Song object and set to default&#10;adding when need song image" />
-    <option name="LAST_COMMIT_MESSAGE" value="add image url field to Song object and set to default&#10;adding when need song image" />
+    <MESSAGE value="주환님 코드에서 c prefix 빠진 부분 수정&#10;&#10;main.jsp 에서 artist data fetch 및 렌더링 구현&#10;css 수정해야함" />
+    <option name="LAST_COMMIT_MESSAGE" value="주환님 코드에서 c prefix 빠진 부분 수정&#10;&#10;main.jsp 에서 artist data fetch 및 렌더링 구현&#10;css 수정해야함" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
