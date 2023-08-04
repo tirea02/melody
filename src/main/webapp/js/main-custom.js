@@ -39,16 +39,18 @@ $(function(){
     draggable: false
   });
 
-  $('.artist-slider').slick({
-    dots: true,
-    infinite: true,
-    centerMode: true,
-    centerPadding: '10px',
-    speed: 1000,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    draggable: false
-  });
+  // $('.artist-slider').slick({
+  //   dots: true,
+  //   infinite: true,
+  //   centerMode: true,
+  //   centerPadding: '10px',
+  //   speed: 1000,
+  //   autoplay: true,
+  //   autoplaySpeed: 4000,
+  //   draggable: false,
+  //   slidesToShow: 5,
+  //   slidesToScroll: 5
+  // });
 
   $('.musicvideo-slider').slick({
     dots: true,
@@ -94,6 +96,7 @@ $(function(){
     $(this).siblings().removeClass('active')
   })
 
+
   //Genre Tab menu
   $('.genre-tab1').show()
   $('.genre-btn-tab a:nth-child(1)').click(function(){
@@ -101,6 +104,8 @@ $(function(){
     $('.genre-tab2').hide()
     $('.genre-tab3').hide()
     $('.genre-tab4').hide()
+    $('.genre-tab5').hide()
+    $('.genre-tab6').hide()
     $(this).addClass('active')
     $(this).siblings().removeClass('active')
   })
@@ -109,6 +114,8 @@ $(function(){
     $('.genre-tab2').show()
     $('.genre-tab3').hide()
     $('.genre-tab4').hide()
+    $('.genre-tab5').hide()
+    $('.genre-tab6').hide()
     $(this).addClass('active')
     $(this).siblings().removeClass('active')
   })
@@ -117,6 +124,8 @@ $(function(){
     $('.genre-tab2').hide()
     $('.genre-tab3').show()
     $('.genre-tab4').hide()
+    $('.genre-tab5').hide()
+    $('.genre-tab6').hide()
     $(this).addClass('active')
     $(this).siblings().removeClass('active')
   })
@@ -125,6 +134,28 @@ $(function(){
     $('.genre-tab2').hide()
     $('.genre-tab3').hide()
     $('.genre-tab4').show()
+    $('.genre-tab5').hide()
+    $('.genre-tab6').hide()
+    $(this).addClass('active')
+    $(this).siblings().removeClass('active')
+  })
+  $('.genre-btn-tab a:nth-child(5)').click(function(){
+    $('.genre-tab1').hide()
+    $('.genre-tab2').hide()
+    $('.genre-tab3').hide()
+    $('.genre-tab4').hide()
+    $('.genre-tab5').show()
+    $('.genre-tab6').hide()
+    $(this).addClass('active')
+    $(this).siblings().removeClass('active')
+  })
+  $('.genre-btn-tab a:nth-child(6)').click(function(){
+    $('.genre-tab1').hide()
+    $('.genre-tab2').hide()
+    $('.genre-tab3').hide()
+    $('.genre-tab4').hide()
+    $('.genre-tab5').hide()
+    $('.genre-tab6').show()
     $(this).addClass('active')
     $(this).siblings().removeClass('active')
   })
