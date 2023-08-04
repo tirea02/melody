@@ -26,6 +26,16 @@ public class CustomPlaylistDeleteServelt extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException{
 		
-		request.getRequestDispatcher("/pages/main-login.jsp").forward(request, response);
+		long playlistId = Long.parseLong(request.getParameter("playlistId"));
+		PlaylistDAO playlistDAO = new PlaylistDAO();
+		try {
+			playlistDAO.deletePlaylist(playlistId);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+				
+		
+		response.sendRedirect("pages/main-login.jsp");
+//		request.getRequestDispatcher("/pages/main-login.jsp").forward(request, response);
 	}
 }

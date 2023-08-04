@@ -83,10 +83,8 @@
                     <span>${playlist.playlistName}</span>
                   </div>
                 </div>
-            </c:forEach>
-            
-            
-          	<div class="myplatlist=delete">
+                
+           	<div class="myplatlist=delete">
             	<a href="<c:url value='/customPlaylistDelete'>
                 	<c:param name='playlistId' value='${playlist.playlistId}' />
                 	</c:url>">
@@ -99,9 +97,9 @@
                	</div>
                	</a>
             </div>
-            
-            
-            
+                
+                
+            </c:forEach>
           </div>
           </c:forEach>
         </div>
