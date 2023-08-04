@@ -104,7 +104,12 @@ public class SongDAO {
 
     public List<Song> getSongsByGenre(int genreId) {
         List<Song> songs = new ArrayList<>();
-        String searchQuery = "SELECT s.* FROM Song s WHERE s.Genre_ID = ? order by likes desc";
+        String searchQuery = "SELECT s.*, a.Cover_Photo AS imageUrl " +
+                "FROM Song s " +
+                "JOIN Album a ON s.Album_ID = a.Album_ID " +
+                "WHERE s.Genre_ID = ? " +
+                "ORDER BY s.likes DESC";
+
         try (Connection connection = DatabaseConfig.getConnection();
              PreparedStatement statement = connection.prepareStatement(searchQuery)) {
             statement.setInt(1, genreId);
@@ -112,6 +117,7 @@ public class SongDAO {
             try (ResultSet resultSet = statement.executeQuery()) {
                 while (resultSet.next()) {
                     Song song = createSongFromResultSet(resultSet);
+                    song.setImageUrl(resultSet.getString("imageUrl"));
                     songs.add(song);
                 }
             }
