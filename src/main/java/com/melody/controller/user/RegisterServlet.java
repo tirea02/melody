@@ -66,6 +66,7 @@ public class RegisterServlet extends HttpServlet {
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
         response.getWriter().println("<div style='background-color: #d4edda; color: #155724; padding: 10px;'>Registration Successful!</div>");
-        response.sendRedirect(request.getContextPath() + "/userDetail?userAccountId=" + newUserId);
+        response.sendRedirect(request.getContextPath() + "/pages/main.jsp");
+//        response.sendRedirect(request.getContextPath() + "/userDetail?userAccountId=" + newUserId);
     }
 }

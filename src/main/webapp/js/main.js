@@ -45,6 +45,19 @@ $(document).ready(function() {
             dataType: "json",
             success: function(data) {
                 renderArtists(data); // Render the list of artists
+                $('.artist-slider').slick({
+                    dots: true,
+                    infinite: true,
+                    centerMode: true,
+                    centerPadding: '10px',
+                    speed: 1000,
+                    autoplay: true,
+                    autoplaySpeed: 4000,
+                    draggable: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 4
+                });
+
             },
             error: function(xhr, status, error) {
                 console.error("AJAX request error:", status, error);
@@ -54,22 +67,31 @@ $(document).ready(function() {
 
     // Function to render the list of artists
     function renderArtists(artists) {
-        var artistList = $(".artist-list");
+        var artistSlider = $(".artist-slider");
+        var slideCount = Math.ceil(artists.length / 4); // Calculate the number of slides
 
         // Clear any existing artist data
-        artistList.empty();
+        artistSlider.empty();
 
-        // Loop through the artists and create artist items for each artist
-        $.each(artists, function(index, artist) {
-            var artistItem = $("<div>").addClass("artist-item");
-            var artistLink = $("<a>").attr("href", "#");
-            var artistImg = $("<div>").addClass("artist-img-inner").append($("<img>").attr("src", artist.imageUrl));
-            var artistText = $("<div>").addClass("artist-text").append($("<span>").text(artist.name));
+        // Loop through the slides and create artist items for each slide
+        for (var i = 0; i < slideCount; i++) {
+            var slide = $("<div>").addClass("artist-items");
 
-            artistLink.append(artistImg, artistText);
-            artistItem.append(artistLink);
-            artistList.append(artistItem);
-        });
+            // Loop through the artists and create artist items for each slide
+            for (var j = i * 3; j < Math.min((i + 1) * 3, artists.length); j++) {
+                var artistItem = $("<div>").addClass("artist-item");
+                var artistLink = $("<a>").attr("href", "#");
+                var artistImg = $("<div>").addClass("artist-img-inner").append($("<img>").attr("src", artists[j].singerPhoto));
+                var artistText = $("<div>").addClass("artist-text").append($("<span>").text(artists[j].singerName));
+
+                artistLink.append(artistImg, artistText);
+                artistItem.append(artistLink);
+                slide.append(artistItem);
+            }
+
+            artistSlider.append(slide);
+        }
+
     }
 
     // Load artists on page load
@@ -129,4 +151,6 @@ $(document).ready(function() {
         fetchGenreSongs(genreId, pageNumber);
         return false;
     });
+
+
 });
