@@ -35,7 +35,7 @@ public class PlaySongSimpleServlet extends HttpServlet {
 
                 String downloadedFilePath = YoutubeDownloader.downloadAudio(videoLink, songSimple.getTitle(), 0);
                 logger.debug(downloadedFilePath);
-                String relativePath = downloadedFilePath.substring("C:/melody".length()) + ".mp3";
+                String relativePath = downloadedFilePath.substring("C:/melody".length()) +".mp3";
                 logger.debug(relativePath);
                 songSimple.setUrl(relativePath);
 

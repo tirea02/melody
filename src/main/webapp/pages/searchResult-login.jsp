@@ -17,8 +17,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <!-- Custom Css & Js -->
-  <link rel="stylesheet" href="../css/searchResult.css">
-  <script src="../js/searchResult.js"></script>
+  <link rel="stylesheet" href="../css/searchResult-login.css">
+  <script src="../js/searchResult-login.js"></script>
   <!-- Favicon -->
   <link rel="icon" href="../resources/images/Favicon.png">
 </head>
@@ -35,8 +35,11 @@
               </a>
             </div>
             <div class="lnb">
-              <a href="#none">LOGIN</a>
-              <a href="#none">SIGN UP</a>
+              <c:if test="${not empty userAccount}">
+                <p>${userAccount.name}님 환영합니다. </p>
+              </c:if>
+              <a href="#none">LOGOUT</a>
+              <a href="#none">MY PAGE</a>
               <div class="darkmode"></div>
             </div>
           </div>
@@ -45,12 +48,7 @@
               <input type="search">
             </div>
             <div class="gnb">
-              <a href="#season">Season</a>
-              <a href="#best">Best</a>
-              <a href="#new">New</a>
-              <a href="#genre">Genre</a>
-              <a href="#artist">Artist</a>
-              <a href="#musicvideo">Music Video</a>
+
             </div>
           </nav>
       </div>
@@ -60,7 +58,6 @@
     <section class="search-results" id="search-results">
       <div class="section-inner">
         <div class="search-results-inner">
-
 
           <h2>Artist</h2>
           <c:if test="${not empty singers}">
