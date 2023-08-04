@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -10,17 +10,17 @@
   <!-- jQuery CDN -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- slick slider -->
-  <script src="../js/slick.min.js"></script>
-  <link rel="stylesheet" href="../css/slick-theme.css">
-  <link rel="stylesheet" href="../css/slick.css">
+  <script src="${pageContext.request.contextPath}/js/slick.min.js"></script>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/css/slick-theme.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/css/slick.css">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <!-- Custom Css & Js -->
-  <link rel="stylesheet" href="../css/searchResult.css">
-  <script src="../js/searchResult.js"></script>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/css/searchResult.css">
+  <script src="${pageContext.request.contextPath}/js/searchResult.js"></script>
   <!-- Favicon -->
-  <link rel="icon" href="../resources/images/Favicon.png">
+  <link rel="icon" href="${pageContext.request.contextPath}/resources/images/Favicon.png">
 </head>
 <body>
   
@@ -45,12 +45,7 @@
               <input type="search">
             </div>
             <div class="gnb">
-              <a href="#season">Season</a>
-              <a href="#best">Best</a>
-              <a href="#new">New</a>
-              <a href="#genre">Genre</a>
-              <a href="#artist">Artist</a>
-              <a href="#musicvideo">Music Video</a>
+
             </div>
           </nav>
       </div>
@@ -60,7 +55,6 @@
     <section class="search-results" id="search-results">
       <div class="section-inner">
         <div class="search-results-inner">
-
 
           <h2>Artist</h2>
           <c:if test="${not empty singers}">
@@ -119,7 +113,7 @@
     <!-- Chat-Helper -->
     <div class="chat-helper-icon">
       <button class="chat-helper-start">
-        <img class="chat-helper-img" src="../resources/images/chat-helper.png">
+        <img class="chat-helper-img" src="${pageContext.request.contextPath}/resources/images/chat-helper.png">
       </button>
     </div>
     <div class="chat-helper-main">
@@ -137,7 +131,7 @@
     <footer>
       <div class="footer-inner">
         <div class="footer-logo">
-          <img src="../resources/images/Footerlogo.png" alt="#none">
+          <img src="${pageContext.request.contextPath}/resources/images/Footerlogo.png" alt="#none">
         </div>
         <div class="copyright">
           <div class="service">
