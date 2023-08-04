@@ -83,17 +83,26 @@
                     <span>${playlist.playlistName}</span>
                   </div>
                 </div>
-
             </c:forEach>
-          </div>
+            
+            
           	<div class="myplatlist=delete">
-            	<a href="<c:url value='/CustomPlaylistDeleteServelt'>
+            	<a href="<c:url value='/customPlaylistDelete'>
                 	<c:param name='playlistId' value='${playlist.playlistId}' />
                 	</c:url>">
-               	<div calss="myplaylist-delete-text">
-               		<span>Delete MyPlaylist</span>
+               	<div class="myplaylist-delete-text">
+               	
+               		<form method="post">
+               			<input type="button" value="Delete Playlist">
+               		</form>
+
                	</div>
+               	</a>
             </div>
+            
+            
+            
+          </div>
           </c:forEach>
         </div>
       </div>
