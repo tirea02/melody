@@ -19,6 +19,7 @@ public class Song {
     private long genreId; // New field for Genre_ID
     private List<Hashtag> songHashtags;
     private String url;
+    private String imageUrl = "default.jpg";
 
     public Song(long albumId, String title, String songInfo, String lyrics, int duration, int likes, long singerId, long genreId, List<Hashtag> songHashtags, String url) {
         this.albumId = albumId;

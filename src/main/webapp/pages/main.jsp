@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
 <html lang="ko">
@@ -21,6 +21,9 @@
   <script src="../js/main-custom.js"></script>
   <!-- Favicon -->
   <link rel="icon" href="../resources/images/Favicon.png">
+  <script>
+    let contextPath = '<%= request.getContextPath() %>';
+  </script>
 </head>
 <body>
     
@@ -1516,10 +1519,10 @@
         </div>
         <div class="genre-tab-inner">
           <div class="genre-btn-tab">
-            <a href="#none" class="active">Ballad</a>
-            <a href="#none">Rap</a>
-            <a href="#none">Ost</a>
-            <a href="#none">Pop</a>
+            <a href="#none" class="active">Dance</a>
+            <a href="#none">Ballad</a>
+            <a href="#none">POP</a>
+            <a href="#none">ROCK</a>
           </div>
           <div class="genre-tabs">
             <div class="genre-tab1">
@@ -2478,6 +2481,6 @@
       </div>
     </footer>
   </div>
-
+<script src="${pageContext.request.contextPath}/js/main.js"></script>
 </body>
 </html>
