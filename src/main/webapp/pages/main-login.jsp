@@ -88,12 +88,12 @@
             	<a href="<c:url value='/customPlaylistDelete'>
                 	<c:param name='playlistId' value='${playlist.playlistId}' />
                 	</c:url>">
-               	<div class="myplaylist-delete-text">
+               	<div class="myplaylist-delete-button">
                	
                		<form method="post">
                			<input type="button" value="Delete Playlist">
                		</form>
-
+               		
                	</div>
                	</a>
             </div>
