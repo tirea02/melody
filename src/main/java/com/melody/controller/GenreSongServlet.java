@@ -1,6 +1,7 @@
 package com.melody.controller;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 import com.melody.dao.AlbumDAO;
 import com.melody.dao.SongDAO;
 import com.melody.model.Album;
@@ -25,20 +26,27 @@ public class GenreSongServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
         String genreIdParam = request.getParameter("genreId");
         int genreId = Integer.parseInt(genreIdParam);
-        SongDAO songDAO = new SongDAO();
-        AlbumDAO albumDAO = new AlbumDAO();
+        int pageNumber = Integer.parseInt(request.getParameter("pageNumber"));
+        int pageSize = 10; // Number of songs to display per page
 
-        List<Song> songs = songDAO.getSongsByGenre(genreId);
+        SongDAO songDAO = new SongDAO();
+
+        List<Song> songs = songDAO.getSongsByGenre(genreId, pageNumber, pageSize);
+        int totalSongs = songDAO.getTotalSongsByGenre(genreId);
+
 
         logger.debug("songs : {}", songs);
 
         // Use Gson to convert the song list to JSON
-        Gson gson = new Gson();
-        String jsonSongs = gson.toJson(songs);
+        JsonObject jsonObject = new JsonObject();
+        jsonObject.add("songs", new Gson().toJsonTree(songs));
+        jsonObject.addProperty("totalSongs", totalSongs);
+        jsonObject.addProperty("songsPerPage", pageSize);
+
 
         // Set the content type of the response to JSON
         response.setContentType("application/json");
         // Write the JSON string to the response
-        response.getWriter().write(jsonSongs);
+        response.getWriter().write(jsonObject.toString());
     }
 }

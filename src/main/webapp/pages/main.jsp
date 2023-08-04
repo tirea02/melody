@@ -10,17 +10,17 @@
   <!-- jQuery CDN -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- slick slider -->
-  <script src="../js/slick.min.js"></script>
-  <link rel="stylesheet" href="../css/slick-theme.css">
-  <link rel="stylesheet" href="../css/slick.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <!-- Custom Css & Js -->
-  <link rel="stylesheet" href="../css/main-style.css">
-  <script src="../js/main-custom.js"></script>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/css/main-style.css">
+
   <!-- Favicon -->
-  <link rel="icon" href="../resources/images/Favicon.png">
+  <link rel="icon" href="${pageContext.request.contextPath}/resources/images/Favicon.png">
   <script>
     let contextPath = '<%= request.getContextPath() %>';
   </script>
@@ -1523,6 +1523,8 @@
             <a href="#none">Ballad</a>
             <a href="#none">POP</a>
             <a href="#none">ROCK</a>
+            <a href="#none">R&B</a>
+            <a href="#none">Hip Hop</a>
           </div>
           <div class="genre-tabs">
             <div class="genre-tab1">
@@ -1534,169 +1536,10 @@
                   <th>재생</th>
                   <th>추가</th>
                 </tr>
-                <tr>
-                  <td>
-                    <p>1</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>2</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>3</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>4</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>5</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
+
               </table>
-              <div class="table-btn">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">7</a>
-                <a href="#">8</a>
-                <a href="#">9</a>
-                <a href="#">10</a>
-                <a href="#">></a>
+              <div class="table-btn pagination">
+
               </div>
             </div>
             <div class="genre-tab2">
@@ -1708,169 +1551,9 @@
                   <th>재생</th>
                   <th>추가</th>
                 </tr>
-                <tr>
-                  <td>
-                    <p>1</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>2</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>3</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>4</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>5</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
               </table>
               <div class="table-btn">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">7</a>
-                <a href="#">8</a>
-                <a href="#">9</a>
-                <a href="#">10</a>
-                <a href="#">></a>
+
               </div>
             </div>
             <div class="genre-tab3">
@@ -1882,169 +1565,9 @@
                   <th>재생</th>
                   <th>추가</th>
                 </tr>
-                <tr>
-                  <td>
-                    <p>1</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>2</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>3</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>4</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>5</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
               </table>
               <div class="table-btn">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">7</a>
-                <a href="#">8</a>
-                <a href="#">9</a>
-                <a href="#">10</a>
-                <a href="#">></a>
+
               </div>
             </div>
             <div class="genre-tab4">
@@ -2056,171 +1579,40 @@
                   <th>재생</th>
                   <th>추가</th>
                 </tr>
+              </table>
+              <div class="table-btn">
+              </div>
+            </div>
+
+            <div class="genre-tab5">
+              <table class="genre-table">
                 <tr>
-                  <td>
-                    <p>1</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>2</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>3</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>4</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>5</p>
-                  </td>
-                  <td>
-                    <div class="genre-song-info">
-                      <a href="#">
-                        <div class="genre-img-inner">
-                          <img src="../resources/images/MockupsUpImg.png">
-                        </div>
-                        <div class="genre-song-name">
-                          <span>
-                            Dance The Night Away
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </td>
-                  <td>
-                    <p>
-                      TWICE (트와이스)
-                    </p>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a>
-                  </td>
-                  <td>
-                    <a href="#" class="genre-plus"><i class="bi bi-plus"></i></a>
-                  </td>
+                  <th>순위</th>
+                  <th>곡</th>
+                  <th>아티스트</th>
+                  <th>재생</th>
+                  <th>추가</th>
                 </tr>
               </table>
               <div class="table-btn">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">7</a>
-                <a href="#">8</a>
-                <a href="#">9</a>
-                <a href="#">10</a>
-                <a href="#">></a>
               </div>
             </div>
+
+            <div class="genre-tab6">
+              <table class="genre-table">
+                <tr>
+                  <th>순위</th>
+                  <th>곡</th>
+                  <th>아티스트</th>
+                  <th>재생</th>
+                  <th>추가</th>
+                </tr>
+              </table>
+              <div class="table-btn">
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>
@@ -2236,90 +1628,7 @@
         </div>
         <div class="artist-inner">
           <div class="artist-slider">
-            <div class="artist-items">
-              <div class="artist-item">
-                <a href="#">
-                  <div class="artist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="artist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-              <div class="artist-item">
-                <a href="#">
-                  <div class="artist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="artist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-              <div class="artist-item">
-                <a href="#">
-                  <div class="artist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="artist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-              <div class="artist-item">
-                <a href="#">
-                  <div class="artist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="artist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="artist-items">
-              <div class="artist-item">
-                <a href="#">
-                  <div class="artist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="artist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-              <div class="artist-item">
-                <a href="#">
-                  <div class="artist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="artist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-              <div class="artist-item">
-                <a href="#">
-                  <div class="artist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="artist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-              <div class="artist-item">
-                <a href="#">
-                  <div class="artist-img-inner">
-                    <img src="../resources/images/MockupsUpImg.png">
-                  </div>
-                  <div class="artist-text">
-                    <span>TWICE (트와이스)</span>
-                  </div>
-                </a>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
@@ -2481,6 +1790,11 @@
       </div>
     </footer>
   </div>
-<script src="${pageContext.request.contextPath}/js/main.js"></script>
+  <script src="${pageContext.request.contextPath}/js/main.js"></script>
+  <script src="${pageContext.request.contextPath}/js/main-custom.js"></script>
+
+
+
+
 </body>
 </html>
