@@ -102,17 +102,21 @@ public class SongDAO {
     }
 
 
-    public List<Song> getSongsByGenre(int genreId) {
+    public List<Song> getSongsByGenre(int genreId, int pageNumber, int pageSize) {
         List<Song> songs = new ArrayList<>();
         String searchQuery = "SELECT s.*, a.Cover_Photo AS imageUrl " +
                 "FROM Song s " +
                 "JOIN Album a ON s.Album_ID = a.Album_ID " +
                 "WHERE s.Genre_ID = ? " +
-                "ORDER BY s.likes DESC";
+                "ORDER BY s.likes DESC " +
+                "OFFSET ? ROWS FETCH NEXT ? ROWS ONLY";
 
         try (Connection connection = DatabaseConfig.getConnection();
              PreparedStatement statement = connection.prepareStatement(searchQuery)) {
             statement.setInt(1, genreId);
+            int offset = (pageNumber - 1) * pageSize;
+            statement.setInt(2, offset);
+            statement.setInt(3, pageSize);
 
             try (ResultSet resultSet = statement.executeQuery()) {
                 while (resultSet.next()) {
@@ -125,6 +129,24 @@ public class SongDAO {
             e.printStackTrace();
         }
         return songs;
+    }
+
+    //페이징 위해서 전채 길이 필요
+    public int getTotalSongsByGenre(int genreId) {
+        String countQuery = "SELECT COUNT(*) FROM Song WHERE Genre_ID = ?";
+        try (Connection connection = DatabaseConfig.getConnection();
+             PreparedStatement statement = connection.prepareStatement(countQuery)) {
+            statement.setInt(1, genreId);
+
+            try (ResultSet resultSet = statement.executeQuery()) {
+                if (resultSet.next()) {
+                    return resultSet.getInt(1);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     // Method to search for Songs based on the provided criteria
