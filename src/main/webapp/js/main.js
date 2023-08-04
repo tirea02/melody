@@ -58,7 +58,7 @@ $(document).ready(function() {
             var row = $("<tr>");
             row.append("<td><p>" + (index + 1) + "</p></td>");
             row.append(
-                '<td><div class="genre-song-info"><a href="#"><div class="genre-img-inner">' +
+                '<td><div class="genre-song-info"><a href="melody_albumList.jsp"><div class="genre-img-inner">' +
                 '<img src="' + song.imageUrl + '"></div>' +
                 '<div class="genre-song-name"><span>' + song.title + '</span></div></a></div></td>'
             );
