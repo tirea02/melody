@@ -8,7 +8,7 @@
   <!-- Title -->
   <title>Melody</title>
   <!-- jQuery CDN -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   <!-- slick slider -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -20,9 +20,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Custom Css & Js -->
   <link rel="stylesheet" href="${pageContext.request.contextPath}/css/main-style.css">
-
   <script src="${pageContext.request.contextPath}/js/miniPlaySong.js"></script>
-
   <!-- Favicon -->
   <link rel="icon" href="${pageContext.request.contextPath}/resources/images/Favicon.png">
   <script>
@@ -49,7 +47,10 @@
           </div>
           <nav>
             <div class="sub-lnb">
-              <input type="search">
+              <form action="${pageContext.request.contextPath}/search" method="get">
+					  <input type="text" id="mainSearchQuery" name="mainSearchQuery" required>
+					  <button type="submit">Search</button>
+				  </form>
             </div>
             <div class="gnb">
               <a href="#season">Season</a>

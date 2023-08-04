@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class DatabaseConfig {
     private static final String DB_URL = "jdbc:oracle:thin:@localhost:1521:xe";
-    private static final String DB_USER = "MELODYTESTALPHA";
+    private static final String DB_USER = "MELODYTEST";
     private static final String DB_PASSWORD = "1234";
 
     public static Connection getConnection() throws SQLException {
