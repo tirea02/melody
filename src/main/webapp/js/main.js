@@ -39,6 +39,42 @@ $(document).ready(function() {
         });
     }
 
+    function fetchArtists() {
+        $.ajax({
+            url: contextPath + "/artistServlet", // Replace with the correct URL for fetching artists
+            dataType: "json",
+            success: function(data) {
+                renderArtists(data); // Render the list of artists
+            },
+            error: function(xhr, status, error) {
+                console.error("AJAX request error:", status, error);
+            }
+        });
+    }
+
+    // Function to render the list of artists
+    function renderArtists(artists) {
+        var artistList = $(".artist-list");
+
+        // Clear any existing artist data
+        artistList.empty();
+
+        // Loop through the artists and create artist items for each artist
+        $.each(artists, function(index, artist) {
+            var artistItem = $("<div>").addClass("artist-item");
+            var artistLink = $("<a>").attr("href", "#");
+            var artistImg = $("<div>").addClass("artist-img-inner").append($("<img>").attr("src", artist.imageUrl));
+            var artistText = $("<div>").addClass("artist-text").append($("<span>").text(artist.name));
+
+            artistLink.append(artistImg, artistText);
+            artistItem.append(artistLink);
+            artistList.append(artistItem);
+        });
+    }
+
+    // Load artists on page load
+    fetchArtists();
+
     // Loop through each genre ID and make the AJAX call
     for (var i = 0; i < genreIds.length; i++) {
         console.log(`genreIds : ${genreIds}`);
