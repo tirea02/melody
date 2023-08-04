@@ -17,6 +17,7 @@ import java.util.List;
 public class ArtistServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setCharacterEncoding("UTF-8");
         // Fetch the list of artists from the data source (e.g., database)
         SingerDAO singerDAO =  new SingerDAO();
         List<Singer> artists = null;

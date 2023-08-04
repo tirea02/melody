@@ -10,9 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="add image url field to Song object and set to default&#10;adding when need song image">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/ArtistServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/controller/ArtistServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/ArtistServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/controller/user/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/user/RegisterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/util/DatabaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/util/DatabaseConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/main-custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/main-custom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/searchResult-login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/searchResult-login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/searchResult.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/searchResult.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +45,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="newMaster-dev-dam" />
+        <entry key="$PROJECT_DIR$" value="newMaster-temp" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -127,6 +134,9 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.76">
+    <configuration name="index.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8089/melody/index.jsp">
+      <method v="2" />
+    </configuration>
     <configuration name="register.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8089/melody/pages/register.jsp">
       <method v="2" />
     </configuration>
@@ -220,12 +230,13 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JavaScript Debug.index.jsp" />
       <item itemvalue="JavaScript Debug.register.jsp" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.76" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.register.jsp" />
+        <item itemvalue="JavaScript Debug.index.jsp" />
         <item itemvalue="JavaScript Debug.register.jsp" />
         <item itemvalue="JavaScript Debug.register.jsp" />
         <item itemvalue="JavaScript Debug.register.jsp" />
