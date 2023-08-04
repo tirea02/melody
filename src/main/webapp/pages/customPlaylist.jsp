@@ -52,7 +52,8 @@
                 <p>Singer ID: ${song.singerId}</p>
                 <p>URL: ${song.url}</p>
                 <a href="<%= request.getContextPath() %>/playSong?songId=${song.songId}">Play Song</a>
-                <hr>
+                <a href="<%= request.getContextPath() %>/CustomPlaylistdeleteSong?songId=${song.songId}&playlistId=${customPlaylist.playlistId}">
+                <input type="button" value="delete song"></a>
             </div>
         </c:forEach>
     </c:if>
