@@ -42,7 +42,7 @@
       </div>
     </header>
   
-    <!-- Section : Artist -->
+    <!-- Section : Login -->
     <section class="login" id="login">
       <div class="section-inner">
         <div class="login-form-inner">
