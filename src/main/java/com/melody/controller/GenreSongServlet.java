@@ -1,8 +1,11 @@
 package com.melody.controller;
 
 import com.google.gson.Gson;
+import com.melody.dao.AlbumDAO;
 import com.melody.dao.SongDAO;
+import com.melody.model.Album;
 import com.melody.model.Song;
+import org.checkerframework.checker.units.qual.A;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,8 +26,10 @@ public class GenreSongServlet extends HttpServlet {
         String genreIdParam = request.getParameter("genreId");
         int genreId = Integer.parseInt(genreIdParam);
         SongDAO songDAO = new SongDAO();
+        AlbumDAO albumDAO = new AlbumDAO();
 
         List<Song> songs = songDAO.getSongsByGenre(genreId);
+
         logger.debug("songs : {}", songs);
 
         // Use Gson to convert the song list to JSON
