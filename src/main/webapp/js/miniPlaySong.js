@@ -37,7 +37,7 @@ $(document).ready(function() {
     blankedHeart.show();
   });  
 
-<<<<<<< HEAD
+
   //제목,가수
   function updateSongInfo(index) {
       const nextSong = songUrls[index];
@@ -48,8 +48,7 @@ $(document).ready(function() {
   // Initial song info update
   updateSongInfo(currentSongIndex);
     
-=======
->>>>>>> parent of 2416677 (add nextButton function, set arrangement)
+
   // Update the progress bar and playtime display
   audioElement.addEventListener('timeupdate', function () {
     const currentTimeValue = audioElement.currentTime;
@@ -114,7 +113,7 @@ $(document).ready(function() {
 
   //다음 곡 버튼
   nextButton.click(function () {
-<<<<<<< HEAD
+
     //const nextSong = "/mp3/사계_0.mp3"; //audioElement.src = "path_to_next_song.mp3";
     currentSongIndex = (currentSongIndex + 1) % songUrls.length;
     const nextSong = songUrls[currentSongIndex].url
@@ -122,12 +121,6 @@ $(document).ready(function() {
 	audioElement.currentTime = 0;
 	audioElement.play();
 	updateSongInfo(currentSongIndex);
-=======
-    // Implement the logic to play the next song
-    // For example: audioElement.src = "path_to_next_song.mp3";
-    // You may need to manage the playlist and track the current song index
->>>>>>> parent of 2416677 (add nextButton function, set arrangement)
-  });
 
   //셔플 버튼
   shuffleButton.click(function () {
@@ -190,4 +183,5 @@ $(document).ready(function() {
       isMuted = false;
     }
   });
+});
 });
