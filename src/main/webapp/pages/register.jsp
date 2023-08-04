@@ -35,6 +35,7 @@
               </a>
             </div>
             <div class="lnb">
+              <a href="#none">LOGIN</a>
               <a href="#none">SIGN UP</a>
               <div class="darkmode"></div>
             </div>
