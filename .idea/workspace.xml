@@ -9,7 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="주환님 코드에서 c prefix 빠진 부분 수정&#10;&#10;main.jsp 에서 artist data fetch 및 렌더링 구현&#10;css 수정해야함" />
+    <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="주환님 코드에서 c prefix 빠진 부분 수정&#10;&#10;main.jsp 에서 artist data fetch 및 렌더링 구현&#10;css 수정해야함">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/util/DatabaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/util/DatabaseConfig.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -225,9 +228,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.register.jsp" />
         <item itemvalue="JavaScript Debug.index.jsp" />
-        <item itemvalue="JavaScript Debug.register.jsp" />
-        <item itemvalue="JavaScript Debug.register.jsp" />
+        <item itemvalue="JavaScript Debug.index.jsp" />
         <item itemvalue="JavaScript Debug.register.jsp" />
         <item itemvalue="JavaScript Debug.register.jsp" />
       </list>
