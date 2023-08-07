@@ -25,7 +25,7 @@ public class PlaylistDAO {
 
             pstmt.executeUpdate();
         }
-    }
+    }   
 
     // Method to retrieve a Playlist by its playlistId from the database
     public Playlist getPlaylistById(long playlistId) throws SQLException {

@@ -29,5 +29,9 @@ public class Playlist {
         this.createdDate = createdDate;
         this.playlistHashtags = playlistHashtags;
     }
+    
+    public Playlist (long userAccountId, String playlistName, String description, Date createdDate, String playlistHashtags) {
+    	
+    }
 
 }

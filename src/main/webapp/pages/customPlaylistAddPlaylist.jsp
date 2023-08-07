@@ -9,7 +9,7 @@
 <body>
 	<!-- Create PlayList -->
 	<section>
-		<form action="${pageContext.request.contextPath}/CustomPlaylistInsert" method="posts" class="CreateMylistForm" name="CreateMylistForm">
+		<form action="${pageContext.request.contextPath}/CustomPlaylistInsert" method="post" class="CreateMylistForm" name="CreateMylistForm">
 			<h1>Create MyList</h1>
 			<div class="Mylist-text">
 				<div>
@@ -19,7 +19,7 @@
 				
 				<div>
 					<label>Description</label>
-					<input type="text" name="playlistdescription">		
+					<input type="text" name="playlistdescription">
 				</div>
 				
 				<div>
