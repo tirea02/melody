@@ -1,15 +1,13 @@
-package com.melody.controller;
+package com.melody.controller.detail;
 
 import com.melody.dao.AlbumDAO;
 import com.melody.dao.SongDAO;
 import com.melody.model.Album;
 import com.melody.model.Song;
-import org.checkerframework.checker.units.qual.A;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.sql.SQLException;
 import java.util.List;
 
 import javax.servlet.ServletException;

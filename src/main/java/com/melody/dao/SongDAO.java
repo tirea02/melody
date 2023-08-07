@@ -80,6 +80,8 @@ public class SongDAO {
     }
 
 
+
+
     // Method to update an existing Song in the database
     public void updateSong(Song song) throws SQLException {
         String sql = "UPDATE Song SET Album_ID = ?, Title = ?, Song_Info = ?, Lyrics = ?, Duration = ?, Singer_ID = ?, " +
@@ -215,6 +217,9 @@ public class SongDAO {
 //        logger.debug(hashtags.toString());
         song.setSongHashtags(hashtags);
         song.setUrl(resultSet.getString("URL"));
+
+        //feature added, new column
+        song.setPlaylistCount(resultSet.getInt("playlist_count"));
         return song;
     }
 

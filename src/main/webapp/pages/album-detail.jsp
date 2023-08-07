@@ -7,7 +7,7 @@
     <title>Album Detail</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/melody_css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script type="text/javascript" src="${pageContext.request.contextPath}/js/melody_js.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         // Add your JavaScript code here
@@ -42,8 +42,8 @@
                 <td rowspan="2" align="center">
                     <div class="rating_box">
                         <div class="rating">
-                            <span class="rating_star"></span>
-                            <input type="range" value="${album.rating}" step="1" min="0" max="5" id="ratingSlider">
+                            <span class="rating-star"></span>
+                            <input id="rating-input" type="range" value="0" step="1" min="0" max="5" >
                             <p id="rating_text">평점 ㅣ ${album.rating}</p>
                         </div>
                         <span id="currentRating"></span>
@@ -72,7 +72,7 @@
     <c:if test="${not empty songs}">
         <div>
             <c:forEach items="${songs}" var="song" varStatus="status">
-                ${status.index + 1}. <a href="${pageContext.request.contextPath}/pages/melody_songDetail.jsp?songID=${song.songId}" target="_blank">${song.title}</a> <br>
+                ${status.index + 1}. <a href="${pageContext.request.contextPath}/songDetail?songID=${song.songId}" target="_blank">${song.title}</a> <br>
             </c:forEach>
         </div>
     </c:if>
@@ -89,5 +89,8 @@
     <!-- Add the rest of your JSP code here -->
 
 </div>
+
+
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/melody_js.js"></script>
 </body>
 </html>
