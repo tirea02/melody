@@ -49,7 +49,7 @@
               <input type="search">
             </div>
             <div class="gnb">
-              <a href="#myplaylist">MyPlayList</a>
+              <a href="${pageContext.request.contextPath}/pages/myPlaylist.jsp">MyPlayList</a>
               <a href="#tag-song">Tag Song</a>
               <a href="#musicvideo">Music Video</a>
             </div>
