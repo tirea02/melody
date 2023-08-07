@@ -118,7 +118,7 @@ $(document).ready(function() {
   nextButton.click(function () {
     //const nextSong = "/mp3/사계_0.mp3"; //audioElement.src = "path_to_next_song.mp3";
     currentSongIndex = (currentSongIndex + 1) % songUrls.length;
-    const nextSong = songUrls[currentSongIndex].url
+    const nextSong = audioUrl[currentSongIndex].url
 	audioElement.src = nextSong;
 	audioElement.currentTime = 0;
 	audioElement.play();
