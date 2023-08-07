@@ -4,7 +4,7 @@ $(function(){
     $(this).toggleClass('on')
   })
   $('.darkmode').click(function(){
-	  $('body, .slick-dots, section:nth-child(odd), header, .section-header, .sub-lnb input[type=search], .lnb, .gnb, .logo, .new-text, .artist-text, .musicvideo-text, footer, .sns, .player').toggleClass('dark')
+	  $('body, .slick-dots, section:nth-child(odd), header, .section-header, .lnb, .gnb, .logo, .new-text, .artist-text, .musicvideo-text, footer, .sns, .player').toggleClass('dark')
   })
   
   //Overlay
