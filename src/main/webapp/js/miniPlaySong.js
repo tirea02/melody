@@ -7,7 +7,8 @@ $(document).ready(function() {
   // audioElement.src = mp3FilePath;
   const audioUrl = [
 	  {url: "/mp3/ditto_31.mp3", title: "Ditto", artist: "NewJeans"},
-	  {url: "/mp3/사계_0.mp3", title: "사계", artist: "태연"}
+	  {url: "/mp3/I AM_0.mp3", title: "I AM", artist: "아이브"},
+      {url: "/mp3/Dance The Night Away_0.mp3", title: "Dance The Night Away", artist: "Twice"}
   ];
 
   const progressBar = $("#progress");
@@ -44,7 +45,7 @@ $(document).ready(function() {
 
   //제목,가수
   function updateSongInfo(index) {
-      const nextSong = songUrls[index];
+      const nextSong = audioUrl[index];
       $(".songName").text(nextSong.title);
       $(".artistName").text(nextSong.artist);
   }
@@ -117,7 +118,7 @@ $(document).ready(function() {
   //다음 곡 버튼
   nextButton.click(function () {
     //const nextSong = "/mp3/사계_0.mp3"; //audioElement.src = "path_to_next_song.mp3";
-    currentSongIndex = (currentSongIndex + 1) % songUrls.length;
+    currentSongIndex = (currentSongIndex + 1) % audioUrl.length;
     const nextSong = audioUrl[currentSongIndex].url
 	audioElement.src = nextSong;
 	audioElement.currentTime = 0;

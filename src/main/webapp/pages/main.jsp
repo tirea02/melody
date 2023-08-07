@@ -1745,14 +1745,17 @@
       </button>
     </div>
     <div class="chat-helper-main">
-      <form class="chat-helper-inner">
+      <div class="chat-helper-inner">
         <div class="helper-text">
+          <h2>Answer:</h2>
+          <div id="answer">${answer}</div>
         </div>
         <div class="user-text">
-          <textarea cols="100%" rows="4" class="user-chat"></textarea>
-          <button type="submit" class="helper-send">Send</button>
+<%--          <label for="question">Enter your question:</label><br>--%>
+          <textarea id="question" rows="4" cols="100%" class="user-chat"></textarea><br>
+          <button id="submitBtn" class="helper-send">Send</button>
         </div>
-      </form>
+      </div>
     </div>
 
     <!-- Footer -->
