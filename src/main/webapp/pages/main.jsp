@@ -49,9 +49,9 @@
           <nav>
             <div class="sub-lnb">
               <form action="${pageContext.request.contextPath}/search" method="get">
-					  <input type="text" id="mainSearchQuery" name="mainSearchQuery" required>
-					  <button type="submit">Search</button>
-				  </form>
+                <input type="text" id="mainSearchQuery" name="mainSearchQuery" required>
+                <button type="submit"></button>
+              </form>
             </div>
             <div class="gnb">
               <a href="#season">Season</a>

@@ -52,7 +52,10 @@
           </div>
           <nav>
             <div class="sub-lnb">
-              <input type="search">
+              <form action="${pageContext.request.contextPath}/search" method="get">
+                <input type="text" id="mainSearchQuery" name="mainSearchQuery" required>
+                <button type="submit"></button>
+              </form>
             </div>
             <div class="gnb">
               <a href="#myplaylist">MyPlayList</a>
