@@ -63,14 +63,28 @@
         <div class="section-header">
           <h2 class="content-heading">
             <b>My Playlist</b>
+            
+            <form action="${pageContext.request.contextPath}/CustomPlaylistInsert" method="post">
+                <input type="submit" value="Create MyList">
+            </form>
+            
+			  <c:forEach items="${sessionScope.customPlaylists}" var="playlist">
+                  <div class="myplaylist-delete">
+                        <a href="<c:url value='/CustomPlaylistDelete'>
+                            <c:param name='playlistId' value='${playlist.playlistId}' />
+                        	</c:url>">
+                  			<input type="button" value="playlist">
+                  		</a>
+                  </div>
+              </c:forEach>
+              
           </h2>
         </div>
         <div class="myplaylist-inner">
           <div class="myplaylist-slider">
             <c:forEach items="${sessionScope.customPlaylists}" var="playlist">
-            <div class="myplaylist-items">
+            <div class="myplaylist-items">        
               <c:forEach items="${playlist.songs}" var="song">
-
                 <div class="myplaylist-item">
                   <a href="<c:url value='/customPlaylist'>
                             <c:param name='playlistId' value='${playlist.playlistId}' />

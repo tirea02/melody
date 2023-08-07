@@ -18,7 +18,7 @@ import com.melody.model.Playlist;
 /**
  * Servlet implementation class CustomPlaylistDeleteServelt
  */
-@WebServlet("/customPlaylistDelete")
+@WebServlet("/CustomPlaylistDelete")
 public class CustomPlaylistDeleteServelt extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static final Logger logger = LoggerFactory.getLogger(CustomPlaylistServlet.class);
