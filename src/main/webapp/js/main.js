@@ -4,6 +4,8 @@ $(document).ready(function() {
     var currentPage = {};
     var totalPages = {};
 
+    initializeChatHelper();
+
     // $('.genre-tab1').show();
     //
     // $('.genre-btn-tab a').click(function() {
@@ -154,3 +156,25 @@ $(document).ready(function() {
 
 
 });
+
+
+function initializeChatHelper() {
+    const submitBtn = $("#submitBtn");
+    const questionInput = $("#question");
+    const answerDiv = $("#answer");
+
+    submitBtn.click(function(e) {
+        e.preventDefault(); // Prevent the default form submission
+
+        const question = questionInput.val();
+        if (question.trim() === "") {
+            return;
+        }
+
+        // Send AJAX request to the servlet
+        $.get(contextPath+"/pythonExecutor", { question: question }, function(data) {
+            // Update the answer area with the response
+            answerDiv.html(data);
+        });
+    });
+}

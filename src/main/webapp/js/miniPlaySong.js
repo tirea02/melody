@@ -7,7 +7,8 @@ $(document).ready(function() {
   // audioElement.src = mp3FilePath;
   const audioUrl = [
 	  {url: "/mp3/ditto_31.mp3", title: "Ditto", artist: "NewJeans"},
-	  {url: "/mp3/사계_0.mp3", title: "사계", artist: "태연"}
+	  {url: "/mp3/I AM_0.mp3", title: "I AM", artist: "아이브"},
+      {url: "/mp3/Dance The Night Away_0.mp3", title: "Dance The Night Away", artist: "Twice"}
   ];
 
   const progressBar = $("#progress");
