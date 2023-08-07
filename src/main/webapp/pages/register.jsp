@@ -11,9 +11,12 @@
   <!-- jQuery CDN -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- slick slider -->
-  <script src="../js/slick.min.js"></script>
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/css/slick-theme.css">
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/css/slick.css">
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -31,13 +34,12 @@
       <div class="header-inner">
           <div class="banner">
             <div class="logo">
-              <a href="#">
+              <a href="${pageContext.request.contextPath}/pages/main.jsp">
                 <!-- <img src="../resources/images/Logo.png"> -->
               </a>
             </div>
             <div class="lnb">
-              <a href="#none">LOGIN</a>
-              <a href="#none">SIGN UP</a>
+              <a href="${pageContext.request.contextPath}/pages/login.jsp">LOGIN</a>
               <div class="darkmode"></div>
             </div>
           </div>

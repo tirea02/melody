@@ -31,7 +31,7 @@ public class PythonExecutorServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String question = request.getParameter("question");
-        String token = "ZQh13qusT4H_k4B40YJmBCcfWDKHvzNwaQjT-IlvEJXjlBPzS6NYIvaDNSnA0ZHyBUbN8Q."; // Your BARD API token
+        String token = "Zgh13oZedLNo38-iInpbjddU_DQj5JAoHO4WuIz3Bl7CpNaxDTSks1LwRDpRV0i5pqOKWg."; // Your BARD API token
 
         String answer = executePythonScript(question, token);
         logger.debug("Answer : {}", answer);
@@ -42,15 +42,11 @@ public class PythonExecutorServlet extends HttpServlet {
         // Forward the request to the JSP page for rendering
         response.setContentType("text/plain");
         response.setCharacterEncoding("UTF-8");
-        request.getRequestDispatcher("/index.jsp").forward(request, response);
-        
+//        index 에서 사용할때
+//        request.getRequestDispatcher("/pages/main.jsp").forward(request, response);
+        response.getWriter().write(answer);
 
-//        response.setContentType("text/plain");
-//        response.setCharacterEncoding("UTF-8");
-//        PrintWriter out = response.getWriter();
-//
-//        out.print(answer);
-//        out.flush();
+
     }
 
     private String executePythonScript(String question, String token) throws IOException {

@@ -22,6 +22,8 @@
         <div>
           <div class="album">
             <div class="albumImg">
+                <img src="${album.coverPhoto}" alt="this is alt">
+
               
             </div>
             <div class="blankedHeart"><i class="fa-regular fa-heart fa-flip-x fa-xl" style="color: pink;"></i></div>
@@ -42,26 +44,12 @@
           </div>
 
           <div class="currentlyPlaying">
-              <h1 class="songName"><%= ((Song) request.getAttribute("song")).getTitle() %></h1>
-              <%
-                  try {
-                      SingerDAO singerDAO = new SingerDAO();
-                      long singerId = ((Song) request.getAttribute("song")).getSingerId();
-                      String singerName = singerDAO.getSingerById(singerId).getSingerName();
-              %>
-              <h1 class="artistName">Artist Name: <%= singerName %></h1>
-              <%
-              } catch (SQLException e) {
-                  e.printStackTrace();
-              %>
-              <p>Artist Name: Unknown Artist</p>
-              <%
-                  }
-              %>
+              <h1 class="songName">${song.title}</h1>
+              <h1 class="artistName">Artist Name: ${album.singerName}</h1>
+
           </div>
           
           <div class="controls">
-            <div class="option"><i class="fas fa-bars fa-2xl"></i></div>
             <div class="repeat"><i class="fa-solid fa-repeat fa-xl"></i></div>
             <div class="previous"><i class="fas fa-backward fa-xl"></i></div>
             <div class="play"><i class="fas fa-play fa-xl"></i></div>
@@ -75,7 +63,7 @@
                 <input class="volumeRange" type="range" min="0" max="100" step="1" value="50"></input>
               </div>
             </div>
-            <div class="add"><i class="fas fa-plus fa-2xl"></i></div>
+            <div class="option"><i class="fas fa-bars fa-2xl"></i></div>
           </div>
         </div>
       </div>

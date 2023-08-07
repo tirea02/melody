@@ -4,6 +4,8 @@ $(document).ready(function() {
     var currentPage = {};
     var totalPages = {};
 
+    initializeChatHelper();
+
     // $('.genre-tab1').show();
     //
     // $('.genre-btn-tab a').click(function() {
@@ -116,12 +118,12 @@ $(document).ready(function() {
             var row = $("<tr>");
             row.append("<td><p>" + (index + 1) + "</p></td>");
             row.append(
-                '<td><div class="genre-song-info"><a href="#"><div class="genre-img-inner">' +
-                '<img src="' + song.imageUrl + '"></div>' +
+                '<td><div class="genre-song-info"><a href="' + contextPath + '/albumDetail?albumID=' + song.albumId + '">' +
+                '<div class="genre-img-inner"><img src="' + song.imageUrl + '"></div>' +
                 '<div class="genre-song-name"><span>' + song.title + '</span></div></a></div></td>'
             );
             row.append("<td><p>" + song.artist + "</p></td>");
-            row.append('<td><a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a></td>');
+            row.append('<td><a href="' + contextPath + '/playSong?songId=' + song.songId + '" class="genre-play"><i class="bi bi-play-fill"></i></a></td>');
             row.append('<td><a href="#" class="genre-plus"><i class="bi bi-plus"></i></a></td>');
 
             // Append the row to the table
@@ -154,3 +156,25 @@ $(document).ready(function() {
 
 
 });
+
+
+function initializeChatHelper() {
+    const submitBtn = $("#submitBtn");
+    const questionInput = $("#question");
+    const answerDiv = $("#answer");
+
+    submitBtn.click(function(e) {
+        e.preventDefault(); // Prevent the default form submission
+
+        const question = questionInput.val();
+        if (question.trim() === "") {
+            return;
+        }
+
+        // Send AJAX request to the servlet
+        $.get(contextPath+"/pythonExecutor", { question: question }, function(data) {
+            // Update the answer area with the response
+            answerDiv.html(data);
+        });
+    });
+}

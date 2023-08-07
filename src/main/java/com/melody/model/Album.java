@@ -20,6 +20,10 @@ public class Album {
     private String musicVideoLink;
     private List<Hashtag> albumHashtags;
 
+    private String singerName = "default singerName";
+    private String genre = "default genre";
+
+
     // Constructor without ID (used when inserting new records)
 
     public Album(String albumTitle, String coverPhoto, Date releaseDate, String albumInfo, double rating, int replyCount, int likes, String musicVideoLink, List<Hashtag> albumHashtags) {

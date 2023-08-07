@@ -32,7 +32,7 @@
 <a href="pages/music-player.html">play music</a>
 
 <br>
-<a href="pages/playSong.jsp">세담 play song</a>
+<a href="playSong?songId=1">세담 play song</a>
 <br>
 
 <br>

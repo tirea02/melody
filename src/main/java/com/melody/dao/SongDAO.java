@@ -57,6 +57,31 @@ public class SongDAO {
         return null;
     }
 
+    public List<Song> getSongsByAlbumId(Long albumId) {
+        List<Song> songs = new ArrayList<>();
+        String query = "SELECT * FROM Song WHERE Album_ID = ?";
+
+        try (Connection connection = DatabaseConfig.getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)) {
+
+            statement.setLong(1, albumId);
+
+            try (ResultSet resultSet = statement.executeQuery()) {
+                while (resultSet.next()) {
+                    Song song = createSongFromResultSet(resultSet);
+                    songs.add(song);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return songs;
+    }
+
+
+
+
     // Method to update an existing Song in the database
     public void updateSong(Song song) throws SQLException {
         String sql = "UPDATE Song SET Album_ID = ?, Title = ?, Song_Info = ?, Lyrics = ?, Duration = ?, Singer_ID = ?, " +
@@ -192,6 +217,9 @@ public class SongDAO {
 //        logger.debug(hashtags.toString());
         song.setSongHashtags(hashtags);
         song.setUrl(resultSet.getString("URL"));
+
+        //feature added, new column
+        song.setPlaylistCount(resultSet.getInt("playlist_count"));
         return song;
     }
 
