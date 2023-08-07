@@ -1,5 +1,6 @@
 package com.melody.controller.user;
 
+import com.google.gson.Gson;
 import com.melody.controller.CustomPlaylistServlet;
 import com.melody.dao.PlaylistDAO;
 import com.melody.dao.UserAccountDAO;
@@ -47,11 +48,17 @@ public class LoginServlet extends HttpServlet {
         List<CustomPlaylist> customPlaylists = playlistDAO.getAllPlaylistsForUser(userAccount.getUserAccountId());
         logger.debug("customPlaylists : {}" , customPlaylists);
 
+        Gson gson = new Gson();
+        String jsonCustomPlaylists = gson.toJson(customPlaylists);
+
+
+
 
         if (userAccount != null) {
             // If the user is valid, store the UserAccount object in the user's session
             request.getSession().setAttribute("userAccount", userAccount);
             request.getSession().setAttribute("customPlaylists", customPlaylists);
+            request.setAttribute("jsonCustomPlaylists", jsonCustomPlaylists);
             response.sendRedirect(request.getContextPath() + "/userDetail");
         } else {
             // If the user is not valid, display an error message

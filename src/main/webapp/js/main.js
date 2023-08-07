@@ -6,18 +6,7 @@ $(document).ready(function() {
 
     initializeChatHelper();
 
-    // $('.genre-tab1').show();
-    //
-    // $('.genre-btn-tab a').click(function() {
-    //     var genreId = $(this).attr('data-genre-id');
-    //
-    //     // Show the corresponding genre-tab and hide others
-    //     $('.genre-tab').hide();
-    //     $('.genre-tab' + genreId).show();
-    //
-    //     // Add 'active' class to the clicked tab and remove from siblings
-    //     $(this).addClass('active').siblings().removeClass('active');
-    // });
+
 
     // Function to make the AJAX call to retrieve song data for each genre ID
     function fetchGenreSongs(genreId, pageNumber) {
@@ -124,12 +113,49 @@ $(document).ready(function() {
             );
             row.append("<td><p>" + song.artist + "</p></td>");
             row.append('<td><a href="' + contextPath + '/playSong?songId=' + song.songId + '" class="genre-play"><i class="bi bi-play-fill"></i></a></td>');
-            row.append('<td><a href="#" class="genre-plus"><i class="bi bi-plus"></i></a></td>');
+            row.append('<td><a href="#" class="genre-plus" data-songid="' + song.songId + '"><i class="bi bi-plus"></i></a></td>');
 
             // Append the row to the table
             table.append(row);
+
+            var playlistDropdown = $('<div class="playlist-dropdown" style="display: none;"></div>');
+            row.find(".genre-plus").click(function() {
+                var songId = $(this).data("songid");
+                playlistDropdown.toggle();
+
+                // Generate the playlist dropdown content
+                var playlistContent = '<ul class="playlist-list">';
+                $.each(customPlaylists, function(index, playlist) {
+                    playlistContent += '<li><a href="#" class="add-to-playlist" data-songid="' + songId + '" data-playlistid="' + playlist.playlistId + '">' + playlist.playlistName + '</a></li>';
+                });
+                playlistContent += '</ul>';
+
+                playlistDropdown.html(playlistContent);
+            });
+            // Append the playlist dropdown to the row
+            row.append(playlistDropdown);
+
         });
     }
+
+    $(document).on("click", ".add-to-playlist", function(e) {
+        e.preventDefault();
+        var songId = $(this).data("songid");
+        var playlistId = $(this).data("playlistid");
+
+        // Perform AJAX request to add song to playlist
+        $.ajax({
+            type: "POST",
+            url: "/addToPlaylist", // Replace with your servlet URL
+            data: { songId: songId, playlistId: playlistId },
+            success: function(response) {
+                // Handle success
+            },
+            error: function(xhr, status, error) {
+                // Handle error
+            }
+        });
+    });
 
     // Function to update the pagination buttons
     function updatePagination(genreId, totalPages) {
@@ -156,6 +182,7 @@ $(document).ready(function() {
 
 
 });
+
 
 
 function initializeChatHelper() {

@@ -1,6 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -25,6 +24,7 @@
 
   <!-- Favicon -->
   <link rel="icon" href="${pageContext.request.contextPath}/resources/images/Favicon.png">
+  <c:set var="customPlaylists" value="${sessionScope.customPlaylists}" />
   <script>
 	 let contextPath = '<%= request.getContextPath() %>';
   </script>
@@ -212,6 +212,8 @@
         </div>
       </div>
     </section>
+
+
 
     <!-- Section : #Tag song -->
   <
