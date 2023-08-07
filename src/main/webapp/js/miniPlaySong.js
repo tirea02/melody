@@ -160,11 +160,25 @@ $(document).ready(function() {
       isMuted = true;
     }
   });
-  
-  //volumeRangeButton 바뀔때 같이 볼륨 조정
-  function updateVolume(volume) {
-    audioElement.volume = volume;
-    if (volume === 0) {
+
+  //볼륨바 숨기기
+  volumeCtrlButton.hide();
+  volumeButton.hover(function () {
+    volumeCtrlButton.show();
+  })
+  volumeCtrlButton.mouseleave(function () {
+    volumeCtrlButton.hide();
+  })
+  muteButton.hover(function () {
+    volumeCtrlButton.hide();
+  })
+
+  //볼륨바 range 설정
+  volumeRangeButton.on("input", function () {
+    const volumeValue = parseFloat($(this).val());
+    audioElement.volume = volumeValue;
+
+    if (volumeValue === 0) {
       muteButton.show();
       volumeButton.hide();
       isMuted = true;

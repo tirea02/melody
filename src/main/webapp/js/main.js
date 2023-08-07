@@ -116,8 +116,8 @@ $(document).ready(function() {
             var row = $("<tr>");
             row.append("<td><p>" + (index + 1) + "</p></td>");
             row.append(
-                '<td><div class="genre-song-info"><a href="melody_albumList.jsp"><div class="genre-img-inner">' +
-                '<img src="' + song.imageUrl + '"></div>' +
+                '<td><div class="genre-song-info"><a href="' + contextPath + '/albumDetail?albumID=' + song.albumId + '">' +
+                '<div class="genre-img-inner"><img src="' + song.imageUrl + '"></div>' +
                 '<div class="genre-song-name"><span>' + song.title + '</span></div></a></div></td>'
             );
             row.append("<td><p>" + song.artist + "</p></td>");

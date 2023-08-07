@@ -20,7 +20,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Custom Css & Js -->
   <link rel="stylesheet" href="${pageContext.request.contextPath}/css/main-style.css">
-  <script src="${pageContext.request.contextPath}/js/miniPlaySong.js"></script>
+
+
   <!-- Favicon -->
   <link rel="icon" href="${pageContext.request.contextPath}/resources/images/Favicon.png">
   <script>
@@ -1804,7 +1805,7 @@
         <div class="album-cover">
           <div class="album-img-inner"></div>
         </div>
-        
+
         <div class="info-sub">
           <div class="progressBar">
             <div class="progressBar-main">
@@ -1846,9 +1847,17 @@
         </div>
       </div>
     </div>
+
   </div>
+  </div>
+  </div>
+
+
+
   <script src="${pageContext.request.contextPath}/js/main.js"></script>
   <script src="${pageContext.request.contextPath}/js/main-custom.js"></script>
+  <script src="${pageContext.request.contextPath}/js/miniPlaySong.js"></script>
+
 
 
 

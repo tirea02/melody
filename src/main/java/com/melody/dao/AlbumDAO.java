@@ -66,6 +66,41 @@ public class AlbumDAO {
         return null;
     }
 
+
+    //method to get album detail with multi join
+    public  Album getAlbumDetails(Long albumID) {
+        Album album = null;
+        Connection connection = null;
+        PreparedStatement statement = null;
+        ResultSet resultSet = null;
+
+        try {
+            connection = DatabaseConfig.getConnection();
+            String query = "SELECT Album.*, Singer.Singer_Name, Genre.Genre_Name, Album.Release_Date, Album.Album_Hashtags " +
+            ", Song.Title, Album.Likes, Album.Rating FROM Album " +
+            "INNER JOIN Song ON Album.Album_ID = Song.Album_ID " +
+            "INNER JOIN Singer ON Song.Singer_ID = Singer.Singer_ID " +
+            "LEFT JOIN Genre ON Song.Genre_ID = Genre.Genre_ID " +
+            "WHERE Album.Album_ID = ?";
+            statement = connection.prepareStatement(query);
+            statement.setString(1, String.valueOf(albumID));
+
+            resultSet = statement.executeQuery();
+            if (resultSet.next()) {
+             album =  createAlbumFromResultSet(resultSet);
+             album.setGenre(resultSet.getString("genre_name"));
+             album.setSingerName(resultSet.getString("singer_name"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            // Close resources
+            // Handle exceptions
+        }
+
+        return album;
+    }
+
     // Method to update an existing album in the database
     public void updateAlbum(Album album) throws SQLException {
         try (Connection connection = DatabaseConfig.getConnection();
