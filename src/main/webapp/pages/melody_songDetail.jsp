@@ -99,8 +99,17 @@ if(RS.next()==true){
 <hr>
 <h3>비디오</h3>
 <div>
-	<!-- Album_ID, Song_ID, Music_Video_Link -->
-	<iframe src="<%=M_videoURL%>" title="YouTube video player"></iframe>
+	<%
+        if (M_videoURL != null && !M_videoURL.isEmpty()) {
+    %>
+        <iframe src="<%=M_videoURL%>" title="YouTube video player"></iframe>
+    <%
+        } else {
+    %>
+        <p>관련된 영상이 없습니다.</p>
+    <%
+        }
+    %>
 </div>
 
 </body>
