@@ -855,7 +855,8 @@ nav {
 }
 
 .genre-img-inner img {
-	width: 100%;
+	width: 120px;
+	height: 120px;
 }
 
 .genre-song-name {
