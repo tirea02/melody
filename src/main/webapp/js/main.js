@@ -123,7 +123,7 @@ $(document).ready(function() {
                 '<div class="genre-song-name"><span>' + song.title + '</span></div></a></div></td>'
             );
             row.append("<td><p>" + song.artist + "</p></td>");
-            row.append('<td><a href="#" class="genre-play"><i class="bi bi-play-fill"></i></a></td>');
+            row.append('<td><a href="' + contextPath + '/playSong?songId=' + song.songId + '" class="genre-play"><i class="bi bi-play-fill"></i></a></td>');
             row.append('<td><a href="#" class="genre-plus"><i class="bi bi-plus"></i></a></td>');
 
             // Append the row to the table
