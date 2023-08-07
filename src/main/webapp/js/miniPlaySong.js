@@ -24,7 +24,9 @@ $(document).ready(function() {
   let isPlaying = false;
   let isMuted = false;
   let previousVolume = 1.0;
-  
+
+  let currentSongIndex = 0;
+
 
   //좋아요 하트
   coloredHeart.hide(); //hide coloredHeart button until clicked
@@ -47,8 +49,6 @@ $(document).ready(function() {
 
   //곡 정보 업데이트
   updateSongInfo(currentSongIndex);
-  
-  //progressBar 재생 시간 업데이트
   audioElement.addEventListener('timeupdate', function () {
     const currentTimeValue = audioElement.currentTime;
     const durationValue = audioElement.duration;
@@ -128,6 +128,7 @@ $(document).ready(function() {
     // For example: shufflePlaylistAndPlay();
     // You may need to manage the playlist and track the current song index
   });
+
 
   //볼륨바 숨기기
   volumeCtrlButton.hide();
