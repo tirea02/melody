@@ -9,9 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="temp">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="temp" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="newMaster" />
+        <entry key="$PROJECT_DIR$" value="newMaster-temp" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,7 +48,7 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="6359b923-5fc6-4219-9710-edf4a4f21c59" />
+        <option name="accountId" value="7a768764-66c1-4ca3-8ef9-6fd67a849fe9" />
         <option name="url" value="https://github.com/tirea02/melody.git" />
       </UrlAndAccount>
     </option>
@@ -229,9 +227,9 @@
       <list>
         <item itemvalue="JavaScript Debug.register.jsp" />
         <item itemvalue="JavaScript Debug.index.jsp" />
+        <item itemvalue="JavaScript Debug.register.jsp" />
         <item itemvalue="JavaScript Debug.index.jsp" />
-        <item itemvalue="JavaScript Debug.register.jsp" />
-        <item itemvalue="JavaScript Debug.register.jsp" />
+        <item itemvalue="JavaScript Debug.index.jsp" />
       </list>
     </recent_temporary>
   </component>
