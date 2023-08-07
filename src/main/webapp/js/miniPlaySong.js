@@ -5,6 +5,10 @@ $(document).ready(function() {
   const audioElement = document.querySelector("audio");
   // const mp3FilePath = "./music/NewJeans-SuperShy.mp3";
   // audioElement.src = mp3FilePath;
+  const audioUrl = [
+	  {url: "/mp3/ditto_31.mp3", title: "Ditto", artist: "NewJeans"},
+	  {url: "/mp3/사계_0.mp3", title: "사계", artist: "태연"}
+  ];
 
   const progressBar = $("#progress");
   const currentTime = $(".current");
@@ -49,6 +53,8 @@ $(document).ready(function() {
 
   //곡 정보 업데이트
   updateSongInfo(currentSongIndex);
+  
+  //progressBar 재생 시간 업데이트
   audioElement.addEventListener('timeupdate', function () {
     const currentTimeValue = audioElement.currentTime;
     const durationValue = audioElement.duration;
@@ -85,10 +91,17 @@ $(document).ready(function() {
 
   //이전 곡 버튼
   previousButton.click(function () {
-    audioElement.currentTime = 0; //Reset audio to 0 sec
-    // Implement the logic to play the previous song
-    // For example: audioElement.src = "path_to_previous_song.mp3";
-    // You may need to manage the playlist and track the current song index
+    if (audioElement.currentTime <= 2) {
+      currentSongIndex = (currentSongIndex - 1 + audioUrl.length) % audioUrl.length; // Ensure positive index
+      const prevSong = audioUrl[currentSongIndex].url;
+
+      audioElement.src = prevSong;
+      audioElement.currentTime = 0; //Reset audio to 0 sec
+      audioElement.play();
+      updateSongInfo(currentSongIndex);
+    }else {
+      audioElement.currentTime = 0;
+    }
   });
 
   //재생 버튼
@@ -145,40 +158,42 @@ $(document).ready(function() {
   //볼륨바 range 설정
   volumeRangeButton.on("input", function () {
     const volumeValue = parseFloat($(this).val());
-    volumeValue = Math.min(1, Math.max(0, volumeValue));
-    updateVolume(volumeValue);
+    audioElement.volume = volumeValue;
+    if (volumeValue === 0) {
+      muteButton.show();
+      volumeButton.hide();
+      isMuted = true;
+    } else {
+      muteButton.hide();
+      volumeButton.show();
+      isMuted = false;
+    }
   });
   
-    //소리,무음 버튼
+  //소리,무음 버튼
   muteButton.hide(); //hide mute button until clicked
   volumeButton.click(function () {
+    previousVolume = audioElement.volume;
+    audioElement.volume = 0;
+    volumeRangeButton.val(0); // Set the range value to 0
+    volumeCtrlButton.hide();
+    audioElement.play();
+    volumeButton.hide();
+    muteButton.show();
+    isMuted = true;
+  });
+  muteButton.click(function () {
     if (isMuted) {
-      updateVolume(previousVolume);
+      audioElement.volume = previousVolume;
       volumeRangeButton.val(previousVolume); // Restore the previous volume value
-      muteButton.hide();
       volumeButton.show();
+      muteButton.hide();
       isMuted = false;
-    } else {
-      previousVolume = audioElement.volume;
-      updateVolume(0);
-      volumeRangeButton.val(0); // Set the range value to 0
+    }else {
+      audioElement.play();
       muteButton.show();
       volumeButton.hide();
       isMuted = true;
     }
   });
-  
-  //volumeRangeButton 바뀔때 같이 볼륨 조정
-  function updateVolume(volume) {
-    audioElement.volume = volume;
-    if (volume === 0) {
-      muteButton.show();
-      volumeButton.hide();
-      isMuted = true;
-    } else {
-      muteButton.hide();
-      volumeButton.show();
-      isMuted = false;
-    }
-  }
 });
