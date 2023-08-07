@@ -130,7 +130,7 @@
     <!-- Chat-Helper -->
     <div class="chat-helper-icon">
       <button class="chat-helper-start">
-        <img class="chat-helper-img" src="../resources/images/chat-helper.png">
+        <img class="chat-helper-img" src="${pageContext.request.contextPath}/resources/images/chat-helper.png">
       </button>
     </div>
     <div class="chat-helper-main">
@@ -148,7 +148,7 @@
     <footer>
       <div class="footer-inner">
         <div class="footer-logo">
-          <img src="../resources/images/Footerlogo.png" alt="#none">
+          <img src="${pageContext.request.contextPath}/resources/images/Footerlogo.png" alt="#none">
         </div>
         <div class="copyright">
           <div class="service">
