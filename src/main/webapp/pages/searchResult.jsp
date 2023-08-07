@@ -77,6 +77,7 @@
           </c:if>
           <hr>
 
+
           <h2>Songs</h2>
           <c:if test="${not empty songs}">
             <c:forEach items="${songs}" var="song">

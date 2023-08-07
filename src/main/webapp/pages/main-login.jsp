@@ -21,8 +21,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Custom Css & Js -->
   <link rel="stylesheet" href="${pageContext.request.contextPath}/css/main-login-style.css">
-  <script src="${pageContext.request.contextPath}/js/main-login-custom.js"></script>
-  <script src="${pageContext.request.contextPath}/js/miniPlaySong.js"></script>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/css/main-style.css">
+
   <!-- Favicon -->
   <link rel="icon" href="${pageContext.request.contextPath}/resources/images/Favicon.png">
   <script>
@@ -78,19 +78,17 @@
           <div class="myplaylist-slider">
             <c:forEach items="${sessionScope.customPlaylists}" var="playlist">
             <div class="myplaylist-items">
-              <c:forEach items="${playlist.songs}" var="song">
+              <c:forEach items="${playlist.playlistName}" var="playlistName">
 
                 <div class="myplaylist-item">
                   <a href="<c:url value='/customPlaylist'>
                             <c:param name='playlistId' value='${playlist.playlistId}' />
                         </c:url>">
-                    <div class="myplaylist-img-inner">
-                      <p></p>
+                    <div class="myplaylist-text">
+                      <span>${playlist.playlistName}</span>
                     </div>
                   </a>
-                  <div class="myplaylist-text">
-                    <span>${playlist.playlistName}</span>
-                  </div>
+
                 </div>
 
             </c:forEach>
@@ -101,6 +99,119 @@
     </div>
 
   </section>
+
+    <!-- Section : Genre -->
+    <section class="genre" id="genre">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2 class="content-heading">
+            <b>Genre</b>
+            Music
+          </h2>
+          <div class="more-btn">
+            <a href="#">More</a>
+          </div>
+        </div>
+        <div class="genre-tab-inner">
+          <div class="genre-btn-tab">
+            <a href="#none" class="active">Dance</a>
+            <a href="#none">Ballad</a>
+            <a href="#none">POP</a>
+            <a href="#none">ROCK</a>
+            <a href="#none">R&B</a>
+            <a href="#none">Hip Hop</a>
+          </div>
+          <div class="genre-tabs">
+            <div class="genre-tab1">
+              <table class="genre-table">
+                <tr>
+                  <th>순위</th>
+                  <th>곡</th>
+                  <th>아티스트</th>
+                  <th>재생</th>
+                  <th>추가</th>
+                </tr>
+
+              </table>
+              <div class="table-btn pagination">
+
+              </div>
+            </div>
+            <div class="genre-tab2">
+              <table class="genre-table">
+                <tr>
+                  <th>순위</th>
+                  <th>곡</th>
+                  <th>아티스트</th>
+                  <th>재생</th>
+                  <th>추가</th>
+                </tr>
+              </table>
+              <div class="table-btn">
+
+              </div>
+            </div>
+            <div class="genre-tab3">
+              <table class="genre-table">
+                <tr>
+                  <th>순위</th>
+                  <th>곡</th>
+                  <th>아티스트</th>
+                  <th>재생</th>
+                  <th>추가</th>
+                </tr>
+              </table>
+              <div class="table-btn">
+
+              </div>
+            </div>
+            <div class="genre-tab4">
+              <table class="genre-table">
+                <tr>
+                  <th>순위</th>
+                  <th>곡</th>
+                  <th>아티스트</th>
+                  <th>재생</th>
+                  <th>추가</th>
+                </tr>
+              </table>
+              <div class="table-btn">
+              </div>
+            </div>
+
+            <div class="genre-tab5">
+              <table class="genre-table">
+                <tr>
+                  <th>순위</th>
+                  <th>곡</th>
+                  <th>아티스트</th>
+                  <th>재생</th>
+                  <th>추가</th>
+                </tr>
+              </table>
+              <div class="table-btn">
+              </div>
+            </div>
+
+            <div class="genre-tab6">
+              <table class="genre-table">
+                <tr>
+                  <th>순위</th>
+                  <th>곡</th>
+                  <th>아티스트</th>
+                  <th>재생</th>
+                  <th>추가</th>
+                </tr>
+              </table>
+              <div class="table-btn">
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Section : #Tag song -->
   <
@@ -494,5 +605,9 @@
     </div>
   </div>
 
+  <script src="${pageContext.request.contextPath}/js/main.js"></script>
+  <script src="${pageContext.request.contextPath}/js/main-custom.js"></script>
+  <script src="${pageContext.request.contextPath}/js/main-login-custom.js"></script>
+  <script src="${pageContext.request.contextPath}/js/miniPlaySong.js"></script>
 </body>
 </html>
