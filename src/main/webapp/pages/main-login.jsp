@@ -72,21 +72,6 @@
         <div class="section-header">
           <h2 class="content-heading">
             <b>My Playlist</b>
-
-            <br>
-            <a href="${pageContext.request.contextPath}/pages/customPlaylistAddPlaylist.jsp">Create MyList</a>
-            
-			  <c:forEach items="${sessionScope.customPlaylists}" var="playlist">
-                  <div class="myplaylist-delete">
-                        <a href="<c:url value='/CustomPlaylistDelete'>
-                            <c:param name='playlistId' value='${playlist.playlistId}' />
-                        	</c:url>">
-                  			<input type="button" value="playlist">
-                  		</a>
-                  </div>
-              </c:forEach>
-              
-
           </h2>
         </div>
         <div class="myplaylist-inner">
