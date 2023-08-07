@@ -14,17 +14,17 @@
 			<div class="Mylist-text">
 				<div>
 					<label>MyList Name</label>
-					<input type="text" name="name">
+					<input type="text" name="playlistname">
 				</div>
 				
 				<div>
 					<label>Description</label>
-					<input type="text" name="description">		
+					<input type="text" name="playlistdescription">		
 				</div>
 				
 				<div>
 					<label>HasgTag</label>
-					<input type="text" name="hashtag">
+					<input type="text" name="playlisthashtags">
 				</div>
 				
 				<div>
