@@ -64,10 +64,8 @@
           <h2 class="content-heading">
             <b>My Playlist</b>
 
-            
-            <form action="${pageContext.request.contextPath}/CustomPlaylistInsert" method="post">
-                <input type="submit" value="Create MyList">
-            </form>
+            <br>
+            <a href="${pageContext.request.contextPath}/pages/customPlaylistAddPlaylist.jsp">Create MyList</a>
             
 			  <c:forEach items="${sessionScope.customPlaylists}" var="playlist">
                   <div class="myplaylist-delete">
