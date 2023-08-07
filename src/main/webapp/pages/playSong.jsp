@@ -56,12 +56,11 @@
               %>
               <p>Artist Name: Unknown Artist</p>
               <%
-                  }
+                }
               %>
           </div>
           
           <div class="controls">
-            <div class="option"><i class="fas fa-bars fa-2xl"></i></div>
             <div class="repeat"><i class="fa-solid fa-repeat fa-xl"></i></div>
             <div class="previous"><i class="fas fa-backward fa-xl"></i></div>
             <div class="play"><i class="fas fa-play fa-xl"></i></div>
@@ -75,7 +74,7 @@
                 <input class="volumeRange" type="range" min="0" max="100" step="1" value="50"></input>
               </div>
             </div>
-            <div class="add"><i class="fas fa-plus fa-2xl"></i></div>
+            <div class="option"><i class="fas fa-bars fa-2xl"></i></div>
           </div>
         </div>
       </div>

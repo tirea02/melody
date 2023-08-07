@@ -5,6 +5,10 @@ $(document).ready(function() {
   const audioElement = document.querySelector("audio");
   // const mp3FilePath = "./music/NewJeans-SuperShy.mp3";
   // audioElement.src = mp3FilePath;
+  const audioUrl = [
+	  {url: "/mp3/ditto_31.mp3", title: "Ditto", artist: "NewJeans"},
+	  {url: "/mp3/사계_0.mp3", title: "사계", artist: "태연"}
+  ];
 
   const progressBar = $("#progress");
   const currentTime = $(".current");
@@ -24,7 +28,8 @@ $(document).ready(function() {
   let isPlaying = false;
   let isMuted = false;
   let previousVolume = 1.0;
-  
+  let currentSongIndex = 0;
+
 
   //좋아요 하트
   coloredHeart.hide(); //hide coloredHeart button until clicked
@@ -36,6 +41,16 @@ $(document).ready(function() {
     coloredHeart.hide();
     blankedHeart.show();
   });  
+
+  //제목,가수
+  function updateSongInfo(index) {
+      const nextSong = songUrls[index];
+      $(".songName").text(nextSong.title);
+      $(".artistName").text(nextSong.artist);
+  }
+
+  // Initial song info update
+  updateSongInfo(currentSongIndex);
 
   // Update the progress bar and playtime display
   audioElement.addEventListener('timeupdate', function () {
@@ -101,9 +116,13 @@ $(document).ready(function() {
 
   //다음 곡 버튼
   nextButton.click(function () {
-    // Implement the logic to play the next song
-    // For example: audioElement.src = "path_to_next_song.mp3";
-    // You may need to manage the playlist and track the current song index
+    //const nextSong = "/mp3/사계_0.mp3"; //audioElement.src = "path_to_next_song.mp3";
+    currentSongIndex = (currentSongIndex + 1) % songUrls.length;
+    const nextSong = songUrls[currentSongIndex].url
+	audioElement.src = nextSong;
+	audioElement.currentTime = 0;
+	audioElement.play();
+	updateSongInfo(currentSongIndex);
   });
 
   //셔플 버튼
@@ -132,6 +151,7 @@ $(document).ready(function() {
       volumeRangeButton.val(previousVolume); // Restore the previous volume value
       volumeButton.show();
       muteButton.hide();
+      volumeButton.show();
       isMuted = false;
     }else {
       audioElement.play();
@@ -140,24 +160,11 @@ $(document).ready(function() {
       isMuted = true;
     }
   });
-
-  //볼륨바 숨기기
-  volumeCtrlButton.hide();
-  volumeButton.hover(function () {
-    volumeCtrlButton.show();
-  })
-  volumeCtrlButton.mouseleave(function () {
-    volumeCtrlButton.hide();
-  })
-  muteButton.hover(function () {
-    volumeCtrlButton.hide();
-  })
-
-  //볼륨바 range 설정
-  volumeRangeButton.on("input", function () {
-    const volumeValue = parseFloat($(this).val());
-    audioElement.volume = volumeValue;
-    if (volumeValue === 0) {
+  
+  //volumeRangeButton 바뀔때 같이 볼륨 조정
+  function updateVolume(volume) {
+    audioElement.volume = volume;
+    if (volume === 0) {
       muteButton.show();
       volumeButton.hide();
       isMuted = true;
