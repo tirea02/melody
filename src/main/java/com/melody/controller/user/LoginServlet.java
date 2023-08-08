@@ -58,7 +58,7 @@ public class LoginServlet extends HttpServlet {
             // If the user is valid, store the UserAccount object in the user's session
             request.getSession().setAttribute("userAccount", userAccount);
             request.getSession().setAttribute("customPlaylists", customPlaylists);
-            request.setAttribute("jsonCustomPlaylists", jsonCustomPlaylists);
+            request.getSession().setAttribute("jsonCustomPlaylists", jsonCustomPlaylists);
             response.sendRedirect(request.getContextPath() + "/userDetail");
         } else {
             // If the user is not valid, display an error message

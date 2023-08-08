@@ -3,6 +3,10 @@ $(document).ready(function() {
     var genreIds = [1, 2, 3, 4, 5, 6];
     var currentPage = {};
     var totalPages = {};
+    let hdnSession = document.getElementById("hdnSession");
+    let jsonCustomPlaylist = JSON.parse(hdnSession.getAttribute("data-value"));
+    console.log(`json custom playlist : ${jsonCustomPlaylist}`);
+
 
     initializeChatHelper();
 

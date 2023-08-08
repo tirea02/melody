@@ -10,8 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="custom playlist에 데이터 추가 및 main-login에 genre table 추가">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2023-07-28_오후_5_47_[Changes]1/melody.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2023-07-28_오후_5_47_[Changes]1/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/main-login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/main-login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
