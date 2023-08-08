@@ -617,44 +617,44 @@
                 <div class="new-content">
                   <a href="#">
                     <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
+                      <img src="https://cdnimg.melon.co.kr/cm2/album/images/112/81/456/11281456_20230706180841_500.jpg">
                     </div>
                     <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
+                      <span>뉴진스 (NewJeans)</span>
+                      <p>Get Up</p>
                     </div>
                   </a>
                 </div>
                 <div class="new-content">
                   <a href="#">
                     <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
+                      <img src="https://cdnimg.melon.co.kr/cm2/album/images/112/58/233/11258233_20230605094802_500.jpg">
                     </div>
                     <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
+                      <span>임영웅</span>
+                      <p>모래 알갱이</p>
                     </div>
                   </a>
                 </div>
                 <div class="new-content">
                   <a href="#">
                     <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
+                      <img src="https://cdnimg.melon.co.kr/cm2/album/images/112/54/858/11254858_20230531233847_500.jpg">
                     </div>
                     <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
+                      <span>Lauv</span>
+                      <p>Steal The Show (From “엘리멘탈”)</p>
                     </div>
                   </a>
                 </div>
                 <div class="new-content">
                   <a href="#">
                     <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
+                      <img src="https://cdnimg.melon.co.kr/cm2/album/images/112/40/232/11240232_20230509151820_500.jpg">
                     </div>
                     <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
+                      <span>(여자)아이들</span>
+                      <p>I feel</p>
                     </div>
                   </a>
                 </div>
@@ -663,44 +663,44 @@
                 <div class="new-content">
                   <a href="#">
                     <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
+                      <img src="https://cdnimg.melon.co.kr/cm2/album/images/112/36/264/11236264_20230508184331_500.jpg">
                     </div>
                     <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
+                      <span>aespa</span>
+                      <p>MY WORLD</p>
                     </div>
                   </a>
                 </div>
                 <div class="new-content">
                   <a href="#">
                     <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
+                      <img src="https://cdnimg.melon.co.kr/cm2/album/images/112/34/678/11234678_20230502162327_500.jpg">
                     </div>
                     <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
+                      <span>LE SSERAFIM (르세라핌)</span>
+                      <p>UNFORGIVEN</p>
                     </div>
                   </a>
                 </div>
                 <div class="new-content">
                   <a href="#">
                     <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
+                      <img src="https://cdnimg.melon.co.kr/cm2/album/images/112/29/537/11229537_20230421170444_500.jpg">
                     </div>
                     <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
+                      <span>세븐틴 (SEVENTEEN)</span>
+                      <p>FML</p>
                     </div>
                   </a>
                 </div>
                 <div class="new-content">
                   <a href="#">
                     <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
+                      <img src="https://cdnimg.melon.co.kr/cm2/album/images/112/27/533/11227533_20230419162238_500.jpg">
                     </div>
                     <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
+                      <span>박재정</span>
+                      <p>Alone</p>
                     </div>
                   </a>
                 </div>
@@ -711,33 +711,33 @@
                 <div class="new-content">
                   <a href="#">
                     <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
+                      <img src="https://cdnimg.melon.co.kr/cm2/album/images/112/11/297/11211297_20230410151046_500.jpg">
                     </div>
                     <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
+                      <span>IVE (아이브)</span>
+                      <p>I've IVE</p>
                     </div>
                   </a>
                 </div>
                 <div class="new-content">
                   <a href="#">
                     <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
+                      <img src="https://cdnimg.melon.co.kr/cm2/album/images/112/14/411/11214411_20230330163342_500.jpg">
                     </div>
                     <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
+                      <span>지수 (JISOO)</span>
+                      <p>ME</p>
                     </div>
                   </a>
                 </div>
                 <div class="new-content">
                   <a href="#">
                     <div class="new-img-inner">
-                      <img src="../resources/images/MockupsUpImg.png">
+                      <img src="https://cdnimg.melon.co.kr/cm2/album/images/111/88/020/11188020_20230223114923_500.jpg">
                     </div>
                     <div class="new-text">
-                      <span>TWICE (트와이스)</span>
-                      <p>Dance The Night Away</p>
+                      <span>FIFTY FIFTY</span>
+                      <p>The Beginning: Cupid</p>
                     </div>
                   </a>
                 </div>
@@ -937,11 +937,11 @@
                       <div class="best-song-info">
                         <a href="#">
                           <div class="best-img-inner">
-                            <img src="../resources/images/MockupsUpImg.png">
+                            <img src="https://cdnimg.melon.co.kr/cm2/album/images/109/22/231/10922231_20220527120653_500.jpg">
                           </div>
                           <div class="best-song-name">
                             <span>
-                              Dance The Night Away
+                              Super Shy
                             </span>
                           </div>
                         </a>
@@ -949,7 +949,7 @@
                     </td>
                     <td>
                       <p>
-                        TWICE (트와이스)
+                        뉴진스 (NewJeans)
                       </p>
                     </td>
                     <td>
@@ -967,11 +967,11 @@
                       <div class="best-song-info">
                         <a href="#">
                           <div class="best-img-inner">
-                            <img src="../resources/images/MockupsUpImg.png">
+                            <img src="https://cdnimg.melon.co.kr/cm2/album/images/110/78/852/11078852_20221017102947_500.jpg">
                           </div>
                           <div class="best-song-name">
                             <span>
-                              Dance The Night Away
+                              Nxde
                             </span>
                           </div>
                         </a>
@@ -979,7 +979,7 @@
                     </td>
                     <td>
                       <p>
-                        TWICE (트와이스)
+                        (여자)아이들
                       </p>
                     </td>
                     <td>
@@ -997,11 +997,11 @@
                       <div class="best-song-info">
                         <a href="#">
                           <div class="best-img-inner">
-                            <img src="../resources/images/MockupsUpImg.png">
+                            <img src="https://cdnimg.melon.co.kr/cm2/album/images/109/09/179/10909179_20220405103521_500.jpg">
                           </div>
                           <div class="best-song-name">
                             <span>
-                              Dance The Night Away
+                              LOVE DIVE
                             </span>
                           </div>
                         </a>
@@ -1009,7 +1009,7 @@
                     </td>
                     <td>
                       <p>
-                        TWICE (트와이스)
+                        IVE (아이브)
                       </p>
                     </td>
                     <td>
@@ -1027,11 +1027,11 @@
                       <div class="best-song-info">
                         <a href="#">
                           <div class="best-img-inner">
-                            <img src="../resources/images/MockupsUpImg.png">
+                            <img src="https://cdnimg.melon.co.kr/cm2/album/images/110/78/496/11078496_20221014153848_500.jpg">
                           </div>
                           <div class="best-song-name">
                             <span>
-                              Dance The Night Away
+                              ANTIFRAGILE
                             </span>
                           </div>
                         </a>
@@ -1039,7 +1039,7 @@
                     </td>
                     <td>
                       <p>
-                        TWICE (트와이스)
+                        LE SSERAFIM (르세라핌)
                       </p>
                     </td>
                     <td>
@@ -1057,11 +1057,11 @@
                       <div class="best-song-info">
                         <a href="#">
                           <div class="best-img-inner">
-                            <img src="../resources/images/MockupsUpImg.png">
+                            <img src="https://cdnimg.melon.co.kr/cm2/album/images/109/90/058/10990058_20220623170956_500.jpg">
                           </div>
                           <div class="best-song-name">
                             <span>
-                              Dance The Night Away
+                              Spicy
                             </span>
                           </div>
                         </a>
@@ -1069,7 +1069,7 @@
                     </td>
                     <td>
                       <p>
-                        TWICE (트와이스)
+                        aespa
                       </p>
                     </td>
                     <td>
