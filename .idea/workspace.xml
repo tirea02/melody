@@ -9,19 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="playlist show in gerne list 가장 간단한 기능만 구현">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/plyrTest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/miniPlayerTest.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/controller/PlaySongSimpleServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/PlaySongSimpleServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/album-detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/album-detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/melody_js.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/melody_js.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/miniPlaySong.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/miniPlaySong.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/album-detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/album-detail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/main.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="playlist show in gerne list 가장 간단한 기능만 구현" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

@@ -1,4 +1,4 @@
-package com.melody.controller
+package com.melody.controller;
 
 import com.melody.dao.AlbumDAO;
 import com.melody.dao.SongDAO;
@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -27,13 +28,22 @@ public class AlbumUpdateSampleServlet extends HttpServlet {
         String albumID = request.getParameter("albumID");
         int like = Integer.parseInt(request.getParameter("like"));
         AlbumDAO albumDAO = new AlbumDAO();
-     
-        Album album = albumDAO.getAlbumById(Long.valueOf(albumID));
+
+        Album album = null;
+        try {
+            album = albumDAO.getAlbumById(Long.valueOf(albumID));
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
         int currentLike = album.getLikes();
         album.setLikes(currentLike+like);
-        
-        albumDAO.updateAlbum(album);
-        
+
+        try {
+            albumDAO.updateAlbum(album);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
 
         // Set the album object in the request attribute
        
