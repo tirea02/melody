@@ -862,14 +862,13 @@ header.dark .sub-lnb button {
 }
 
 .genre-img-inner {
-	flex: 0.5;
+	flex: 0.2;
 	justify-content: center;
 	overflow: hidden;
 }
 
 .genre-img-inner img {
-	width: 120px;
-	height: 120px;
+	width: 100%;
 }
 
 .genre-song-name {
