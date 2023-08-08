@@ -21,8 +21,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Custom Css & Js -->
   <link rel="stylesheet" href="${pageContext.request.contextPath}/css/searchResult.css">
-  <script src="${pageContext.request.contextPath}/js/searchResult.js"></script>
-  <script src="${pageContext.request.contextPath}/js/miniPlaySong.js"></script>
+
   <!-- Favicon -->
   <link rel="icon" href="${pageContext.request.contextPath}/resources/images/Favicon.png">
 </head>
@@ -232,5 +231,8 @@
     </div>
   </div>
 
+  <script src="${pageContext.request.contextPath}/js/navConfig.js"></script>
+  <script src="${pageContext.request.contextPath}/js/searchResult.js"></script>
+  <script src="${pageContext.request.contextPath}/js/miniPlaySong.js"></script>
 </body>
 </html>

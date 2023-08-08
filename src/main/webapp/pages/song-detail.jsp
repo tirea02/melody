@@ -240,6 +240,7 @@
 
   <!-- Custom Css & Js -->
   <link rel="stylesheet" href="${pageContext.request.contextPath}/css/song-detail.css">
+  <script src="${pageContext.request.contextPath}/js/navConfig.js"></script>
   <script src="${pageContext.request.contextPath}/js/miniPlaySong.js"></script>
   <script src="${pageContext.request.contextPath}/js/song-detail.js"></script>
   <script type="text/javascript" src="${pageContext.request.contextPath}/js/melody_js.js"></script>

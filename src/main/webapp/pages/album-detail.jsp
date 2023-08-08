@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Favicon -->
   <link rel="icon" href="${pageContext.request.contextPath}/resources/images/Favicon.png">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/album-detail.css">
 </head>
 <body>
   
@@ -246,7 +247,8 @@
   </div>
 
     <!-- Custom Css & Js -->
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/album-detail.css">
+
+    <script src="${pageContext.request.contextPath}/js/navConfig.js"></script>
     <script src="${pageContext.request.contextPath}/js/miniPlaySong.js"></script>
     <script src="${pageContext.request.contextPath}/js/album-detail.js"></script>
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/melody_js.js"></script>
