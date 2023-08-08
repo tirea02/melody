@@ -3,9 +3,12 @@ $(document).ready(function() {
     var genreIds = [1, 2, 3, 4, 5, 6];
     var currentPage = {};
     var totalPages = {};
-    let hdnSession = document.getElementById("hdnSession");
-    let jsonCustomPlaylist = JSON.parse(hdnSession.getAttribute("data-value"));
-    console.log(`json custom playlist : ${jsonCustomPlaylist}`);
+
+    var hdnSession = document.getElementById("hdnSession");
+    var jsonCustomPlaylist = hdnSession.getAttribute("data-value");
+    var parsedJsonCustomPlaylist = JSON.parse(jsonCustomPlaylist);
+
+    console.log("json custom playlist:", parsedJsonCustomPlaylist);
 
 
     initializeChatHelper();
@@ -129,7 +132,7 @@ $(document).ready(function() {
 
                 // Generate the playlist dropdown content
                 var playlistContent = '<ul class="playlist-list">';
-                $.each(customPlaylists, function(index, playlist) {
+                $.each(parsedJsonCustomPlaylist, function(index, playlist) {
                     playlistContent += '<li><a href="#" class="add-to-playlist" data-songid="' + songId + '" data-playlistid="' + playlist.playlistId + '">' + playlist.playlistName + '</a></li>';
                 });
                 playlistContent += '</ul>';

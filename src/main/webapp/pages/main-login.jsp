@@ -8,7 +8,7 @@
   <!-- Title -->
   <title>Melody</title>
   <!-- jQuery CDN -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   <!-- slick slider -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -1881,7 +1881,8 @@
     </div>
   </div>
 
-  <input type="hidden" id="hdnSession" data-value="@Request.RequestContext.HttpContext.Session['jsonCustomPlaylists']" />
+  <input type="hidden" id="hdnSession" data-value='<%= session.getAttribute("jsonCustomPlaylists") %>' />
+
   <script src="${pageContext.request.contextPath}/js/main.js"></script>
   <script src="${pageContext.request.contextPath}/js/main-login-custom.js"></script>
   <script src="${pageContext.request.contextPath}/js/miniPlaySong.js"></script>

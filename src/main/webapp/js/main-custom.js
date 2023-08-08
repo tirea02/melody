@@ -39,19 +39,6 @@ $(function(){
     draggable: false
   });
 
-  // $('.artist-slider').slick({
-  //   dots: true,
-  //   infinite: true,
-  //   centerMode: true,
-  //   centerPadding: '10px',
-  //   speed: 1000,
-  //   autoplay: true,
-  //   autoplaySpeed: 4000,
-  //   draggable: false,
-  //   slidesToShow: 5,
-  //   slidesToScroll: 5
-  // });
-
   $('.musicvideo-slider').slick({
     dots: true,
     infinite: true,
