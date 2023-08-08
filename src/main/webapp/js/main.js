@@ -5,10 +5,17 @@ $(document).ready(function() {
     var totalPages = {};
 
     var hdnSession = document.getElementById("hdnSession");
-    //add check part because main.jsp doesn't have hidden element
-    var jsonCustomPlaylist = hdnSession.getAttribute("data-value");
-    var parsedJsonCustomPlaylist = JSON.parse(jsonCustomPlaylist);
-    console.log("json custom playlist:", parsedJsonCustomPlaylist);
+    if (hdnSession) {
+        var jsonCustomPlaylist = hdnSession.getAttribute("data-value");
+        if (jsonCustomPlaylist) {
+            var parsedJsonCustomPlaylist = JSON.parse(jsonCustomPlaylist);
+            console.log("json custom playlist:", parsedJsonCustomPlaylist);
+        } else {
+            console.log("data-value attribute not found in hdnSession");
+        }
+    } else {
+        console.log("hdnSession element not found");
+    }
 
 
     initializeChatHelper();
