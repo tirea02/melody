@@ -53,8 +53,8 @@ $(document).ready(function() {
                     centerMode: true,
                     centerPadding: '10px',
                     speed: 1000,
-                    autoplay: true,
-                    autoplaySpeed: 4000,
+/*                    autoplay: true,
+                    autoplaySpeed: 4000,*/
                     draggable: false,
                     slidesToShow: 1,
                     slidesToScroll: 4

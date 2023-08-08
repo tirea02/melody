@@ -80,10 +80,10 @@
 
                 <div class="myplaylist-item">
                   <a href="<c:url value='/customPlaylist'>
-                            <c:param name='playlistId' value='${playlist.playlistId}' />
-                        </c:url>">
+                    <c:param name='playlistId' value='${playlist.playlistId}' />
+                    </c:url>">
                     <div class="myplaylist-img-inner">
-                      <p></p>
+                      <img src="${pageContext.request.contextPath}/resources/images/playlist-img1.png">
                     </div>
                   </a>
                   <div class="myplaylist-text">
