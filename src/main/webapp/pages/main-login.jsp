@@ -56,7 +56,11 @@
             </div>
             <div class="gnb">
               <a href="#myplaylist">MyPlayList</a>
-              <a href="#tag-song">Tag Song</a>
+              <a href="#season">Season</a>
+              <a href="#best">Best</a>
+              <a href="#new">New</a>
+              <a href="#genre">Genre</a>
+              <a href="#artist">Artist</a>
               <a href="#musicvideo">Music Video</a>
             </div>
           </nav>
@@ -70,6 +74,9 @@
           <h2 class="content-heading">
             <b>My Playlist</b>
           </h2>
+          <div class="more-btn">
+            <a href="#">+ New PlayList</a>
+          </div>
         </div>
         <div class="myplaylist-inner">
           <div class="myplaylist-slider">
@@ -546,13 +553,12 @@
             <div class="genre-tab1">
               <table class="genre-table">
                 <tr>
-                  <th>순위</th>
-                  <th>곡</th>
-                  <th>아티스트</th>
-                  <th>재생</th>
-                  <th>추가</th>
+                  <td>순위</td>
+                  <td>곡</td>
+                  <td>아티스트</td>
+                  <td>재생</td>
+                  <td>추가</td>
                 </tr>
-
               </table>
               <div class="table-btn pagination">
 
