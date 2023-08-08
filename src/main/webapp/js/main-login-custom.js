@@ -14,14 +14,14 @@ $(function(){
   })
 
   // Slick
-  $('.myplaylist-slider').slick({
+/*  $('.myplaylist-slider').slick({
     dots: true,
     infinite: true,
     centerMode: true,
     centerPadding: '10px',
     speed: 1000,
-    draggable: false
-  });
+    draggable: false,
+  });*/
 
   $('.season-slider').slick({
     dots: true,
