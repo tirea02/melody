@@ -5,9 +5,9 @@ $(document).ready(function() {
     var totalPages = {};
 
     var hdnSession = document.getElementById("hdnSession");
+    //add check part because main.jsp doesn't have hidden element
     var jsonCustomPlaylist = hdnSession.getAttribute("data-value");
     var parsedJsonCustomPlaylist = JSON.parse(jsonCustomPlaylist);
-
     console.log("json custom playlist:", parsedJsonCustomPlaylist);
 
 
@@ -126,7 +126,8 @@ $(document).ready(function() {
             table.append(row);
 
             var playlistDropdown = $('<div class="playlist-dropdown" style="display: none;"></div>');
-            row.find(".genre-plus").click(function() {
+            row.find(".genre-plus").click(function(e) {
+                e.preventDefault();
                 var songId = $(this).data("songid");
                 playlistDropdown.toggle();
 
@@ -145,18 +146,21 @@ $(document).ready(function() {
         });
     }
 
+    //function to add to playlist when clicked
     $(document).on("click", ".add-to-playlist", function(e) {
         e.preventDefault();
         var songId = $(this).data("songid");
         var playlistId = $(this).data("playlistid");
 
+        console.log(`tt songId : ${songId}, playlistId " ${playlistId}`);
+
         // Perform AJAX request to add song to playlist
         $.ajax({
             type: "POST",
-            url: "/addToPlaylist", // Replace with your servlet URL
+            url: contextPath + "/addToPlaylist", // Replace with your servlet URL
             data: { songId: songId, playlistId: playlistId },
             success: function(response) {
-                // Handle success
+               console.log(`playlist updated successfully`);
             },
             error: function(xhr, status, error) {
                 // Handle error

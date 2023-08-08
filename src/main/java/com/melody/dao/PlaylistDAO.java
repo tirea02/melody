@@ -149,7 +149,6 @@ public class PlaylistDAO {
     }
 
     // Method to retrieve all hashtags associated with a specific Playlist
-    // Method to retrieve all hashtags associated with a specific Playlist
     public List<Hashtag> getHashtagsForPlaylist(long playlistId) throws SQLException {
         List<Hashtag> hashtags = new ArrayList<>();
         String sql = "SELECT h.Hashtag_ID, h.Hashtag_Value " +
