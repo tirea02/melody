@@ -24,6 +24,7 @@
 		<div class="myplaylistAddSong">
 			<a href="<c:url value='/CustomPlaylistaddSong'>
 				<c:param name='playlistId' value='${playlist.playlistId}' />
+				<c:param name='songId' value='<% String songId = request.getParameter("songId"); %>' />
 				</c:url>">
 				<h6>곡추가</h6>
 			</a>

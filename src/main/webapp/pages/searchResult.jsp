@@ -82,6 +82,7 @@
             <c:forEach items="${songs}" var="song">
               <p>곡 : ${song.title}</p>
               <p>곡 정보 : ${song.songInfo}</p>
+              <a href="<%= request.getContextPath() %>/pages/myPlaylist.jsp?songId=${song.songId}">Test</a>
 
               <c:forEach items="${song.songHashtags}" var="hashtags">
                 <p>#${hashtags.hashtagValue}</p>

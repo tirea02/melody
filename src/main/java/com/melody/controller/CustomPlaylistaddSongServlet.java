@@ -34,11 +34,11 @@ public class CustomPlaylistaddSongServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//일단 보류
-		
-		long playlistId = 0;
-		long songId = 0;
-		//임시
+				
+		long playlistId = Long.parseLong(request.getParameter("playlistId"));
+		logger.debug(String.valueOf(playlistId));
+		long songId = Long.parseLong(request.getParameter("songId"));
+		logger.debug(String.valueOf(songId));
 				
 		PlaylistDAO playlistDAO = new PlaylistDAO();
 		try {
