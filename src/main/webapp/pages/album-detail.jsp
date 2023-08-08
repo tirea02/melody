@@ -29,7 +29,7 @@
     </style>
 </head>
 <body>
-  
+
   <div class="container">
     <!-- Header -->
     <header>
@@ -80,7 +80,7 @@
                             <!--Album_ID, Likes -->
                         </td>
                     </tr>
-        
+
                     <tr>
                         <td>가수 | ${album.singerName} <!-- Singer_Name --></td>
                     </tr>
@@ -106,7 +106,7 @@
                     </tr>
                 </table>
             </c:if>
-        
+
             <hr>
             <h3>앨범 소개</h3>
             <c:if test="${not empty album}">
@@ -132,7 +132,7 @@
         <%--            </c:forEach>--%>
         <%--        </div>--%>
         <%--    </c:if>--%>
-        
+
             <!-- Add the rest of your JSP code here -->
 
 <%--              <div class="plyr__video-embed" id="player" >--%>
@@ -146,7 +146,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- Chat-Helper -->
     <div class="chat-helper-icon">
       <button class="chat-helper-start">
