@@ -5,10 +5,17 @@ $(document).ready(function() {
     var totalPages = {};
 
     var hdnSession = document.getElementById("hdnSession");
-    //add check part because main.jsp doesn't have hidden element
-    var jsonCustomPlaylist = hdnSession.getAttribute("data-value");
-    var parsedJsonCustomPlaylist = JSON.parse(jsonCustomPlaylist);
-    console.log("json custom playlist:", parsedJsonCustomPlaylist);
+    if (hdnSession) {
+        var jsonCustomPlaylist = hdnSession.getAttribute("data-value");
+        if (jsonCustomPlaylist) {
+            var parsedJsonCustomPlaylist = JSON.parse(jsonCustomPlaylist);
+            console.log("json custom playlist:", parsedJsonCustomPlaylist);
+        } else {
+            console.log("data-value attribute not found in hdnSession");
+        }
+    } else {
+        console.log("hdnSession element not found");
+    }
 
 
     initializeChatHelper();
@@ -49,10 +56,10 @@ $(document).ready(function() {
                     centerMode: true,
                     centerPadding: '10px',
                     speed: 1000,
-                    autoplay: true,
-                    autoplaySpeed: 4000,
+/*                    autoplay: true,
+                    autoplaySpeed: 4000,*/
                     draggable: false,
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 4
                 });
 
@@ -168,6 +175,19 @@ $(document).ready(function() {
         });
     });
 
+    const audioPlayerContainer = $('#audio-player');
+    $.ajax({
+        url: contextPath+ '/pages/miniPlayerTest.jsp',
+        dataType: 'html',
+        success: function(response) {
+            audioPlayerContainer.html(response);
+            // Add your JavaScript code for managing playback state here
+        },
+        error: function(xhr, status, error) {
+            console.error('AJAX request error:', status, error);
+        }
+    });
+
     // Function to update the pagination buttons
     function updatePagination(genreId, totalPages) {
         var paginationDiv = $(".genre-tab" + genreId + " .table-btn");
@@ -216,3 +236,5 @@ function initializeChatHelper() {
         });
     });
 }
+
+

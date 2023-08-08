@@ -3,8 +3,6 @@ $(document).ready(function() {
   const coloredHeart = $(".coloredHeart");
 
   const audioElement = document.querySelector("audio");
-  // const mp3FilePath = "./music/NewJeans-SuperShy.mp3";
-  // audioElement.src = mp3FilePath;
   const audioUrl = [
 	  {url: "/mp3/ditto_31.mp3", title: "Ditto", artist: "NewJeans"},
 	  {url: "/mp3/I AM_0.mp3", title: "I AM", artist: "아이브"},

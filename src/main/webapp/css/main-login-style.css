@@ -149,7 +149,6 @@ header.dark {
 	padding: 20px 0;
 }
 
-.lnb.dark,
 .lnb.dark a {
 	color: #fff;
 }
@@ -335,15 +334,18 @@ header.dark .sub-lnb button {
 	border-top: 1px solid #bbb;
 	border-bottom: 1px solid #bbb;
 	padding: 10px 0;
+	display: flex;
 }
 .myplaylist-items {
 	display: flex;
 	gap: 100px;
 	/* text-align: center; */
+	border: 1px solid #000;
 }
 
 .myplaylist-item {
 	flex: 1;
+	border: 1px solid #000;
 }
 
 .myplaylist-item a {
@@ -367,7 +369,6 @@ header.dark .sub-lnb button {
 
 .myplaylist-img-inner img {
 	width: 100%;
-	height: 150px;
 }
 
 .myplaylist-text {
@@ -967,16 +968,24 @@ header.dark .sub-lnb button {
 
 .artist-items {
 	display: flex;
+	justify-content: center;
 	gap: 100px;
 	/* text-align: center; */
 }
 
 .artist-item {
 	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 }
 
 .artist-item a {
-	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
 }
 
 .artist-item:hover .artist-img-inner {
@@ -992,11 +1001,14 @@ header.dark .sub-lnb button {
 	overflow: hidden;
 	border-radius: 20px;
 	transition: 0.3s;
+	border: 1px solid #ddd;
+	width: 80%;
+	height: 80%;
 }
 
 .artist-img-inner img {
 	width: 100%;
-	height: 150px;
+	height: 100%;
 }
 
 .artist-text {
@@ -1009,6 +1021,7 @@ header.dark .sub-lnb button {
 .artist-text.dark>span {
 	color: #fff;
 }
+
 /* ############## Music Video ############## */
 .musicvideo .slick-initialized .slick-slide {
 	display: flex;

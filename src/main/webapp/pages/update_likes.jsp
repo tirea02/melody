@@ -1,6 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
-    <%@ include file="melody_db.jsp" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file="melody_db.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,13 +10,13 @@
 
 <%
 	String songID = request.getParameter("songID");
-	int change = Integer.parseInt(request.getParameter("change"));
+	//int change = Integer.parseInt(request.getParameter("change"));
 	
-	String updateLikesQuery = "UPDATE Song SET Likes = Likes + " + change + 
-			" WHERE Song_ID = " + songID;
-    ST.executeUpdate(updateLikesQuery); // ÁÁ¾Æ¿ä ¾÷µ¥ÀÌÆ®
+	//String updateLikesQuery = "UPDATE Song SET Likes = Likes + " + change + 
+	String updateLikesQuery = "UPDATE Song SET Likes = Likes + 1 WHERE Song_ID = " + songID;
+    ST.executeUpdate(updateLikesQuery); // ì¢‹ì•„ìš” ì—…ë°ì´íŠ¸
 
-    // ¾÷µ¥ÀÌÆ®µÈ ÁÁ¾Æ¿ä ¼ýÀÚ¸¦ ÀÀ´äÀ¸·Î º¸³¿
+    // ì—…ë°ì´íŠ¸ëœ ì¢‹ì•„ìš” ìˆ«ìžë¥¼ ì‘ë‹µìœ¼ë¡œ ë³´ëƒ„
     String likesUpdateQuery = "SELECT Likes FROM Song WHERE Song_ID = " + songID;
     ST.executeUpdate(likesUpdateQuery);
     int updatedLikes = 0;
@@ -27,6 +26,13 @@
     }
     out.print(updatedLikes);
     System.out.println(updatedLikes);
+%>
+
+<%
+	//ì•¨ë²” ì¢‹ì•„ìš”
+    String albumID = request.getParameter("albumID");
+    String updateQuery = "UPDATE Album SET Likes = Likes + 1 WHERE Album_ID = " + albumID;
+    ST.executeUpdate(updateQuery);
 %>
 <script type="text/javascript">
 	window.history.back();
