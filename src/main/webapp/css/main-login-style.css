@@ -967,7 +967,7 @@ header.dark .sub-lnb button {
 
 .artist-items {
 	display: flex;
-	gap: 100px;
+	gap: 50px;
 	/* text-align: center; */
 }
 
@@ -992,11 +992,12 @@ header.dark .sub-lnb button {
 	overflow: hidden;
 	border-radius: 20px;
 	transition: 0.3s;
+	border: 1px solid #ddd;
 }
 
 .artist-img-inner img {
 	width: 100%;
-	height: 150px;
+	height: 100%;
 }
 
 .artist-text {
@@ -1009,6 +1010,7 @@ header.dark .sub-lnb button {
 .artist-text.dark>span {
 	color: #fff;
 }
+
 /* ############## Music Video ############## */
 .musicvideo .slick-initialized .slick-slide {
 	display: flex;
