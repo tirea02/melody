@@ -36,10 +36,17 @@ public class AddPlaylistServlet extends HttpServlet {
 			UserAccount userAccount = (UserAccount) request.getSession().getAttribute("userAccount");
 			long useraccountId = userAccount.getUserAccountId();
 			
+			String playlistName = request.getParameter("playlistname");
+			String playlistDescription = request.getParameter("playlistdescription");
+			String playlistHasgtags = request.getParameter("playlisthashtags");
 			
-			
+					
 			Playlist playlist = new Playlist();
+			playlist.setPlaylistName(playlistName);
 			playlist.setUserAccountId(useraccountId);
+			playlist.setDescription(playlistDescription);
+			playlist.setPlaylistHashtags(playlistHasgtags);
+			
 			
 			PlaylistDAO PlaylistDAO = new PlaylistDAO();
 			PlaylistDAO.addPlaylist(playlist);
