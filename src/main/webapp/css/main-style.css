@@ -382,7 +382,7 @@ header.dark .sub-lnb button {
 	font-weight: 600;
 	line-height: 40px;
 	color: #fff;
-	
+
 }
 
 .season-text p {
@@ -862,14 +862,14 @@ header.dark .sub-lnb button {
 }
 
 .genre-img-inner {
-	flex: 0.5;
+	flex: 0.3;
 	justify-content: center;
 	overflow: hidden;
+	border: 1px solid #ddd;
 }
 
 .genre-img-inner img {
-	width: 120px;
-	height: 120px;
+	width: 100%;
 }
 
 .genre-song-name {
@@ -930,16 +930,26 @@ header.dark .sub-lnb button {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center; 
+	align-items: center;
 }
 
 .artist-item:hover .artist-img-inner {
 	box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
 }
+body.dark .artist-item:hover .artist-img-inner {
+	box-shadow: 1px 5px 10px rgba(255, 255, 255, 0.5);
+}
 
 .artist-item:hover .artist-text {
 	font-weight: bold;
 	color: #000;
+}
+
+.artist-item a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .artist-img-inner {
@@ -948,7 +958,6 @@ header.dark .sub-lnb button {
 	transition: 0.3s;
 	border: 1px solid #ddd;
 	width: 80%;
-	height: 80%;
 }
 
 .artist-img-inner img {
