@@ -1884,8 +1884,8 @@
     </div>
   </div>
   
-  <script src="${pageContext.request.contextPath}/js/main.js"></script>
   <script src="${pageContext.request.contextPath}/js/main-login-custom.js"></script>
+  <script src="${pageContext.request.contextPath}/js/main.js"></script>
   <script src="${pageContext.request.contextPath}/js/miniPlaySong.js"></script>
 
 </body>

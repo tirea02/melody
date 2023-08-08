@@ -48,7 +48,7 @@ $('.new-slider').slick({
   draggable: false
 });
 
-$('.artist-slider').slick({
+/*$('.artist-slider').slick({
   dots: true,
   infinite: true,
   centerMode: true,
@@ -57,7 +57,7 @@ $('.artist-slider').slick({
   autoplay: true,
   autoplaySpeed: 4000,
   draggable: false
-});
+});*/
 
 $('.musicvideo-slider').slick({
   dots: true,
