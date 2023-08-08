@@ -23,7 +23,7 @@ public class DeletePlaylistServlet extends HttpServlet {
 	private static final Logger logger = LoggerFactory.getLogger(AddToPlaylistServlet.class);
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Long playlistId = Long.parseLong(request.getParameter("playlisyId"));
+		long playlistId = Long.parseLong(request.getParameter("playlistId"));
 		logger.debug(String.valueOf(playlistId));
 		
 		PlaylistDAO playlistDAO = new PlaylistDAO();
