@@ -360,6 +360,8 @@ header.dark .sub-lnb button {
 	gap: 10px;
 	flex-direction: column;
 	padding: 50px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .season-text-sub {
@@ -380,6 +382,7 @@ header.dark .sub-lnb button {
 	font-weight: 600;
 	line-height: 40px;
 	color: #fff;
+	
 }
 
 .season-text p {
