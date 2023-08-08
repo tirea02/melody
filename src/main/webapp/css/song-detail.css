@@ -314,24 +314,24 @@ nav {
 }
 
 /* ############## Album-Detail ############## */
-.album-detail {
+.song-detail {
 	padding: 150px 0px;
 	/* height: 100vh; */
 }
-.album-detail.dark .album-detail-inner * {
+.song-detail.dark .song-detail-inner * {
 	color: #fff;
 }
-.album-detail.dark .album-detail-inner {
+.song-detail.dark .song-detail-inner {
 	color: #fff;
 }
-.album-detail-inner {
+.song-detail-inner {
 	/* border: 1px solid #000; */
 }
 
-.album-detail-inner h2 {
+.song-detail-inner h2 {
 	text-transform: uppercase;
 }
-.album-detail-inner h3 {
+.song-detail-inner h3 {
 	font-weight: bold;
 }
 
@@ -377,55 +377,52 @@ nav {
 	border: 1px solid #eee;
 	border-radius: 10px;
 }
-
-
-
-.album-detail iframe {
+.song-detail iframe {
 	width: 200px;
 	height: 200px;
 	border: 0;
 	border-radius: 15px;
 }
-.album-detail a {
+.song-detail a {
 	text-decoration: none;
 	color: gray;
 }
-.album-detail a:hover {
+.song-detail a:hover {
 	text-decoration: underline;
 	font-weight: bold;
 }
-.album-detail input[type="text"]{
+.song-detail input[type="text"]{
 	border: 1px solid gray;
 }
-.album-detail .rating_star {
+.song-detail .rating_star {
 	display: inline-block;
 	font-size: 30px;
 	line-height: 1;
 }
-.album-detail .album_Likes{
+.song-detail .album_Likes{
 	background: none;
 	border: 0;
 	cursor: pointer;
 }
-.album-detail .fa-heart{
+.song-detail .fa-heart{
 	font-size: 2em;
 }
-.album-detail .album_Likes i{
+.song-detail .album_Likes i{
 	color:pink;
 }
-.album-detail.dark .album_Likes i{
+.song-detail.dark .album_Likes i{
 	color:pink;
 }
-.album-detail .rating_box{
+.song-detail .rating_box{
 	display: flex;
 } 
-.album-detail .rating{
+.song-detail .rating{
 	position: relative;
 	color: #ddd;
 	font-size: 30px;
 	text-align: center;
 }
-.album-detail .rating input{
+.song-detail .rating input{
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -434,13 +431,13 @@ nav {
 	opacity: 0;
 	cursor: pointer;
 }
-.album-detail .rating-star {
+.song-detail .rating-star {
 	color: #ffc107;
 }
-.album-detail.dark .rating-star {
+.song-detail.dark .rating-star {
 	color: #ffc107;
 }
-.album-detail .rating_sta{
+.song-detail .rating_sta{
 	width: 0;
 	color: #ffc107;
 	position: absolute;
@@ -449,31 +446,31 @@ nav {
 	overflow: hidden;
 	pointer-events: none;
 }
-.album-detail #rating_text{
+.song-detail #rating_text{
 	font-size: 12pt;
 	color: black;
 }
-.album-detail.dark #rating_text{
+.song-detail.dark #rating_text{
 	color: #fff;
 }
-.album-detail .song_Likes{
+.song-detail .song_Likes{
 	background: none;
 	border: 0;
 	cursor: pointer;
 }
-.album-detail .song_Likes i{
+.song-detail .song_Likes i{
 	color:pink;
 }
-.album-detail #musicCount{
+.song-detail #musicCount{
 	width: 500px;
 	height: 100px;
 }
-.album-detail .song-list {
+.song-detail .song-list {
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
 }
-.album-detail .song-list a {
+.song-detail .song-list a {
 	font-size: 15px;
 }
 

@@ -61,7 +61,7 @@
                 <table border="0" cellspacing="0" cellpadding="10">
                     <tr>
                         <td rowspan="4" align="center" >
-                            <a href="${album.coverPhoto}">
+                            <a class="play-img" href="#">
                                 <img src="${album.coverPhoto}" alt="앨범 사진">
                             </a>
                         </td>
