@@ -161,7 +161,7 @@
         <div class="helper-text">
           <div id="answer" class="helper-answer">${answer}</div>
         </div>
-        <div class="instent-play">
+        <div class="instant-play">
         		<input type="text" placeholder="노래제목을 입력하세요">
         		<button type="submit"><i class="bi bi-play-fill"></i></button>
         </div>

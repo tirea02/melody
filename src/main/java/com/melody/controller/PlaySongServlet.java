@@ -30,6 +30,9 @@ public class PlaySongServlet extends HttpServlet {
             Song song = songDAO.getSongById(songId);
             Album album = albumDAO.getAlbumDetails(song.getAlbumId());
 
+            logger.debug(String.valueOf(song));
+            logger.debug(String.valueOf(album));
+
             String downloadedFilePath = YoutubeDownloader.downloadAudio(song.getUrl(), song.getTitle(), 0);
             String relativePath = downloadedFilePath.substring("C:/melody".length()) +".mp3";
             song.setUrl(relativePath);

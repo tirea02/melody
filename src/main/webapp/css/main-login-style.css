@@ -1203,11 +1203,11 @@ body.dark .artist-item:hover .artist-img-inner {
 .helper-answer {
 	font-size: 13px;
 }
-.instent-play {
+.instant-play {
 	position: relative;
 	flex: 0.4;
 }
-.instent-play input[type="text"] {
+.instant-play input[type="text"] {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -1219,10 +1219,10 @@ body.dark .artist-item:hover .artist-img-inner {
 	padding: 15px;
 	font-size: 11px;
 }
-.instent-play input[type="text"]:focus {
+.instant-play input[type="text"]:focus {
 	border: 2px solid #ccc;
 }
-.instent-play button {
+.instant-play button {
 	position: absolute;
 	top: 50%;
 	right: 0;
@@ -1235,7 +1235,7 @@ body.dark .artist-item:hover .artist-img-inner {
 	border-radius: 50%;
 	transition: 0.2s;
 }
-.instent-play button:hover {
+.instant-play button:hover {
 	background-color: #000;
 	color: #fff;
 }

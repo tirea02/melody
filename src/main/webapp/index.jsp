@@ -86,7 +86,7 @@
 <h1>Song data Extractor</h1>
 <form action="playSongSimple" method="get">
   <label for="query">Enter Search Query:</label>
-  <input type="text" id="melonQuery" name="melonQuery" required>
+  <input type="text" id="songTitle" name="songTitle" required>
   <button type="submit">Search</button>
 </form>
 

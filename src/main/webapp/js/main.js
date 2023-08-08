@@ -222,6 +222,18 @@ function initializeChatHelper() {
     const questionInput = $("#question");
     const answerDiv = $("#answer");
 
+    const playSongForm = $("playSongForm");
+    const songQuery = $("#songQuery");
+    const playSongBtn = $("#playSongBtn");
+
+    playSongBtn.click(function() { // Use the jQuery .click() method
+        const songTitle = songQuery.val().trim();
+        if (songTitle !== "") {
+            songQuery.val(songTitle); // Use .val() to set the input's value
+            playSongForm.submit();
+        }
+    });
+
     submitBtn.click(function(e) {
         e.preventDefault(); // Prevent the default form submission
 
@@ -235,7 +247,10 @@ function initializeChatHelper() {
             // Update the answer area with the response
             answerDiv.html(data);
         });
+
     });
+
+
 }
 
 

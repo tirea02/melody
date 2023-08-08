@@ -3,14 +3,13 @@ $(document).ready(function() {
   const coloredHeart = $(".coloredHeart");
 
   const audioElement = document.querySelector("audio");
-  // const mp3FilePath = "./music/NewJeans-SuperShy.mp3";
-  // audioElement.src = mp3FilePath;
-  const audioUrl = [
-	  {url: "/mp3/ditto_31.mp3", title: "Ditto", artist: "NewJeans"},
-	  {url: "/mp3/사계_0.mp3", title: "사계", artist: "태연"},
-	  {url: "/mp3/New Emotions_0.mp3", title: "New Emotions", artist: "인피니트"},
-	  {url: "/mp3/I AM_0.mp3", title: "I AM", artist: "아이브"}
-  ];
+
+  // const audioUrl = [
+	//   {url: "/mp3/ditto_31.mp3", title: "Ditto", artist: "NewJeans"},
+	//   {url: "/mp3/사계_0.mp3", title: "사계", artist: "태연"},
+	//   {url: "/mp3/New Emotions_0.mp3", title: "New Emotions", artist: "인피니트"},
+	//   {url: "/mp3/I AM_0.mp3", title: "I AM", artist: "아이브"}
+  // ];
 
   const progressBar = $("#progress");
   const currentTime = $(".current");
@@ -31,9 +30,9 @@ $(document).ready(function() {
   let isMuted = false;
   let previousVolume = 1.0;
   let currentSongIndex = 0;
-  let shuffledPlaylist = [...audioUrl];
-  let isShuffled = false;
-  let shuffleRounds = audioUrl.length;
+  // let shuffledPlaylist = [...audioUrl];
+  // let isShuffled = false;
+  // let shuffleRounds = audioUrl.length;
 
 
   //좋아요 하트
@@ -49,20 +48,20 @@ $(document).ready(function() {
 
 
   //제목,가수
-  function updateSongInfo(index) {
-    if (isShuffled) {
-      const nextShuffledSong = shuffledPlaylist[index];
-      $(".songName").text(nextShuffledSong.title);
-      $(".artistName").text(nextShuffledSong.artist);
-    } else {
-      const nextSong = audioUrl[index];
-      $(".songName").text(nextSong.title);
-      $(".artistName").text(nextSong.artist);
-    }
-  }
+  // function updateSongInfo(index) {
+  //   if (isShuffled) {
+  //     const nextShuffledSong = shuffledPlaylist[index];
+  //     $(".songName").text(nextShuffledSong.title);
+  //     $(".artistName").text(nextShuffledSong.artist);
+  //   } else {
+  //     const nextSong = audioUrl[index];
+  //     $(".songName").text(nextSong.title);
+  //     $(".artistName").text(nextSong.artist);
+  //   }
+  // }
 
   //곡 정보 업데이트
-  updateSongInfo(currentSongIndex);
+  // updateSongInfo(currentSongIndex);
   
   // progressBar 재생 시간 업데이트
   audioElement.addEventListener('timeupdate', function () {
@@ -147,48 +146,48 @@ $(document).ready(function() {
   });
 
   //셔플 버튼
-  function random_Url() {
-    return audioUrl[Math.floor(Math.random()*audioUrl.length)];
-  }
-  var audio = new Audio(random_Url());
-  audio.play();
-  audio.addEventListener('ended', function() {
-    audio.src = random_Url();
-    audio.play();
-  });
+  // function random_Url() {
+  //   return audioUrl[Math.floor(Math.random()*audioUrl.length)];
+  // }
+  // var audio = new Audio(random_Url());
+  // audio.play();
+  // audio.addEventListener('ended', function() {
+  //   audio.src = random_Url();
+  //   audio.play();
+  // });
 
-  shuffleButton.click(function () {
-    $(this).toggleClass('clicked');
-    if ($(this).hasClass('clicked')) {
-      for (let i=0; i<shuffleRounds; i++){
-        shufflePlaylist();
-      }
-      playNextShuffledSong();
-    } else {
-      isShuffled = false;
-    }
-  });
+  // shuffleButton.click(function () {
+  //   $(this).toggleClass('clicked');
+  //   if ($(this).hasClass('clicked')) {
+  //     for (let i=0; i<shuffleRounds; i++){
+  //       shufflePlaylist();
+  //     }
+  //     playNextShuffledSong();
+  //   } else {
+  //     isShuffled = false;
+  //   }
+  // });
 
-  function shufflePlaylist() {
-    shuffledPlaylist = [...audioUrl];
-    for (let i = shuffledPlaylist.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffledPlaylist[i], shuffledPlaylist[j]] = [shuffledPlaylist[j], shuffledPlaylist[i]]; // Swap elements
-    }
-    currentSongIndex = 0; // Start from the first song in shuffled playlist
-    isShuffled = true;
-  }
+  // function shufflePlaylist() {
+  //   shuffledPlaylist = [...audioUrl];
+  //   for (let i = shuffledPlaylist.length - 1; i > 0; i--) {
+  //     const j = Math.floor(Math.random() * (i + 1));
+  //     [shuffledPlaylist[i], shuffledPlaylist[j]] = [shuffledPlaylist[j], shuffledPlaylist[i]]; // Swap elements
+  //   }
+  //   currentSongIndex = 0; // Start from the first song in shuffled playlist
+  //   isShuffled = true;
+  // }
 
-  function playNextShuffledSong() {
-    if (isShuffled) {
-      const nextShuffledSong = shuffledPlaylist[currentSongIndex].url;
-      audioElement.src = nextShuffledSong;
-      audioElement.currentTime = 0;
-      audioElement.play();
-      updateSongInfo(currentSongIndex);
-      currentSongIndex = (currentSongIndex + 1) % shuffledPlaylist.length;
-    }
-  }
+  // function playNextShuffledSong() {
+  //   if (isShuffled) {
+  //     const nextShuffledSong = shuffledPlaylist[currentSongIndex].url;
+  //     audioElement.src = nextShuffledSong;
+  //     audioElement.currentTime = 0;
+  //     audioElement.play();
+  //     updateSongInfo(currentSongIndex);
+  //     currentSongIndex = (currentSongIndex + 1) % shuffledPlaylist.length;
+  //   }
+  // }
 
   //볼륨바 숨기기
   volumeCtrlButton.hide();

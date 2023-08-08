@@ -31,7 +31,7 @@ public class PythonExecutorServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String question = request.getParameter("question");
-        String token = "ZghoS8tY0Kpsn7TuP3iNptR2n6f_4yQ0hGqK6XOIYe3HHer9wCZ5If5gE4iLzYbtgfrj7A."; // Your BARD API token
+        String token = "Ywh13jG3o55ELWtvEIS9B7VYcpZR4mfXSh276b-k3h9teavItMDw_nB07Kmgf2VbacakgA."; // Your BARD API token
 
         String answer = executePythonScript(question, token);
         logger.debug("Answer : {}", answer);
@@ -52,7 +52,7 @@ public class PythonExecutorServlet extends HttpServlet {
     private String executePythonScript(String question, String token) throws IOException {
         logger.debug(question);
         logger.debug(token);
-        String pythonExecutable = "C:/Users/user/AppData/Local/Programs/Python/Python311/python";
+        String pythonExecutable = "C:/Users/신정민/AppData/Local/Programs/Python/Python39/python";
         ProcessBuilder processBuilder = new ProcessBuilder(pythonExecutable, "C:/melody/bard/bard_script.py", question, token);
         Process process = processBuilder.start();
 

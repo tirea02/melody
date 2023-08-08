@@ -19,8 +19,8 @@ public class PlaySongSimpleServlet extends HttpServlet {
     private static final Logger logger = LoggerFactory.getLogger(PlaySongSimpleServlet.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
-            String query = request.getParameter("melonQuery");
-
+            String query = request.getParameter("songTitle");
+            logger.debug(query);
             // Fetch the SongSimple information using the MelonSongInfoExtractor
 
             if (query != null && !query.isEmpty()) {
