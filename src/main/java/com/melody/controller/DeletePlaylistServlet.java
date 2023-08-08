@@ -17,16 +17,11 @@ import com.melody.dao.PlaylistDAO;
 /**
  * Servlet implementation class DeletePlaylistServlet
  */
-@WebServlet("/DeletePlaylistServlet")
+@WebServlet("/DeletePlaylist")
 public class DeletePlaylistServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static final Logger logger = LoggerFactory.getLogger(AddToPlaylistServlet.class);
 	
-    public DeletePlaylistServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
-
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Long playlistId = Long.parseLong(request.getParameter("playlisyId"));
 		logger.debug(String.valueOf(playlistId));

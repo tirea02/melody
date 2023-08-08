@@ -42,7 +42,8 @@
 <div id="playlist-container">
     <h1>Custom Playlist Details</h1>
     <c:if test="${customPlaylist != null}">
-        <h2>Playlist ID: ${customPlaylist.playlistId}</h2>
+        <h2 style="display:inline">Playlist ID: ${customPlaylist.playlistId}</h2>
+        <a href="<%= request.getContextPath() %>/DeletePlaylist?playlistId=${customPlaylist.playlistId}">플레이리스트 삭제</a>
         <h2>Playlist Name: ${customPlaylist.playlistName}</h2>
         <h3>Songs:</h3>
         <c:forEach items="${customPlaylist.songs}" var="song" varStatus="loop">
@@ -52,6 +53,7 @@
                 <p>Singer ID: ${song.singerId}</p>
                 <p>URL: ${song.url}</p>
                 <a href="<%= request.getContextPath() %>/playSong?songId=${song.songId}">Play Song</a>
+                <P><a href="<%= request.getContextPath() %>/DeleteToPlaylist?playlistId=${customPlaylist.playlistId}&songId=${song.songId}">곡 삭제</a></P>
                 <hr>
             </div>
         </c:forEach>

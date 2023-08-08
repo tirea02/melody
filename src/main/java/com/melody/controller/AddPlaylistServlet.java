@@ -20,7 +20,7 @@ import com.melody.model.UserAccount;
 /**
  * Servlet implementation class AddPlaylistServlet
  */
-@WebServlet("/AddPlaylistServlet")
+@WebServlet("/AddPlaylist")
 public class AddPlaylistServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static final Logger logger = LoggerFactory.getLogger(AddToPlaylistServlet.class);
@@ -54,7 +54,6 @@ public class AddPlaylistServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 		
-		request.getRequestDispatcher("/pages/main-login.jsp").forward(request, response);
 	}
 
 }

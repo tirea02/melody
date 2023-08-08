@@ -15,7 +15,7 @@ import com.melody.dao.SongPlaylistDAO;
 /**
  * Servlet implementation class DeleteToPlaylistServlet
  */
-@WebServlet("/DeleteToPlaylistServlet")
+@WebServlet("/DeleteToPlaylist")
 public class DeleteToPlaylistServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static final Logger logger = LoggerFactory.getLogger(AddToPlaylistServlet.class);
@@ -29,5 +29,6 @@ public class DeleteToPlaylistServlet extends HttpServlet {
 		SongPlaylistDAO songplaylistDAO = new SongPlaylistDAO();
 		
 		songplaylistDAO.deleteSongFromPlaylist(playlistId, songId);
+		
 	}
 }
