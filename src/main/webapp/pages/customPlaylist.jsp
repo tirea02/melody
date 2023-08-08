@@ -12,7 +12,7 @@
     <style>
         /* Add your custom CSS styles here */
         body {
-            padding: 600px;
+            padding: 100px;
         }
         .playlist-container {
             max-width: 600px;
@@ -40,48 +40,59 @@
 </head>
 <body>
 <div id="playlist-container">
-    <h1>Custom Playlist Details</h1>
+<!--
+    <h1	>Custom Playlist Details</h1>
+-->
     <c:if test="${customPlaylist != null}">
+    
+    	<!--
         <h2 style="display:inline">Playlist ID: ${customPlaylist.playlistId}</h2>
         <a href="<%= request.getContextPath() %>/DeletePlaylist?playlistId=${customPlaylist.playlistId}">플레이리스트 삭제</a>
         <h2>Playlist Name: ${customPlaylist.playlistName}</h2>
-        <h3>Songs:</h3>
+        -->
+
+		<div class="card text-center">
+		  <div class="card-header">
+		    <h1	>Custom Playlist Details</h1>
+		  </div>
+		  <div class="card-body">
+		    <h5 class="card-title">Playlist ID: ${customPlaylist.playlistId}</h5>
+		    <p class="card-text">Playlist Name: ${customPlaylist.playlistName}</p>
+		  </div>
+		  <div class="card-footer text-body-secondary">
+		    <a href="<%= request.getContextPath() %>/DeletePlaylist?playlistId=${customPlaylist.playlistId}" class="btn btn-dark">플레이리스트 삭제</a>
+		  </div>
+		</div>
+		<p></p>
+		
+		<div class="card text-center">
+			<div class="card-body">
+				<h3>Songs:</h3>
+			</div>
+		</div>
+		<p></p>
+
+		<!--
+			<h3>Songs:</h3>
+		-->
         <c:forEach items="${customPlaylist.songs}" var="song" varStatus="loop">
             <div class="song-details" id="song-${song.songId}">
             	<p><h3>${song.title}</h3></p>
             	<p><h5>${song.songInfo}</h5></P>
+            	<!--
                 <p>Song ID: ${song.songId}</p>
                 <p>Title: ${song.title}</p>
                 <p>Singer ID: ${song.singerId}</p>
                 <p>URL: ${song.url}</p>
-                <a href="<%= request.getContextPath() %>/playSong?songId=${song.songId}">Play Song</a>
-                <P><a href="<%= request.getContextPath() %>/DeleteToPlaylist?playlistId=${customPlaylist.playlistId}&songId=${song.songId}">곡 삭제</a></P>
+                -->
+                <button type="button" class="btn btn-dark"><a href="<%= request.getContextPath() %>/playSong?songId=${song.songId}">Play Song</a> &nbsp&nbsp
+                </button>
+                <button type="button" class="btn btn-warning"><a href="<%= request.getContextPath() %>/DeleteToPlaylist?playlistId=${customPlaylist.playlistId}&songId=${song.songId}">곡 삭제</a>
+                </button>
                 <hr>
             </div>
         </c:forEach>
     </c:if>
-</div>
-
-<div id="playlist-container">
-	<h1>Custom Playlist Details</h1>
-	<c:if test="${customPlaylist != null}">
-	<h2 style="display:inline">Playlist ID: ${customPlaylist.playlistId}</h2>
-	<a href="<%= request.getContextPath() %>/DeletePlaylist?playlistId=${customPlaylist.playlistId}">플레이리스트 삭제</a>
-	<h2>Playlist Name: ${customPlaylist.playlistName}</h2>
-	<c:forEach items="${customPlaylist.songs}" var="song" varStatus="loop">
-	<div class="row row-cols-1 row-cols-md-3 g-4">
-	  <div class="col">
-	    <div class="card h-100">
-	      <div class="card-body">
-	        <h5 class="card-title">${song.title}</h5>
-	        <p class="card-text">${song.songInfo}</a></p>
-	        <p class="card-text"><a href="<%= request.getContextPath() %>/playSong?songId=${song.songId}">Play Song</a></p>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	</c:forEach>
-	</c:if>
 </div>
 
 

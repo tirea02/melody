@@ -10,7 +10,7 @@
 
 	<!-- Create PlayList -->
 	<section>
-		<form action="${pageContext.request.contextPath}/AddPlaylistServlet" method="post" class="CreateMylistForm" name="CreateMylistForm">
+		<form action="${pageContext.request.contextPath}/AddPlaylist" method="post" class="CreateMylistForm" name="CreateMylistForm">
 			<h1>Create My PlayList</h1>
 			<div class="Mylist-text">
 				<div>
