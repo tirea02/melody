@@ -137,6 +137,7 @@ $(document).ready(function() {
                 e.preventDefault();
                 var songId = $(this).data("songid");
                 playlistDropdown.toggle();
+                $('.playlist-dropdown').toggleClass('open')
 
                 // Generate the playlist dropdown content
                 var playlistContent = '<ul class="playlist-list">';
