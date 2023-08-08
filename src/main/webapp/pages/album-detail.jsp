@@ -14,6 +14,7 @@
     </script>
 </head>
 <body>
+<input data-value  = album>
 <div align="left">
     <h3>앨범 정보</h3>
     <c:if test="${not empty album}">

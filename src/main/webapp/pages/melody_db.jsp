@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 
 <%@ page import="java.sql.Connection" %>
 <%@ page import="java.sql.DriverManager" %>
@@ -46,10 +46,10 @@
 	Class.forName("oracle.jdbc.driver.OracleDriver");
 	String url="jdbc:oracle:thin:@127.0.0.1:1521:XE";
 	CN=DriverManager.getConnection(url,"melodytest", "1234");
-	System.out.println("------ db¿¬°á ¼º°øÇß½À´Ï´Ù ------ ");
-	//out.println("<h2> ------ db¿¬°á ¼º°øÇß½À´Ï´Ù ------ </h2> ");
+	System.out.println("------ dbì—°ê²° ì„±ê³µí–ˆìŠµë‹ˆë‹¤ ------ ");
+	//out.println("<h2> ------ dbì—°ê²° ì„±ê³µí–ˆìŠµë‹ˆë‹¤ ------ </h2> ");
 	ST = CN.createStatement();
-  }catch(Exception ex){System.out.println("db¿¡·¯:"+ex);}
+  }catch(Exception ex){System.out.println("dbì—ëŸ¬:"+ex);}
  %>
 
 
