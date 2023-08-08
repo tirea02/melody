@@ -41,7 +41,10 @@
           </div>
           <nav>
             <div class="sub-lnb">
-              <input type="search">
+              <form action="${pageContext.request.contextPath}/search" method="get">
+                <input type="text" id="mainSearchQuery" name="mainSearchQuery" required>
+                <button type="submit"></button>
+              </form>
             </div>
             <div class="gnb">
 
@@ -133,15 +136,21 @@
         <img class="chat-helper-img" src="${pageContext.request.contextPath}/resources/images/chat-helper.png">
       </button>
     </div>
-    <div class="chat-helper-main">
-      <form class="chat-helper-inner">
+	 <div class="chat-helper-main">
+      <div class="chat-helper-inner">
         <div class="helper-text">
+          <div id="answer" class="helper-answer">${answer}</div>
+        </div>
+        <div class="instent-play">
+        		<input type="text" placeholder="노래제목을 입력하세요">
+        		<button type="submit"><i class="bi bi-play-fill"></i></button>
         </div>
         <div class="user-text">
-          <textarea cols="100%" rows="4" class="user-chat"></textarea>
-          <button type="submit" class="helper-send">Send</button>
+<%--          <label for="question">Enter your question:</label><br>--%>
+          <textarea id="question" rows="4" cols="100%" class="user-chat"></textarea><br>
+          <button id="submitBtn" class="helper-send">Send</button>
         </div>
-      </form>
+      </div>
     </div>
 
     <!-- Footer -->

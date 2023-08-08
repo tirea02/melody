@@ -1745,8 +1745,11 @@
     <div class="chat-helper-main">
       <div class="chat-helper-inner">
         <div class="helper-text">
-          <h2>Answer:</h2>
-          <div id="answer">${answer}</div>
+          <div id="answer" class="helper-answer">${answer}</div>
+        </div>
+        <div class="instent-play">
+        		<input type="text" placeholder="노래제목을 입력하세요">
+        		<button type="submit"><i class="bi bi-play-fill"></i></button>
         </div>
         <div class="user-text">
 <%--          <label for="question">Enter your question:</label><br>--%>

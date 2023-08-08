@@ -149,13 +149,6 @@ header.dark {
 	padding: 20px 0;
 }
 
-.lnb.dark a {
-	color: #fff;
-}
-
-.lnb {
-}
-
 .logo {
 	height: 50px;
 	width: 200px;
@@ -193,7 +186,10 @@ header.dark {
 	gap: 20px;
 	line-height: 50px;
 }
-
+.lnb.dark
+.lnb.dark a {
+	color: #fff;
+}
 .lnb a {
 	transition: 0.1s;
 	letter-spacing: 0.2dvh;
@@ -222,7 +218,7 @@ header.dark {
 
 nav {
 	display: flex;
-	justify-content: center;
+	justify-content: right;
 	align-content: center;
 	gap: 100px;
 	height: 50px;
@@ -235,38 +231,48 @@ nav {
 	justify-content: center;
 }
 
-.sub-lnb input[type=search] {
+.sub-lnb input[type=text] {
 	border: none;
 	width: 300px;
 	height: 50px;
 	background-color: transparent;
 	border-bottom: 1px solid #bbb;
 	padding: 0px 5px;
-	background: url('../resources/images/search.svg') no-repeat center right
-		10px;
 	position: absolute;
 	top: 0;
 	left: 50%;
 	transform: translate(-100%, -10%);
 }
 
-.sub-lnb input[type=search].dark {
-	border: none;
-	width: 300px;
-	background-color: transparent;
-	border-bottom: 1px solid #bbb;
-	padding: 0px 7px;
-	background: url('../resources/images/search-dark.svg') no-repeat center
-		right 10px;
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translate(-100%, -10%);
+header.dark .sub-lnb input[type=text] {
 	color: #fff;
 }
 
-.sub-lnb input[type=search]:focus {
+.sub-lnb input[type=text]:focus {
 	border-bottom: 1.5px solid #9d9b9b;
+}
+.sub-lnb button {
+	border: none;
+	background: url('../resources/images/search.svg') no-repeat center center;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-100%, -10%);
+	cursor: pointer;
+}
+header.dark .sub-lnb button {
+	border: none;
+	background: url('../resources/images/search-dark.svg') no-repeat center center;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-100%, -10%);
+	cursor: pointer;
+	color: #fff;
 }
 
 .gnb {
@@ -407,10 +413,10 @@ nav {
 .song-detail .fa-heart{
 	font-size: 2em;
 }
-.song-detail .album_Likes i{
+.song-detail .song_Likes i{
 	color:pink;
 }
-.song-detail.dark .album_Likes i{
+.song-detail.dark .song_Likes i{
 	color:pink;
 }
 .song-detail .rating_box{
@@ -562,6 +568,47 @@ nav {
 	background-color: #eee;
 	border-radius: 5px;
 	flex: 3;
+	overflow: scroll;
+	padding: 20px;
+}
+.helper-answer {
+	font-size: 13px;
+}
+.instent-play {
+	position: relative;
+	flex: 0.4;
+}
+.instent-play input[type="text"] {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	border: 1px solid #ccc;
+	border-radius: 50px;
+	padding: 15px;
+	font-size: 11px;
+}
+.instent-play input[type="text"]:focus {
+	border: 2px solid #ccc;
+}
+.instent-play button {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(0, -50%);
+	width: 30px;
+	height: 90%;
+	border: 1px solid #ddd;
+	line-height: 90%;
+	background-color: #eee;
+	border-radius: 50%;
+	transition: 0.2s;
+}
+.instent-play button:hover {
+	background-color: #000;
+	color: #fff;
 }
 .user-text {
 	border-radius: 10px;
@@ -588,7 +635,8 @@ nav {
 	transition: 0.1s;
 }
 .helper-send:hover {
-	font-weight: 500;
+	/* border: 1px solid #5c5c5c; */
+  font-weight: 500;
 }
 
 /* ############## Footer ############## */
