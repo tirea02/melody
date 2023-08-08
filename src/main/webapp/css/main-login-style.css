@@ -1,4 +1,4 @@
-@charset 'utf-8';
+@charset "utf-8";
 
 /* Google Web Font CDN */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap');
@@ -224,7 +224,7 @@ nav {
 	display: flex;
 	justify-content: right;
 	align-content: center;
-	gap: 100px;
+	gap: 40px;
 	height: 50px;
 	line-height: 50px;
 }
@@ -327,6 +327,12 @@ header.dark .sub-lnb button {
 .myplaylist {
 	padding-top: 150px;
 }
+.myplaylist .section-header {
+	justify-content: space-between;
+}
+.myplaylist .section-header .more-btn a {
+	width: 150px;
+}
 .myplaylist .slick-initialized .slick-slide {
 	display: flex;
 }
@@ -334,18 +340,15 @@ header.dark .sub-lnb button {
 	border-top: 1px solid #bbb;
 	border-bottom: 1px solid #bbb;
 	padding: 10px 0;
-	display: flex;
 }
 .myplaylist-items {
 	display: flex;
 	gap: 100px;
 	/* text-align: center; */
-	border: 1px solid #000;
 }
 
 .myplaylist-item {
 	flex: 1;
-	border: 1px solid #000;
 }
 
 .myplaylist-item a {
@@ -369,6 +372,7 @@ header.dark .sub-lnb button {
 
 .myplaylist-img-inner img {
 	width: 100%;
+	height: 150px;
 }
 
 .myplaylist-text {
@@ -401,7 +405,8 @@ header.dark .sub-lnb button {
 }
 
 .season-item4 {
-	background-color: #93aa79;
+/* 	background-color: #93aa79; */
+	background-color: #859a6d;
 }
 
 .season-item5 {
@@ -768,11 +773,11 @@ header.dark .sub-lnb button {
 .genre .section-header {
 	justify-content: space-between;
 }
-.genre .section-header .more-btn {
+.more-btn {
 	display: flex;
 	align-items: center;
 }
-.genre .section-header .more-btn a {
+.more-btn a {
 	border: 1px solid #bbb;
 	display: block;
 	width: 100px;
@@ -782,7 +787,7 @@ header.dark .sub-lnb button {
 	padding: 5px 0;
 	border-radius: 5px;
 }
-.genre .section-header .more-btn a:hover {
+.more-btn a:hover {
 	background-color: #000;
 	color: #fff;
 }
@@ -826,6 +831,7 @@ header.dark .sub-lnb button {
 	border-collapse: collapse;
 	text-align: center;
 	font-size: 13px;
+	transition: 0.3s;
 }
 
 .genre-table tr, th, td {
@@ -844,9 +850,9 @@ header.dark .sub-lnb button {
 	border-bottom: 1px solid #bbb;
 }
 
-.genre-table tr:first-child {
+/* .genre-table tr:first-child {
 	padding: 10px;
-}
+} */
 
 .genre-table td:nth-child(1), .genre-table td:nth-child(3), .genre-table td:nth-child(4),
 	.genre-table td:nth-child(5) {
@@ -918,9 +924,10 @@ header.dark .sub-lnb button {
 }
 
 .genre-img-inner {
-	flex: 0.5;
+	flex: 0.3;
 	justify-content: center;
 	overflow: hidden;
+	border: 1px solid #ddd;
 }
 
 .genre-img-inner img {
@@ -960,6 +967,41 @@ header.dark .sub-lnb button {
 	color: #000;
 	font-weight: bold;
 }
+.playlist-dropdown {
+	transition: 0.1s;
+	width: 0;
+	text-align: left;
+	position: relative;
+	padding: 5px;
+	color: #000;
+	background-color: #ddd;
+	margin: 5px 0;
+	border-radius: 5px;
+}
+.playlist-list {
+	display: block;
+	boder: 1px solid #000;
+	width: 100%;
+}
+.playlist-dropdown:after {
+		content: '';
+	position: absolute;
+	top: 50%;
+	left: -10px;
+	transform: translate(0, -50%);
+	width: 20px;
+	height: 20px;
+	background-color: #ddd;
+	rotate: 45deg;
+}
+.playlist-dropdown.open {
+	width: 170px;
+	height: 100%;
+}
+.playlist-dropdown li a:hover {
+	text-decoration: underline;
+}
+
 
 /* ############## Artist ############## */
 .artist .slick-initialized .slick-slide {
@@ -968,7 +1010,6 @@ header.dark .sub-lnb button {
 
 .artist-items {
 	display: flex;
-	justify-content: center;
 	gap: 100px;
 	/* text-align: center; */
 }
@@ -985,16 +1026,25 @@ header.dark .sub-lnb button {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center; 
+	align-items: center;
 }
 
 .artist-item:hover .artist-img-inner {
 	box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
 }
+body.dark .artist-item:hover .artist-img-inner {
+	box-shadow: 1px 5px 10px rgba(255, 255, 255, 0.5);
+}
 
 .artist-item:hover .artist-text {
 	font-weight: bold;
 	color: #000;
+}
+.artist-item a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .artist-img-inner {
@@ -1003,7 +1053,6 @@ header.dark .sub-lnb button {
 	transition: 0.3s;
 	border: 1px solid #ddd;
 	width: 80%;
-	height: 80%;
 }
 
 .artist-img-inner img {

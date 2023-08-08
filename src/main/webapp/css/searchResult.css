@@ -149,13 +149,6 @@ header.dark {
 	padding: 20px 0;
 }
 
-.lnb.dark a {
-	color: #fff;
-}
-
-.lnb {
-}
-
 .logo {
 	height: 50px;
 	width: 200px;
@@ -201,6 +194,10 @@ header.dark {
 
 .lnb a:hover {
 	font-weight: 500;
+}
+.lnb.dark, 
+.lnb.dark a{
+	color: #fff;
 }
 
 .darkmode {

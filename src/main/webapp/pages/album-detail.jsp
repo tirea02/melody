@@ -36,7 +36,7 @@
       <div class="header-inner">
           <div class="banner">
             <div class="logo">
-              <a href="#">
+              <a href="${pageContext.request.contextPath}/pages/main.jsp">
                 <!-- <img src="../resources/images/Logo.png"> -->
               </a>
             </div>
