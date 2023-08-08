@@ -12,7 +12,7 @@
     <style>
         /* Add your custom CSS styles here */
         body {
-            padding: 20px;
+            padding: 600px;
         }
         .playlist-container {
             max-width: 600px;
@@ -48,6 +48,8 @@
         <h3>Songs:</h3>
         <c:forEach items="${customPlaylist.songs}" var="song" varStatus="loop">
             <div class="song-details" id="song-${song.songId}">
+            	<p><h3>${song.title}</h3></p>
+            	<p><h5>${song.songInfo}</h5></P>
                 <p>Song ID: ${song.songId}</p>
                 <p>Title: ${song.title}</p>
                 <p>Singer ID: ${song.singerId}</p>
@@ -58,6 +60,28 @@
             </div>
         </c:forEach>
     </c:if>
+</div>
+
+<div id="playlist-container">
+	<h1>Custom Playlist Details</h1>
+	<c:if test="${customPlaylist != null}">
+	<h2 style="display:inline">Playlist ID: ${customPlaylist.playlistId}</h2>
+	<a href="<%= request.getContextPath() %>/DeletePlaylist?playlistId=${customPlaylist.playlistId}">플레이리스트 삭제</a>
+	<h2>Playlist Name: ${customPlaylist.playlistName}</h2>
+	<c:forEach items="${customPlaylist.songs}" var="song" varStatus="loop">
+	<div class="row row-cols-1 row-cols-md-3 g-4">
+	  <div class="col">
+	    <div class="card h-100">
+	      <div class="card-body">
+	        <h5 class="card-title">${song.title}</h5>
+	        <p class="card-text">${song.songInfo}</a></p>
+	        <p class="card-text"><a href="<%= request.getContextPath() %>/playSong?songId=${song.songId}">Play Song</a></p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	</c:forEach>
+	</c:if>
 </div>
 
 
