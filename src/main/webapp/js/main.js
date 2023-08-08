@@ -175,6 +175,19 @@ $(document).ready(function() {
         });
     });
 
+    const audioPlayerContainer = $('#audio-player');
+    $.ajax({
+        url: contextPath+ '/pages/miniPlayerTest.jsp',
+        dataType: 'html',
+        success: function(response) {
+            audioPlayerContainer.html(response);
+            // Add your JavaScript code for managing playback state here
+        },
+        error: function(xhr, status, error) {
+            console.error('AJAX request error:', status, error);
+        }
+    });
+
     // Function to update the pagination buttons
     function updatePagination(genreId, totalPages) {
         var paginationDiv = $(".genre-tab" + genreId + " .table-btn");
@@ -223,3 +236,5 @@ function initializeChatHelper() {
         });
     });
 }
+
+

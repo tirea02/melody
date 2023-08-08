@@ -34,6 +34,9 @@
 <br>
 <a href="playSong?songId=1">세담 play song</a>
 <br>
+<br>
+<a href="pages/miniPlayerTest.jsp">mini play song test !!!!</a>
+<br>
 
 <br>
 <a href="pages/miniPlaySong.jsp">세담 mini play song</a>

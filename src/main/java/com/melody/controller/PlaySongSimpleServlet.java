@@ -47,8 +47,6 @@ public class PlaySongSimpleServlet extends HttpServlet {
                 response.getWriter().println("Please provide a search query.");
             }
 
-            // Forward to the songsimplePlay.jsp for rendering
-//            request.getRequestDispatcher("pages/songsimplePlay.jsp").forward(request, response);
         } catch (NumberFormatException e) {
             e.printStackTrace();
             // Handle any errors or exceptions here

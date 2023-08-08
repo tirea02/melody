@@ -10,7 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="playlist show in gerne list 가장 간단한 기능만 구현">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/plyrTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/miniPlayerTest.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/controller/PlaySongSimpleServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/PlaySongSimpleServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/album-detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/album-detail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/melody_js.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/melody_js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/miniPlaySong.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/miniPlaySong.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/album-detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/album-detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/main.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +37,9 @@
         <option value="CSS File" />
         <option value="HTML File" />
         <option value="SCSS File" />
+        <option value="Class" />
         <option value="Jsp File" />
         <option value="JavaScript File" />
-        <option value="Class" />
       </list>
     </option>
   </component>
@@ -465,7 +475,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691455904088</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="add if statement for hidden element">
+      <option name="closed" value="true" />
+      <created>1691465977295</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1691465977295</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,7 +534,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="init commit" />
     <MESSAGE value="init before change to hibernate -&gt; dao" />
     <MESSAGE value="버전 최종 세팅 &#10;JAVA EE 8 (javax 써야함) &#10;Tomcat 9" />
     <MESSAGE value="Song model 수정 song table에 url 추가" />
@@ -541,7 +558,8 @@
     <MESSAGE value="chat-helper(google bard ) 연동 기능 추가 css 추가 밑&#10;즉시 재생할 수 있는 input box 추가 요청" />
     <MESSAGE value="custom playlist에 데이터 추가 및 main-login에 genre table 추가" />
     <MESSAGE value="playlist show in gerne list 가장 간단한 기능만 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="playlist show in gerne list 가장 간단한 기능만 구현" />
+    <MESSAGE value="add if statement for hidden element" />
+    <option name="LAST_COMMIT_MESSAGE" value="add if statement for hidden element" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

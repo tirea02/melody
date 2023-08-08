@@ -1797,57 +1797,59 @@
       </div>
     </footer>
     
-    <!-- Mini Player -->
-    <div id="player" class="player">
-      <div class="info">
-        <audio class="audio">
-          <source src="/mp3/ditto_31.mp3" type="audio/mp3">
-        </audio>
-        <div class="album-cover">
-          <div class="album-img-inner"></div>
-        </div>
+<%--    <!-- Mini Player -->--%>
+<%--    <div id="player" class="player">--%>
+<%--      <div class="info">--%>
+<%--        <audio class="audio">--%>
+<%--          <source src="/mp3/ditto_31.mp3" type="audio/mp3">--%>
+<%--        </audio>--%>
+<%--        <div class="album-cover">--%>
+<%--          <div class="album-img-inner"></div>--%>
+<%--        </div>--%>
 
-        <div class="info-sub">
-          <div class="progressBar">
-            <div class="progressBar-main">
-              <input type="range" value="0" id="progress">
-            </div>
-          </div>
+<%--        <div class="info-sub">--%>
+<%--          <div class="progressBar">--%>
+<%--            <div class="progressBar-main">--%>
+<%--              <input type="range" value="0" id="progress">--%>
+<%--            </div>--%>
+<%--          </div>--%>
 
-          <div class="currentlyPlaying">
-            <div class="currentlyPlaying-text">
-              <span class="songName">Super Shy</span>
-              <span class="artistName">NewJeans</span>
-            </div>
-            <div class="controls">
-              <div class="music-timer">
-                <span class="current">0:00</span>
-                <span> / </span>
-                <span class="duration">0:00</span>
-              </div>
-              <div class="repeat"><i class="fa-solid fa-repeat fa-xl"></i></div>
-              <div class="previous"><i class="fas fa-backward fa-xl"></i></div>
-              <div class="play"><i class="fas fa-play fa-xl"></i></div>
-              <div class="pause"><i class="fas fa-pause fa-xl"></i></div>
-              <div class="next"><i class="fas fa-forward fa-xl"></i></div>
-              <div class="shuffle"><i class="fas fa-random fa-xl"></i></div>
-              <div class="volume-btn">
-                <div class="volume"><i class="fas fa-volume-up fa-xl"></i></div>
-                <div class="mute"><i class="fas fa-volume-xmark fa-xl"></i></div>
-                <div class="volumeCtrl">
-                  <div class="volume-bar">
-                    <div class="volumeBg">
-                      <input class="volumeRange" type="range" min="0" max="100" step="1" value="50"></input>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="option"><i class="fas fa-bars fa-2xl"></i></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<%--          <div class="currentlyPlaying">--%>
+<%--            <div class="currentlyPlaying-text">--%>
+<%--              <span class="songName">Super Shy</span>--%>
+<%--              <span class="artistName">NewJeans</span>--%>
+<%--            </div>--%>
+<%--            <div class="controls">--%>
+<%--              <div class="music-timer">--%>
+<%--                <span class="current">0:00</span>--%>
+<%--                <span> / </span>--%>
+<%--                <span class="duration">0:00</span>--%>
+<%--              </div>--%>
+<%--              <div class="repeat"><i class="fa-solid fa-repeat fa-xl"></i></div>--%>
+<%--              <div class="previous"><i class="fas fa-backward fa-xl"></i></div>--%>
+<%--              <div class="play"><i class="fas fa-play fa-xl"></i></div>--%>
+<%--              <div class="pause"><i class="fas fa-pause fa-xl"></i></div>--%>
+<%--              <div class="next"><i class="fas fa-forward fa-xl"></i></div>--%>
+<%--              <div class="shuffle"><i class="fas fa-random fa-xl"></i></div>--%>
+<%--              <div class="volume-btn">--%>
+<%--                <div class="volume"><i class="fas fa-volume-up fa-xl"></i></div>--%>
+<%--                <div class="mute"><i class="fas fa-volume-xmark fa-xl"></i></div>--%>
+<%--                <div class="volumeCtrl">--%>
+<%--                  <div class="volume-bar">--%>
+<%--                    <div class="volumeBg">--%>
+<%--                      <input class="volumeRange" type="range" min="0" max="100" step="1" value="50"></input>--%>
+<%--                    </div>--%>
+<%--                  </div>--%>
+<%--                </div>--%>
+<%--              </div>--%>
+<%--              <div class="option"><i class="fas fa-bars fa-2xl"></i></div>--%>
+<%--            </div>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--      </div>--%>
+<%--    </div>--%>
+    <div id="audio-player"></div>
+
 
   </div>
 
