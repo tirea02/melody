@@ -615,7 +615,7 @@
             <div class="new-items">
               <div class="new-item">
                 <div class="new-content">
-                  <a href="#">
+                  <a href="/melody/albumDetail?albumID=3">
                     <div class="new-img-inner">
                       <img src="https://cdnimg.melon.co.kr/cm2/album/images/112/81/456/11281456_20230706180841_500.jpg">
                     </div>
@@ -626,7 +626,7 @@
                   </a>
                 </div>
                 <div class="new-content">
-                  <a href="#">
+                  <a href="/melody/albumDetail?albumID=15">
                     <div class="new-img-inner">
                       <img src="https://cdnimg.melon.co.kr/cm2/album/images/112/58/233/11258233_20230605094802_500.jpg">
                     </div>
@@ -637,7 +637,7 @@
                   </a>
                 </div>
                 <div class="new-content">
-                  <a href="#">
+                  <a href="/melody/albumDetail?albumID=14">
                     <div class="new-img-inner">
                       <img src="https://cdnimg.melon.co.kr/cm2/album/images/112/54/858/11254858_20230531233847_500.jpg">
                     </div>
@@ -648,7 +648,7 @@
                   </a>
                 </div>
                 <div class="new-content">
-                  <a href="#">
+                  <a href="/melody/albumDetail?albumID=5">
                     <div class="new-img-inner">
                       <img src="https://cdnimg.melon.co.kr/cm2/album/images/112/40/232/11240232_20230509151820_500.jpg">
                     </div>
@@ -661,7 +661,7 @@
               </div>
               <div class="new-item">
                 <div class="new-content">
-                  <a href="#">
+                  <a href="/melody/albumDetail?albumID=12">
                     <div class="new-img-inner">
                       <img src="https://cdnimg.melon.co.kr/cm2/album/images/112/36/264/11236264_20230508184331_500.jpg">
                     </div>
@@ -672,7 +672,7 @@
                   </a>
                 </div>
                 <div class="new-content">
-                  <a href="#">
+                  <a href="/melody/albumDetail?albumID=10">
                     <div class="new-img-inner">
                       <img src="https://cdnimg.melon.co.kr/cm2/album/images/112/34/678/11234678_20230502162327_500.jpg">
                     </div>
@@ -683,7 +683,7 @@
                   </a>
                 </div>
                 <div class="new-content">
-                  <a href="#">
+                  <a href="/melody/albumDetail?albumID=16">
                     <div class="new-img-inner">
                       <img src="https://cdnimg.melon.co.kr/cm2/album/images/112/29/537/11229537_20230421170444_500.jpg">
                     </div>
@@ -694,7 +694,7 @@
                   </a>
                 </div>
                 <div class="new-content">
-                  <a href="#">
+                  <a href="/melody/albumDetail?albumID=9">
                     <div class="new-img-inner">
                       <img src="https://cdnimg.melon.co.kr/cm2/album/images/112/27/533/11227533_20230419162238_500.jpg">
                     </div>
@@ -709,7 +709,7 @@
             <div class="new-items">
               <div class="new-item">
                 <div class="new-content">
-                  <a href="#">
+                  <a href="/melody/albumDetail?albumID=8">
                     <div class="new-img-inner">
                       <img src="https://cdnimg.melon.co.kr/cm2/album/images/112/11/297/11211297_20230410151046_500.jpg">
                     </div>
@@ -720,7 +720,7 @@
                   </a>
                 </div>
                 <div class="new-content">
-                  <a href="#">
+                  <a href="/melody/albumDetail?albumID=20">
                     <div class="new-img-inner">
                       <img src="https://cdnimg.melon.co.kr/cm2/album/images/112/14/411/11214411_20230330163342_500.jpg">
                     </div>
