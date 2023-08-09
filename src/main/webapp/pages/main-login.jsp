@@ -75,7 +75,7 @@
             <b>My Playlist</b>
           </h2>
           <div class="more-btn">
-            <a href="#">+ New PlayList</a>
+            <a href="${pageContext.request.contextPath}/pages/inputPlaylist.jsp">+ New PlayList</a>
           </div>
         </div>
         <div class="myplaylist-inner">
