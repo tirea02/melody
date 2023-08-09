@@ -393,37 +393,37 @@ header.dark .sub-lnb button {
 
 .season-item {
 	border-radius: 10px;
-	background-color: #147cc2;
+	background: linear-gradient(#41c4ff, #575fb3);
 }
 
 .season-item2 {
-	background-color: #674d45;
+	background: linear-gradient(#e2ae18, #7b28d2);
 }
 
 .season-item3 {
-	background-color: #455679;
+	background: linear-gradient(#1a4851, #63adc1);
 }
 
 .season-item4 {
-/* 	background-color: #93aa79; */
-	background-color: #859a6d;
+	background: linear-gradient(#e48d0f, #008ac5);
 }
 
 .season-item5 {
-	background-color: #4c4863;
+	background: linear-gradient(#ef7ba8, #0c0051);
 }
 
 .season-slide {
 	display: flex;
-	padding: 0 20px;
+	padding: 50px;
 }
 
 .season-text {
-	flex: 2;
+	flex: 1;
 	display: flex;
 	gap: 10px;
 	flex-direction: column;
-	padding: 50px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .season-text-sub {
@@ -444,6 +444,7 @@ header.dark .sub-lnb button {
 	font-weight: 600;
 	line-height: 40px;
 	color: #fff;
+
 }
 
 .season-text p {
@@ -477,8 +478,7 @@ header.dark .sub-lnb button {
 }
 
 .season-list {
-	flex: 5;
-	padding: 30px;
+	flex: 2.5;
 }
 
 .season-songs {
@@ -496,7 +496,14 @@ header.dark .sub-lnb button {
 }
 
 .season-song-text {
-	flex: 2;
+	flex: 3;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	padding-top: 10px;
 }
 
 .season-song-text span {
@@ -504,10 +511,12 @@ header.dark .sub-lnb button {
 	font-weight: 500;
 	display: block;
 	margin-bottom: 3px;
+	flex: 1;
 }
 
 .season-song-text p {
-	color: #bbb;
+	color: #d1d0d0;
+	flex: 1;	
 }
 
 .season-song img {
@@ -673,7 +682,7 @@ header.dark .sub-lnb button {
 }
 
 .best-img-inner {
-	flex: 0.5;
+	flex: 0.3;
 	justify-content: center;
 	overflow: hidden;
 }
@@ -729,7 +738,7 @@ header.dark .sub-lnb button {
 	width: 100%;
 	/* height: 300px; */
 	display: flex;
-	gap: 150px;
+	gap: 100px;
 }
 
 .new-content a {
@@ -752,11 +761,14 @@ header.dark .sub-lnb button {
 .new-img-inner {
 	overflow: hidden;
 	position: relative;
+	border: 1px solid #eee;
+	width: 100%;
+	height: 100%;
 }
 
 .new-content img {
 	width: 100%;
-	height: 150px;
+	height: 100%;
 	transition: 0.2s;
 }
 
