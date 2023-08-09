@@ -1650,42 +1650,42 @@
           <div class="musicvideo-slider">
             <div class="musicvideo-items">
               <div class="musicvideo-item">
-                <a href="#">
+                <a href="https://www.youtube.com/watch?v=7HDeem-JaSY">
                   <div class="musicvideo-img-inner">
-                    <img src="../resources/images/MockupsUpVideo.png">
+                    <img src="../resources/images/queencard.jpeg">
                   </div>
                   <div class="musicvideo-text">
-                    <span>TWICE (트와이스)</span>
+                    <span>(여자)아이들((G)I-DLE) - '퀸카 (Queencard)' Official Music Video</span>
                   </div>
                 </a>
               </div>
               <div class="musicvideo-item">
-                <a href="#">
+                <a href="https://www.youtube.com/watch?v=F0B7HDiY-10">
                   <div class="musicvideo-img-inner">
-                    <img src="../resources/images/MockupsUpVideo.png">
+                    <img src="../resources/images/after like.jpeg">
                   </div>
                   <div class="musicvideo-text">
-                    <span>TWICE (트와이스)</span>
+                    <span>IVE 아이브 'After LIKE' MV</span>
                   </div>
                 </a>
               </div>
               <div class="musicvideo-item">
-                <a href="#">
+                <a href="https://www.youtube.com/watch?v=pyf8cbqyfPs">
                   <div class="musicvideo-img-inner">
-                    <img src="../resources/images/MockupsUpVideo.png">
+                    <img src="../resources/images/antifragile.jpeg">
                   </div>
                   <div class="musicvideo-text">
-                    <span>TWICE (트와이스)</span>
+                    <span>LE SSERAFIM (르세라핌) 'ANTIFRAGILE' OFFICIAL M/V</span>
                   </div>
                 </a>
               </div>
               <div class="musicvideo-item">
-                <a href="#">
+                <a href="https://www.youtube.com/watch?v=Os_heh8vPfs">
                   <div class="musicvideo-img-inner">
-                    <img src="../resources/images/MockupsUpVideo.png">
+                    <img src="../resources/images/spicy.jpeg">
                   </div>
                   <div class="musicvideo-text">
-                    <span>TWICE (트와이스)</span>
+                    <span>aespa 에스파 'Spicy' MV</span>
                   </div>
                 </a>
               </div>
