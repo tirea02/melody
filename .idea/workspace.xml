@@ -9,10 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="playlist show in gerne list 가장 간단한 기능만 구현">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/controller/DeletePlaylistServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/DeletePlaylistServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/util/DatabaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/util/DatabaseConfig.java" afterDir="false" />
+    <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="delete playlist redirect 및 data fetch 추가">
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -591,7 +589,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691550008801</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="delete playlist redirect 및 data fetch 추가">
+      <option name="closed" value="true" />
+      <created>1691550440447</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1691550440447</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -652,7 +658,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Song model 수정 song table에 url 추가" />
     <MESSAGE value="음악 재생 기능 구현&#10;html+ css 추가중" />
     <MESSAGE value="clone" />
     <MESSAGE value="changed to eclipse project and add resource melody zip" />
@@ -677,7 +682,8 @@
     <MESSAGE value="add if statement for hidden element" />
     <MESSAGE value="시연전 최종 오류 확인 및 경로 재확인" />
     <MESSAGE value="play list 상세 페이지에서 song 삭제 기능 구현 (ajax)" />
-    <option name="LAST_COMMIT_MESSAGE" value="play list 상세 페이지에서 song 삭제 기능 구현 (ajax)" />
+    <MESSAGE value="delete playlist redirect 및 data fetch 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete playlist redirect 및 data fetch 추가" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

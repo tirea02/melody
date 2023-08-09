@@ -129,7 +129,7 @@ public class SongDAO {
 
     public List<Song> getSongsByGenre(int genreId, int pageNumber, int pageSize) {
         List<Song> songs = new ArrayList<>();
-        String searchQuery = "SELECT s.*, a.Cover_Photo AS imageUrl " +
+        String searchQuery = "SELECT s.*, a.album_title ,a.Cover_Photo AS imageUrl " +
                 "FROM Song s " +
                 "JOIN Album a ON s.Album_ID = a.Album_ID " +
                 "WHERE s.Genre_ID = ? " +
@@ -147,6 +147,7 @@ public class SongDAO {
                 while (resultSet.next()) {
                     Song song = createSongFromResultSet(resultSet);
                     song.setImageUrl(resultSet.getString("imageUrl"));
+                    song.setAlbumTitle(resultSet.getString("album_title"));
                     songs.add(song);
                 }
             }

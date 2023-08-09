@@ -22,6 +22,7 @@ public class Song {
     private String imageUrl = "default.jpg";
     //편의를 위해 추가
     private String singerName ="default singer name";
+    private String albumTitle ="default album title";
 
     //기능 추가로 추가
     private int playlistCount = 0;
