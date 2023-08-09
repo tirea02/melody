@@ -48,5 +48,6 @@ public class AddToPlaylistServlet extends HttpServlet {
             e.printStackTrace();
             // Handle error
         }
+        
     }
 }

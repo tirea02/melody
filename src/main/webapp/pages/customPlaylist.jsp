@@ -68,9 +68,7 @@
 		<div class="card text-center">
 			<div class="card-body">
 				<h3>Songs:</h3>
-			</div>
-		</div>
-		<p></p>
+
 
 		<!--
 			<h3>Songs:</h3>
@@ -92,6 +90,8 @@
                 <hr>
             </div>
         </c:forEach>
+        	</div>
+		</div>
     </c:if>
 </div>
 

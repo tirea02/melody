@@ -24,6 +24,11 @@
   <link rel="icon" href="${pageContext.request.contextPath}/resources/images/Favicon.png">
   <script>
 	 let contextPath = '<%= request.getContextPath() %>';
+	 
+		function createPlaylist_window(){
+			window.open("inputPlaylist.jsp", "Create MyPlayList",
+					"width=400, height=300, top=50, left=50 ");
+		}
   </script>
 </head>
 <body>
@@ -75,7 +80,7 @@
             <b>My Playlist</b>
           </h2>
           <div class="more-btn">
-            <a href="${pageContext.request.contextPath}/pages/inputPlaylist.jsp">+ New PlayList</a>
+            <a href="${pageContext.request.contextPath}/pages/inputPlaylist.jsp" onclick="createPlaylist_window();return false;">+ New PlayList</a>
           </div>
         </div>
         <div class="myplaylist-inner">

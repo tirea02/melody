@@ -54,6 +54,7 @@ public class AddPlaylistServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 		
+		request.getRequestDispatcher("/pages/main-login.jsp").forward(request, response);
 	}
 
 }
