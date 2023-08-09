@@ -935,7 +935,7 @@
                     </td>
                     <td>
                       <div class="best-song-info">
-                        <a href="#">
+                        <a href="/melody/albumDetail?albumID=3">
                           <div class="best-img-inner">
                             <img src="https://cdnimg.melon.co.kr/cm2/album/images/109/22/231/10922231_20220527120653_500.jpg">
                           </div>
@@ -965,7 +965,7 @@
                     </td>
                     <td>
                       <div class="best-song-info">
-                        <a href="#">
+                        <a href="/melody/albumDetail?albumID=4">
                           <div class="best-img-inner">
                             <img src="https://cdnimg.melon.co.kr/cm2/album/images/110/78/852/11078852_20221017102947_500.jpg">
                           </div>
@@ -995,7 +995,7 @@
                     </td>
                     <td>
                       <div class="best-song-info">
-                        <a href="#">
+                        <a href="/melody/albumDetail?albumID=6">
                           <div class="best-img-inner">
                             <img src="https://cdnimg.melon.co.kr/cm2/album/images/109/09/179/10909179_20220405103521_500.jpg">
                           </div>
@@ -1025,7 +1025,7 @@
                     </td>
                     <td>
                       <div class="best-song-info">
-                        <a href="#">
+                        <a href="/melody/albumDetail?albumID=11">
                           <div class="best-img-inner">
                             <img src="https://cdnimg.melon.co.kr/cm2/album/images/110/78/496/11078496_20221014153848_500.jpg">
                           </div>
@@ -1055,7 +1055,7 @@
                     </td>
                     <td>
                       <div class="best-song-info">
-                        <a href="#">
+                        <a href="/melody/albumDetail?albumID=12">
                           <div class="best-img-inner">
                             <img src="https://cdnimg.melon.co.kr/cm2/album/images/109/90/058/10990058_20220623170956_500.jpg">
                           </div>
