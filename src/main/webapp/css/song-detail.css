@@ -186,8 +186,12 @@ header.dark {
 	gap: 20px;
 	line-height: 50px;
 }
-.lnb.dark
-.lnb.dark a {
+header.dark
+.lnb {
+	color: #fff;
+}
+header.dark
+.lnb a {
 	color: #fff;
 }
 .lnb a {

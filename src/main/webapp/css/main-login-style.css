@@ -149,13 +149,6 @@ header.dark {
 	padding: 20px 0;
 }
 
-.lnb.dark a {
-	color: #fff;
-}
-
-.lnb {
-}
-
 .logo {
 	height: 50px;
 	width: 200px;
@@ -193,7 +186,14 @@ header.dark {
 	gap: 20px;
 	line-height: 50px;
 }
-
+header.dark
+.lnb {
+	color: #fff;
+}
+header.dark
+.lnb a {
+	color: #fff;
+}
 .lnb a {
 	transition: 0.1s;
 	letter-spacing: 0.2dvh;
