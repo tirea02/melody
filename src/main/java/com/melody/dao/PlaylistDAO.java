@@ -27,6 +27,23 @@ public class PlaylistDAO {
         }
     }
 
+    public void addPlaylistWithStringHashtag(Playlist playlist, String playListHashtag) throws SQLException {
+        String sql = "INSERT INTO Playlist (Playlist_ID, UserAccount_ID, Playlist_Name, Description, Created_Date, Playlist_Hashtags) " +
+                "VALUES (playlist_seq.NEXTVAL, ?, ?, ?, ?, ?)";
+
+        try (Connection conn = DatabaseConfig.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+
+            pstmt.setLong(1, playlist.getUserAccountId());
+            pstmt.setString(2, playlist.getPlaylistName());
+            pstmt.setString(3, playlist.getDescription());
+            pstmt.setDate(4, new java.sql.Date(playlist.getCreatedDate().getTime()));
+            pstmt.setString(5, playListHashtag ); // Convert hashtags to a comma-separated string
+
+            pstmt.executeUpdate();
+        }
+    }
+
     // Method to retrieve a Playlist by its playlistId from the database
     public Playlist getPlaylistById(long playlistId) throws SQLException {
         String sql = "SELECT * FROM Playlist WHERE Playlist_ID = ?";

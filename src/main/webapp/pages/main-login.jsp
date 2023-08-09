@@ -42,7 +42,7 @@
               <c:if test="${not empty userAccount}">
                <p>${userAccount.name}님 환영합니다. </p>
               </c:if>
-              <a href="${pageContext.request.contextPath}/pages/main.jsp">LOGOUT</a>
+              <a href="${pageContext.request.contextPath}/logout">LOGOUT</a>
               <a href="${pageContext.request.contextPath}/pages/userDetail.jsp">MY PAGE</a>
               <div class="darkmode"></div>
             </div>

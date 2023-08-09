@@ -8,7 +8,7 @@ function updateLnbContent() {
         success: function(data) {
             if (data.name) {
                 // User is logged in
-                $(".lnb").html(data.name + "님 환영합니다 <a href='" + data.contextPath + "/pages/main.jsp'>Sign Out</a> <div class='darkmode'></div>");
+                $(".lnb").html(data.name + "님 환영합니다 <a href='" + data.contextPath + "/logout'>Sign Out</a> <div class='darkmode'></div>");
             } else {
                 // User is not logged in
                 $(".lnb").html("<a href='" + data.contextPath + "/pages/login.jsp'>LOGIN</a> <a href='" + data.contextPath + "/pages/register.jsp'>SIGN UP</a> <div class='darkmode'></div>");
