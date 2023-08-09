@@ -88,6 +88,26 @@ public class PlaylistDAO {
             pstmt.executeUpdate();
         }
     }
+    
+    public void updatePlaylistWithStringHashtags(Playlist playlist) throws SQLException {
+        String sql = "UPDATE Playlist SET UserAccount_ID = ?, Playlist_Name = ?, Description = ?, " +
+                "Created_Date = ?, Playlist_Hashtags = ? WHERE Playlist_ID = ?";
+
+        try (Connection conn = DatabaseConfig.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+
+            pstmt.setLong(1, playlist.getUserAccountId());
+            pstmt.setString(2, playlist.getPlaylistName());
+            pstmt.setString(3, playlist.getDescription());
+            pstmt.setDate(4, new java.sql.Date(playlist.getCreatedDate().getTime()));
+            pstmt.setString(5, getPlaylistHashtagsAsString(playlist)); // Convert hashtags to a comma-separated string
+            pstmt.setLong(6, playlist.getPlaylistId());
+
+            pstmt.executeUpdate();
+        }
+    }
+    
+    
 
     // Method to delete a Playlist from the database
     public void deletePlaylist(long playlistId) throws SQLException {
@@ -189,12 +209,6 @@ public class PlaylistDAO {
         return sb.toString();
     }
     
-    //string
-    public List<Hashtag> getStringPlaylistHashtagsASList(String playlistHashtags) {
-    	
-    	
-    	
-    }
 
     public CustomPlaylist getCustomPlaylistWithSongs(long playlistId) {
         CustomPlaylist customPlaylist = null;

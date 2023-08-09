@@ -41,6 +41,7 @@ public class AddPlaylistServlet extends HttpServlet {
 			logger.debug(String.valueOf(date));
 			logger.debug(playlistHasgtags);
 			
+			
 			Playlist playlist = new Playlist( useraccountId , playlistName, playlistDescription, date, playlistHasgtags );
 			playlist.setPlaylistName(playlistName);
 			playlist.setUserAccountId(useraccountId);
@@ -50,6 +51,7 @@ public class AddPlaylistServlet extends HttpServlet {
 			
 			PlaylistDAO PlaylistDAO = new PlaylistDAO();
 			PlaylistDAO.addPlaylist(playlist);
+			
 			
 			
 			

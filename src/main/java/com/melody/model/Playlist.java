@@ -30,9 +30,4 @@ public class Playlist {
         this.playlistHashtags = playlistHashtags;
     }
 
-	public Playlist(long useraccountId, String playlistName, String playlistDescription, Date date,
-			String playlistHasgtags) {
-		
-	}
-
 }
