@@ -330,18 +330,6 @@ header.dark .sub-lnb button {
     padding: 10px;
     border: 1px solid #dee2e6;
     margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 5px
-}
-.song-info {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-}
-.song-info span:first-child {
-	font-weight: bold;
 }
 .playlist .song-title {
     font-weight: bold;
@@ -351,24 +339,7 @@ header.dark .sub-lnb button {
     display: block;
     margin-top: 10px;
 }
-.card-header {
-	padding: 10px;
-	border: none;
-}
-.btn a {
-	color: #fff;
-}
-.playlist p,
-.playlist h3,
-.playlist h5 {
-	text-align: left;
-}
-.card-footer {
-	text-align: right;
-}
-.card-footer a {
-	border: 1px solid #bbb;	
-}
+
 /* ############## Chat Helper ############## */
 .chat-helper-icon {
 	position: fixed;
@@ -534,7 +505,6 @@ footer {
 	background-color: #555;
 	color: #fff;
 	font-size: 13px;
-	padding-bottom: 70px;
 }
 
 footer.dark {

@@ -43,8 +43,6 @@ $('.new-slider').slick({
   centerMode: true,
   centerPadding: '10px',
   speed: 1000,
-  autoplay: true,
-  autoplaySpeed: 4000,
   draggable: false
 });
 

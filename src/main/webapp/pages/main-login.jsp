@@ -86,7 +86,6 @@
 
                 <div class="myplaylist-item">
                   <a href="<c:url value='/customPlaylist'>
-                  	<img src="${pageContext.request.contextPath}/resources/images/playlist-img1.png">
                             <c:param name='playlistId' value='${playlist.playlistId}' />
                         </c:url>">
                     <div class="myplaylist-text">
@@ -1679,7 +1678,6 @@
     </section>
 
     <!-- Section : MusicVideo -->
-<!-- Section : MusicVideo -->
     <section class="musicvideo" id="musicvideo">
       <div class="section-inner">
         <div class="section-header">

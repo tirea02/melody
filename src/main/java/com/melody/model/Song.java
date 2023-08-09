@@ -20,7 +20,7 @@ public class Song {
     private List<Hashtag> songHashtags;
     private String url;
     private String imageUrl = "default.jpg";
-    //편의를 위해 추가
+    //doesn't exist in table added in dao if needed
     private String singerName ="default singer name";
     private String albumTitle ="default album title";
 
