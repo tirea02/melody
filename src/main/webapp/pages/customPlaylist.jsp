@@ -61,6 +61,7 @@
 		  </div>
 		  <div class="card-footer text-body-secondary">
 		    <a href="<%= request.getContextPath() %>/DeletePlaylist?playlistId=${customPlaylist.playlistId}" class="btn btn-dark">플레이리스트 삭제</a>
+		    <a href="<%= request.getContextPath() %>/pages/inputEditPlaylist.jsp?playlistId=${customPlaylist.playlistId}" class="btn btn-dark">플레이리스트 수정</a>
 		  </div>
 		</div>
 		<p></p>

@@ -50,6 +50,8 @@ public class LoginServlet extends HttpServlet {
 
         Gson gson = new Gson();
         String jsonCustomPlaylists = gson.toJson(customPlaylists);
+        
+        
 
 
 

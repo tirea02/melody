@@ -42,7 +42,7 @@ public class AddPlaylistServlet extends HttpServlet {
 			logger.debug(playlistHasgtags);
 			
 			
-			Playlist playlist = new Playlist( useraccountId , playlistName, playlistDescription, date, playlistHasgtags );
+			Playlist playlist = new Playlist();
 			playlist.setPlaylistName(playlistName);
 			playlist.setUserAccountId(useraccountId);
 			playlist.setDescription(playlistDescription);

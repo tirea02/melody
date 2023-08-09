@@ -89,7 +89,7 @@ public class PlaylistDAO {
         }
     }
     
-    public void updatePlaylistWithStringHashtags(Playlist playlist) throws SQLException {
+    public void updatePlaylistWithStringHashtags(Playlist playlist, String playlistHasgtag) throws SQLException {
         String sql = "UPDATE Playlist SET UserAccount_ID = ?, Playlist_Name = ?, Description = ?, " +
                 "Created_Date = ?, Playlist_Hashtags = ? WHERE Playlist_ID = ?";
 
@@ -100,7 +100,7 @@ public class PlaylistDAO {
             pstmt.setString(2, playlist.getPlaylistName());
             pstmt.setString(3, playlist.getDescription());
             pstmt.setDate(4, new java.sql.Date(playlist.getCreatedDate().getTime()));
-            pstmt.setString(5, getPlaylistHashtagsAsString(playlist)); // Convert hashtags to a comma-separated string
+            pstmt.setString(5, playlistHasgtag);
             pstmt.setLong(6, playlist.getPlaylistId());
 
             pstmt.executeUpdate();
