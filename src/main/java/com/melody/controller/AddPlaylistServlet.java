@@ -50,6 +50,9 @@ public class AddPlaylistServlet extends HttpServlet {
 			
 			PlaylistDAO PlaylistDAO = new PlaylistDAO();
 			PlaylistDAO.addPlaylist(playlist);
+			
+			
+			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

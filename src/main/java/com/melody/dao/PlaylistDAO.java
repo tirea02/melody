@@ -188,6 +188,13 @@ public class PlaylistDAO {
         }
         return sb.toString();
     }
+    
+    //string
+    public List<Hashtag> getStringPlaylistHashtagsASList(String playlistHashtags) {
+    	
+    	
+    	
+    }
 
     public CustomPlaylist getCustomPlaylistWithSongs(long playlistId) {
         CustomPlaylist customPlaylist = null;

@@ -30,6 +30,8 @@ public class DeleteToPlaylistServlet extends HttpServlet {
 		
 		songplaylistDAO.deleteSongFromPlaylist(playlistId, songId);
 		
+		
+		
 		request.getRequestDispatcher("/pages/customPlaylist.jsp").forward(request, response);
 		
 	}
