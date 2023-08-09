@@ -17,6 +17,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Custom Css & Js -->
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/css/song-detail.css">
   <!-- Favicon -->
   <link rel="icon" href="${pageContext.request.contextPath}/resources/images/Favicon.png">
 </head>
@@ -142,8 +144,10 @@
           <div id="answer" class="helper-answer">${answer}</div>
         </div>
         <div class="instant-play">
-        		<input type="text" placeholder="노래제목을 입력하세요">
-        		<button type="submit"><i class="bi bi-play-fill"></i></button>
+	        <form id="playSongForm" action="${pageContext.request.contextPath}/playSongSimple" method="get">
+	            <input id="songQuery" name="songTitle" type="text" placeholder="노래제목을 입력하세요">
+	            <button id="playSongBtn" type="submit"><i class="bi bi-play-fill"></i></button>
+	        </form>
         </div>
         <div class="user-text">
 <%--          <label for="question">Enter your question:</label><br>--%>
@@ -248,7 +252,6 @@
   </div>
 
   <!-- Custom Css & Js -->
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/css/song-detail.css">
   <script src="${pageContext.request.contextPath}/js/navConfig.js"></script>
   <script src="${pageContext.request.contextPath}/js/miniPlaySong.js"></script>
   <script src="${pageContext.request.contextPath}/js/song-detail.js"></script>

@@ -788,10 +788,6 @@ header.dark .sub-lnb button {
 	border-bottom: 1px solid #bbb;
 }
 
-.genre-table tr:first-child {
-	padding: 10px;
-}
-
 .genre-table td:nth-child(1), .genre-table td:nth-child(3), .genre-table td:nth-child(4),
 	.genre-table td:nth-child(5) {
 	position: relative;
