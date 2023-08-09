@@ -66,16 +66,18 @@ public class SongPlaylistDAO {
     }
 
     // Method to delete SongPlaylist records by playlist ID and song ID
-    public void deleteSongFromPlaylist(long playlistId, long songId) {
+    public boolean deleteSongFromPlaylist(long playlistId, long songId) {
         try (Connection conn = DatabaseConfig.getConnection();
              PreparedStatement stmt = conn.prepareStatement(
                      "DELETE FROM SongPlaylist WHERE Playlist_ID = ? AND Song_ID = ?")) {
             stmt.setLong(1, playlistId);
             stmt.setLong(2, songId);
             stmt.executeUpdate();
+            return true;
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
+        return false;
     }
 
     // Other utility methods or advanced search as needed

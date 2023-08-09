@@ -10,14 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3d67c91-5db8-421b-9562-d83ff265b3f8" name="Changes" comment="playlist show in gerne list 가장 간단한 기능만 구현">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/user/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/controller/AddPlaylistServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/AddPlaylistServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/dao/PlaylistDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/dao/PlaylistDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/model/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/model/Playlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/navConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/navConfig.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/main-login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/main-login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/controller/DeleteToPlaylistServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/controller/DeleteToPlaylistServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/dao/SongPlaylistDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/dao/SongPlaylistDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/melody/util/DatabaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/melody/util/DatabaseConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/customPlaylist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/customPlaylist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/customPlaylist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/customPlaylist.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -595,6 +593,11 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="68af9950-e7cb-4d46-9115-09121a536bcd" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -617,6 +620,11 @@
     </option>
     <option name="TAB_STATES">
       <map>
+        <entry key="68af9950-e7cb-4d46-9115-09121a536bcd">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>

@@ -36,7 +36,9 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
-
+	<script>
+		let contextPath = '<%= request.getContextPath() %>';
+	</script>
 </head>
 <body>
 <div id="playlist-container">
@@ -56,7 +58,6 @@
 		    <h1	>Custom Playlist Details</h1>
 		  </div>
 		  <div class="card-body">
-		    <h5 class="card-title">Playlist ID: ${customPlaylist.playlistId}</h5>
 		    <p class="card-text">Playlist Name: ${customPlaylist.playlistName}</p>
 		  </div>
 		  <div class="card-footer text-body-secondary">
@@ -85,10 +86,10 @@
                 <p>Singer ID: ${song.singerId}</p>
                 <p>URL: ${song.url}</p>
                 -->
-                <button type="button" class="btn btn-dark"><a href="<%= request.getContextPath() %>/playSong?songId=${song.songId}">Play Song</a> &nbsp&nbsp
+                <button type="button" class="btn btn-dark"><a href="${pageContext.request.contextPath}/playSong?songId=${song.songId}">Play Song</a> &nbsp&nbsp
                 </button>
-                <button type="button" class="btn btn-warning"><a href="<%= request.getContextPath() %>/DeleteToPlaylist?playlistId=${customPlaylist.playlistId}&songId=${song.songId}">곡 삭제</a>
-                </button>
+				<button id="delete-song-btn" type="button" class="btn btn-warning delete-song" data-playlist-id="${customPlaylist.playlistId}" data-song-id="${song.songId}"> 곡 삭제
+				</button>
                 <hr>
             </div>
         </c:forEach>
